@@ -1,0 +1,5941 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="web前端自学基础, 我的个人blog">
+    <meta name="description" content="web前端基础了解">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>web前端自学基础 | 我的个人blog</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+    
+    <script src="/libs/jquery/jquery.min.js"></script>
+    
+<meta name="generator" content="Hexo 4.2.0"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"><link rel="alternate" href="/atom.xml" title="我的个人blog" type="application/atom+xml">
+</head>
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper head-container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">我的个人blog</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="" class="waves-effect waves-light">
+
+      
+      <i class="fas fa-list" style="zoom: 0.6;"></i>
+      
+      <span>Medias</span>
+      <i class="fas fa-chevron-down" aria-hidden="true" style="zoom: 0.6;"></i>
+    </a>
+    <ul class="sub-nav menus_item_child ">
+      
+      <li>
+        <a href="/musics">
+          
+          <i class="fas fa-music" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>Musics</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/movies">
+          
+          <i class="fas fa-film" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>Movies</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/books">
+          
+          <i class="fas fa-book" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>Books</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/galleries">
+          
+          <i class="fas fa-image" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>Galleries</span>
+        </a>
+      </li>
+      
+    </ul>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">我的个人blog</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			Contact
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="javascript:;">
+			
+				<i class="fa-fw fas fa-list"></i>
+			
+			Medias
+			<span class="m-icon"><i class="fas fa-chevron-right"></i></span>
+		</a>
+            <ul  style="background:  ;" >
+              
+                <li>   
+				
+                  <a href="/musics " style="margin-left:75px";>
+				  
+				   <i class="fa fas fa-music" style="position: absolute;left:50px" ></i>
+			      
+		          <span>Musics</span>
+                  </a>
+                </li>
+              
+                <li>   
+				
+                  <a href="/movies " style="margin-left:75px";>
+				  
+				   <i class="fa fas fa-film" style="position: absolute;left:50px" ></i>
+			      
+		          <span>Movies</span>
+                  </a>
+                </li>
+              
+                <li>   
+				
+                  <a href="/books " style="margin-left:75px";>
+				  
+				   <i class="fa fas fa-book" style="position: absolute;left:50px" ></i>
+			      
+		          <span>Books</span>
+                  </a>
+                </li>
+              
+                <li>   
+				
+                  <a href="/galleries " style="margin-left:75px";>
+				  
+				   <i class="fa fas fa-image" style="position: absolute;left:50px" ></i>
+			      
+		          <span>Galleries</span>
+                  </a>
+                </li>
+               
+            </ul>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">web前端自学基础</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        margin: 35px 0 15px 0;
+        padding-left: 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        height: calc(100vh - 250px);
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #toc-content .is-active-link::before {
+        background-color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/web%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/" class="post-category">
+                                web前端基础
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2020-10-26
+                </div>
+                
+
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    31k
+                </div>
+                
+
+                
+				
+                
+            </div>
+            
+        </div>
+        <hr class="clearfix">
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h2 id="第一章：认识前端开发"><a href="#第一章：认识前端开发" class="headerlink" title="第一章：认识前端开发"></a>第一章：认识前端开发</h2><h3 id="什么是HTML"><a href="#什么是HTML" class="headerlink" title="什么是HTML"></a>什么是HTML</h3><p>超文本标记语言（HTML）是一种用于创建网页的标准标记语言。<strong>HTML描述了一个网站的结构，是一种标记语言而非编程语言</strong></p>
+<p><strong>一个HTMl元素是HTML文件的几个基本组成单元，</strong> 是构建网站的基石。</p>
+<p>浏览器使用HTML标签（&lt;html&gt;）和脚本(JavaScript)来诠释网页内容，但不会将标签显示在页面上。</p>
+<p>HTML的发展经历了HTML1 (互联网工程任务组(IETF) 工作草案)、<br>HTML2.0 (1995 年发布)、HTML4.0 与HTML4.01 (W3C 的推荐标<br>准)、XHTML和沿用至今的HTML5, HTML5是对HTML标准的第五次<br>修订，要注意，HTML5本身并非技术，而是标准。国内通常所说的 HTML5实际上是html与css3及JavaScript和api等的一一个组合，大概<br>可以用以下公式说明: HTML5≈HTML +CSS3+ JavaScript+APl.</p>
+<p><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.1/3.jpg" alt="image"></p>
+<h3 id="什么是CSS"><a href="#什么是CSS" class="headerlink" title="什么是CSS"></a>什么是CSS</h3><p>css，即层叠样式表（又称串样式列表、级联样式表、串接样式表、阶层式样式表），是一种用来为结构化文档（如HTML文档或XML应用）添加样式（字体、颜色和间距等）的计算机语言，<strong>他的主要只能就是确定布局和元素的表现</strong></p>
+<p><strong>CSS不能单独使用，</strong>，必须与HTML或XML一起协工作，为HTMl或XML起装饰作用。</p>
+<h3 id="什么是JavaScript"><a href="#什么是JavaScript" class="headerlink" title="什么是JavaScript"></a>什么是JavaScript</h3><p><strong>JavaScript</strong>（通常缩写为<strong>JS</strong>）是一种高级、解释型的编程语言，它能使网页可交互，常用来为网页添加各式各样的动态功能，为用户提供更流畅美观的浏览效果。</p>
+<p>JavaScript 支持面向对象编程，命令式编程，以及函数式标称。他提供语法来操控文本、数组、日期以及正则表达式等。它已经由ECMA（欧洲计算机制造协会）通过ECMAScript实现语言的标准化。</p>
+<blockquote>
+<p>Java与JavaScript是两门不同的编程语言。之所以它命名为JavaScript，是因为java式当时最流行的编程语言，名字中带有”Java”字样有助于这门新生语言的传播。虽然这两门语言不管是在名字上还是语法上都有很多的相似性，但是这两门编程语言从设计之初就有很大的不同，JavaScript的语言设计主要受到了Self（一种基于原型的编程语言）和Scheme（一门函数式编程语言）的影响。JavaScript是运行在浏览器中的一种动态、弱类型脚本语言，java是一种可以撰写跨平台应用软件的面向对象的静态、强类型程序设计语言。</p>
+</blockquote>
+<h2 id="第二章：认识HTML"><a href="#第二章：认识HTML" class="headerlink" title="第二章：认识HTML"></a>第二章：认识HTML</h2><ol>
+<li>Html元素的结构</li>
+<li>HTML中的嵌套</li>
+<li>HTMl文档结构</li>
+<li>HTML中的注释</li>
+<li>认识MDN</li>
+</ol>
+<h2 id="第三章：HTML-文本标签"><a href="#第三章：HTML-文本标签" class="headerlink" title="第三章：HTML-文本标签"></a>第三章：HTML-文本标签</h2><h3 id="块状和内联标签"><a href="#块状和内联标签" class="headerlink" title="块状和内联标签"></a>块状和内联标签</h3><p>内联标签和块状标签是HTML里面两种主要的标签类型，它们最大的区别就是块状标签会为自己的内容占据新的一行，而内联标签则不会。</p>
+<p>比如 ==&lt;img&gt;== 标签是内联标签，而 ==&lt;p&gt;== 标签是块状标签</p>
+<h3 id="标题标签"><a href="#标题标签" class="headerlink" title="标题标签"></a>标题标签</h3><p><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.3/6.png" alt="image"></p>
+<h3 id="图片标签"><a href="#图片标签" class="headerlink" title="图片标签"></a>图片标签</h3><p><strong>&lt;img src=”url”&gt;</strong></p>
+<h3 id="链接标签"><a href="#链接标签" class="headerlink" title="链接标签"></a>链接标签</h3><p><strong>&lt;a&gt;</strong> 标签是内联标签，用户点击后浏览器会跳转到指定网址</p>
+<h4 id="链接标签的属性"><a href="#链接标签的属性" class="headerlink" title="链接标签的属性"></a>链接标签的属性</h4><p><strong>herf</strong></p>
+<p>herf属性给出链接指向的网址。它的值应该是一个URL或者锚点。</p>
+<p><strong>title</strong></p>
+<p>title属性给出链接的署名信息。鼠标悬停在链接上方时，浏览器会将这个属性的值，以提示块的形式显示出来。</p>
+<p><strong>target</strong></p>
+<p>target属性指定如何展示打开的链接</p>
+<p>target属性的值可以是”_self”、”_blank”、”_parent”、”_top”四个关键字之一</p>
+<p>为”_self”的时候表示在当前页面打开</p>
+<p>为”_blank”的时候表示在新页面打开</p>
+<h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><p>&lt;ol&gt;表示有序<br>&lt;ul&gt;表示无序</p>
+<pre><code>&lt;!-- 有序列表--&gt;
+&lt;ol&gt;
+    &lt;li&gt;完成工作画稿&lt;/li&gt;
+    &lt;li&gt;送奶奶去体检&lt;/li&gt;
+    &lt;li&gt;给今天生日的孩子买蛋糕&lt;/li&gt;
+    &lt;li&gt;看完《滑动解锁》的最后一部分&lt;/li&gt;
+&lt;/ol&gt;</code></pre><h2 id="第四章：HTML-表单标签"><a href="#第四章：HTML-表单标签" class="headerlink" title="第四章：HTML-表单标签"></a>第四章：HTML-表单标签</h2><h3 id="form标签"><a href="#form标签" class="headerlink" title="form标签"></a>form标签</h3><p>有时我们需要用户输入来提供一些信息，为满足一些需求HTML提供了交互式表单控件</p>
+<h5 id="form标签-1"><a href="#form标签-1" class="headerlink" title="form标签"></a>form标签</h5><p>我们需要完成如图所示这个表单的开发<br><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.4/1.jpg" alt="image"><br>在这个注册表单里都是输入框，按钮等表单元素，对于这些表单控件，我们需要一个块状元素 <code>&lt;form&gt;</code>把他们包起来，属于同一个表单的表单控件要包含在同一个块状元素<code>form</code>里。</p>
+<p>此时需要了解,<code>action</code>和<code>method</code>:</p>
+<blockquote>
+<p>1.action:一个处理此表单信息的程序所在的URL，所述表格信息将在表单提交时被发送到定义的网址</p>
+</blockquote>
+<blockquote>
+<p>2.method:它的值可以是GET或POST，用来规定如何发送表单信息</p>
+</blockquote>
+<p>通常表单信息被发送到<strong>服务器</strong>。</p>
+<h3 id="单行文本输入框"><a href="#单行文本输入框" class="headerlink" title="单行文本输入框"></a>单行文本输入框</h3><p>单行文本输入框</p>
+<pre><code>&lt;!-- action=""则表单信息将提交到当前页面 --&gt;
+&lt;form action=""&gt;
+  &lt;input type="text" /&gt;
+&lt;/form&gt;</code></pre><ol>
+<li>占位文本</li>
+</ol>
+<p>，在昵称输入框中有”昵称”两个字，但是在在单行文本输入框中没有任何文字，这个文字在点击输入框并输入内容时就会消失，这是<strong>占位文本</strong> ，通过”placeholder”实行。</p>
+<pre><code>&lt;input type="text" placeholder="昵称" /&gt;</code></pre><ol start="2">
+<li>value</li>
+</ol>
+<p>预填写</p>
+<pre><code>&lt;input type="text" placeholder="昵称" name="nick" value="小明" /&gt;
+</code></pre><ol start="3">
+<li>不可修改的输入框<br>“readonly”和“disabled”</li>
+</ol>
+<p>我们不希望用户可以自行进行修改，变成只读输入框</p>
+<pre><code>&lt;input type="text" placeholder="昵称" name="nick" value="小明" readonly /&gt;</code></pre><p>或者</p>
+<pre><code>&lt;input type="text" placeholder="昵称" name="nick" value="小明" disabled /&gt;</code></pre><h3 id="多行文本输入框和密码输入框"><a href="#多行文本输入框和密码输入框" class="headerlink" title="多行文本输入框和密码输入框"></a>多行文本输入框和密码输入框</h3><ol>
+<li>多行输入框</li>
+</ol>
+<p>使用textarea</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;
+  &lt;title&gt;示例表单&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;form action=""&gt;
+    &lt;textarea name="sign" rows="5" cols="30" placeholder="请输入个性签名"&gt;&lt;/textarea&gt;
+
+  &lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre><ol start="2">
+<li>密码输入框</li>
+</ol>
+<p>就是输入的内容不显示，只需要将<strong>type=”text”</strong>中的<strong>text</strong>改成<strong>password</strong></p>
+<h3 id="单选框和复选框"><a href="#单选框和复选框" class="headerlink" title="单选框和复选框"></a>单选框和复选框</h3><pre><code>&lt;input type="radio" name="gender" value="male" /&gt;男
+&lt;input type="radio" name="gender" value="female" /&gt;女</code></pre><p>如何想单击文字也可以进行选择，则使用label标签</p>
+<pre><code>&lt;label&gt; &lt;input type="radio" name="gender" value="male" /&gt;男 &lt;/label&gt;
+&lt;label&gt; &lt;input type="radio" name="gender" value="female" /&gt;女 &lt;/label&gt;</code></pre><p>另一种写法</p>
+<pre><code>&lt;input id="male" type="radio" name="gender" value="male" /&gt;
+&lt;label for="male"&gt;男&lt;/label&gt;
+&lt;input id="female" type="radio" name="gender" value="female" /&gt;
+&lt;label for="female"&gt;女&lt;/label&gt;</code></pre><p>即id=”male”和for=”male”对应</p>
+<h4 id="兴趣多选题（复选框）"><a href="#兴趣多选题（复选框）" class="headerlink" title="兴趣多选题（复选框）"></a>兴趣多选题（复选框）</h4><p>类型是checkbox</p>
+<pre><code>&lt;input type="checkbox" /&gt;</code></pre><p>ex:</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+&lt;!--系统内置 start--&gt;
+&lt;script type="text/javascript" src="//qgt-style.oss-cn-hangzhou.aliyuncs.com/commonJSCSS/console.js"&gt;&lt;/script&gt;
+&lt;!--系统内置 end--&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;
+    &lt;title&gt;编程题&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;form action="https://www.youkeda.com/"&gt;
+      &lt;label&gt;&lt;input type="checkbox" name="attention" value="aa"/&gt;我已阅读并同意相关服务条款和隐私政策&lt;/label&gt;
+    &lt;/form&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre><h3 id="选项菜单"><a href="#选项菜单" class="headerlink" title="选项菜单"></a>选项菜单</h3><p>实现下面图片的效果，使用新的标签<br><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.4/6.jpg" alt="image"></p>
+<p>每个选项用<code>&lt;option&gt;</code>标签表示，一组选项用<code>&lt;select&gt;</code>包裹</p>
+<pre><code>&lt;select name="career"&gt;
+  &lt;option value="default"&gt;请选择职业&lt;/option&gt;
+  &lt;option value="staff"&gt;公司职员&lt;/option&gt;
+  &lt;option value="freelancer"&gt;自由职业者&lt;/option&gt;
+  &lt;option value="student"&gt;学生&lt;/option&gt;
+  &lt;option value="other"&gt;其他&lt;/option&gt;
+&lt;/select&gt;</code></pre><p>这是一个单选菜单，如果用户选择了”学生”，那么提交的数据是<code>&lt;option&gt;</code>中的标签属性<code>value</code>，所以每个value的值互不相同</p>
+<p>思考：如果想要一个多选菜单的话，我们怎么办？</p>
+<p>这时候我们可以给<code>&lt;select&gt;</code>标签添加multiple属性，就可以通过按住Ctrl(或者%)并单击选项来选中多个选项了：</p>
+<pre><code>&lt;select name="career" multiple&gt;
+  &lt;option value="default"&gt;请选择职业&lt;/option&gt;
+  &lt;option value="staff"&gt;公司职员&lt;/option&gt;
+  &lt;option value="freelancer"&gt;自由职业者&lt;/option&gt;
+  &lt;option value="student"&gt;学生&lt;/option&gt;
+  &lt;option value="other"&gt;其他&lt;/option&gt;
+&lt;/select&gt;</code></pre><p>这时候我们再在下图加上职业选择菜单</p>
+<p><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.4/1.jpg" alt="image"></p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;
+  &lt;title&gt;示例表单&lt;/title&gt;
+  &lt;link type="text/css" rel="stylesheet" href="./index.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;form action=""&gt;
+    &lt;input type="text" placeholder="请输入昵称" name="nick" /&gt;
+
+    &lt;textarea name="sign" rows="5" cols="30" placeholder="请输入个性签名"&gt;&lt;/textarea&gt;
+
+    &lt;input type="password" name="password" placeholder="请输入密码"&gt;
+
+
+    &lt;input id="male" type="radio" name="gender" value="male" /&gt;
+    &lt;label for="male"&gt;男&lt;/label&gt;
+
+    &lt;input type="radio" name="gender" value="female" /&gt;
+    &lt;label for="female"&gt;女&lt;/label&gt;
+
+    &lt;input id="coding" type="checkbox" name="interest" value="coding" /&gt;
+    &lt;label for="coding"&gt;编程&lt;/label&gt;
+
+    &lt;input id="other" type="checkbox" name="interest" value="other" /&gt;
+    &lt;label for="other"&gt;其他&lt;/label&gt;
+
+    &lt;select name="career"&gt;
+      &lt;option value="default"&gt;请选择职业&lt;/option&gt;  
+      &lt;option value="staff"&gt;公司职员&lt;/option&gt;  
+      &lt;option value="freelancer"&gt;自由职业者&lt;/option&gt;  
+      &lt;option value="student"&gt;学生&lt;/option&gt;  
+      &lt;option value="other"&gt;其他&lt;/option&gt;  
+    &lt;/select&gt;
+
+
+  &lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre><h3 id="按钮"><a href="#按钮" class="headerlink" title="按钮"></a>按钮</h3><p>表单的注册按钮<br>使用html的<code>&lt;button&gt;</code>标签：</p>
+<pre><code>&lt;button&gt;注册&lt;/button&gt;</code></pre><p>因为<code>&lt;button&gt;</code>标签有闭合标签，在开始标签和结束标签之间我们可以放上文字、图片、图标等等</p>
+<p>它放在form中点击的时候自动提交表单数据，但是在button提交表单数据这一点上是有浏览器的兼容性问题的，一般还是需要加上type=”submit”来确保数据的提交</p>
+<pre><code>&lt;button type="submit"&gt;注册&lt;/button&gt;</code></pre><p>这样我们就完成了一个简单的注册表单</p>
+<p><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.4/1.jpg" alt="image"></p>
+<pre><code>&lt;form action=""&gt;
+  &lt;input type="text" name="name" placeholder="请输入昵称" /&gt;
+  &lt;textarea
+    name="sign"
+    rows="5"
+    cols="30"
+    placeholder="请输入个性签名"
+  &gt;&lt;/textarea&gt;
+  &lt;input name="password" type="password" placeholder="请输入密码" /&gt;
+
+  &lt;label&gt; &lt;input type="radio" name="gender" value="male" /&gt;男 &lt;/label&gt;
+  &lt;label&gt; &lt;input type="radio" name="gender" value="female" /&gt;女 &lt;/label&gt;
+
+  &lt;label&gt; &lt;input type="checkbox" name="interest" value="coding" /&gt;编程 &lt;/label&gt;
+  &lt;label&gt; &lt;input type="checkbox" name="interest" value="other" /&gt;其他 &lt;/label&gt;
+
+  &lt;select name="career"&gt;
+    &lt;option value="default"&gt;请选择职业&lt;/option&gt;
+    &lt;option value="staff"&gt;公司职员&lt;/option&gt;
+    &lt;option value="freelancer"&gt;自由职业者&lt;/option&gt;
+    &lt;option value="student"&gt;学生&lt;/option&gt;
+    &lt;option value="other"&gt;其他&lt;/option&gt;
+  &lt;/select&gt;
+
+  &lt;button type="submit"&gt;注册&lt;/button&gt;
+&lt;/form&gt;</code></pre><p>==homework==</p>
+<p>将提交按钮改造成图片</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+&lt;!--系统内置 start--&gt;
+&lt;script type="text/javascript" src="//qgt-style.oss-cn-hangzhou.aliyuncs.com/commonJSCSS/console.js"&gt;&lt;/script&gt;
+&lt;!--系统内置 end--&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;
+    &lt;title&gt;编程题&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+
+    &lt;form action="https://www.youkeda.com/"&gt;
+    &lt;button type="submit" value="提交"&gt;
+      &lt;img src="https://document.youkeda.com/P3-1-HTML-CSS/1.3/15.png" alt="" style="width: 200px;"/&gt;
+    &lt;/button&gt;
+    &lt;/form&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre><p>==homework:==</p>
+<p><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.4/10.jpg" alt="image"><br>完成此表单</p>
+<p>css</p>
+<pre><code>form {
+  width: 350px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+input,
+button {
+  width: 100%;
+  margin-bottom: 14px;
+}
+input[type='checkbox'] {
+  width: unset;
+}
+input::-webkit-input-placeholder {
+  font-size: 14px;
+  color: #dbdbdb;
+}
+input:-moz-placeholder {
+  font-size: 14px;
+  color: #dbdbdb;
+}
+input::-moz-placeholder {
+  font-size: 14px;
+  color: #dbdbdb;
+} /* for the future */
+input:-ms-input-placeholder {
+  font-size: 14px;
+  color: #dbdbdb;
+}
+
+button {
+  background: #fe7300;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  line-height: 22px;
+  padding: 8px 26px;
+  font-weight: 500;
+  border-radius: 2px;
+}
+label {
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+}
+label + span {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+}
+label + span &gt; a {
+  cursor: pointer;
+  color: #005980;
+  text-decoration: none;
+}
+input {
+  box-sizing: border-box;
+  padding: 9px 14px;
+  border-radius: 2px;
+  border: 1px solid #dfe3e9;
+}
+input:focus {
+  outline: none;
+  border-color: rgba(254, 115, 0, 0.5);
+}
+</code></pre><p>html:</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+&lt;!--系统内置 start--&gt;
+&lt;script type="text/javascript" src="//qgt-style.oss-cn-hangzhou.aliyuncs.com/commonJSCSS/console.js"&gt;&lt;/script&gt;
+&lt;!--系统内置 end--&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;
+    &lt;title&gt;编程题&lt;/title&gt;
+    &lt;link rel="stylesheet" href="./index.css"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;form action="https://www.youkeda.com/"&gt;
+      &lt;input type="text" name="name" placeholder="姓名" /&gt;
+
+
+      &lt;input type="number" name="mobile" placeholder="手机号" /&gt;
+
+      &lt;input name="password" type="password" placeholder="密码不少于6位" /&gt;
+      &lt;input id="agreement" type="checkbox" name="agreement" value="agreement" /&gt;
+      &lt;label for="agreement"&gt;已阅读并同意使用条款以及非活跃号处理规范&lt;/label&gt;
+
+      &lt;button type="submit"&gt;立即注册&lt;/button&gt;
+    &lt;/form&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre><h2 id="第五章：CSS-美化文档"><a href="#第五章：CSS-美化文档" class="headerlink" title="第五章：CSS-美化文档"></a>第五章：CSS-美化文档</h2><h3 id="HTML内部添加样式"><a href="#HTML内部添加样式" class="headerlink" title="HTML内部添加样式"></a>HTML内部添加样式</h3><p>学习如何在标签中引入css样式</p>
+<h3 id="在标签中添加声明"><a href="#在标签中添加声明" class="headerlink" title="在标签中添加声明"></a>在标签中添加声明</h3><p>具体声明如下：</p>
+<pre><code>&lt;input type="text" placeholder="手机号码" style=""&gt;</code></pre><ul>
+<li>声明位置不分先后</li>
+</ul>
+<pre><code>&lt;input type="text" style="" placeholder="手机号码"&gt;
+&lt;!-- 或者 --&gt;
+&lt;input style="" type="text" placeholder="手机号码"&gt;</code></pre><p>以上都对</p>
+<ul>
+<li>与其他关键字之间用空格隔开</li>
+</ul>
+<p>==注意==：关键字和签名之间也要用空格隔开，以下写法是错误的：</p>
+<pre><code>&lt;pstyle=""&gt;&lt;/p&gt;</code></pre><h4 id="2-在引号之间添加样式"><a href="#2-在引号之间添加样式" class="headerlink" title="2.在引号之间添加样式"></a>2.在引号之间添加样式</h4><pre><code>&lt;p style="font-size:14px;color:white"&gt;&lt;/p&gt;</code></pre><p>意思是：在p标签中的字体大小14px，颜色为白色</p>
+<h3 id="字体大小-字体粗细"><a href="#字体大小-字体粗细" class="headerlink" title="字体大小/字体粗细"></a>字体大小/字体粗细</h3><p>CSS中，样式由属性和值组成，中间用冒号隔开，用分号收尾</p>
+<h4 id="字体大小"><a href="#字体大小" class="headerlink" title="字体大小"></a>字体大小</h4><p>设置格式为：font-size:36px</p>
+<blockquote>
+<p>字体的大小：字体大小的尺寸</p>
+</blockquote>
+<p>注意：</p>
+<blockquote>
+<p>看到了style = “font-size: 12px;font-weight:bold”。可以看到bold后面没有分号，这是因为这一组属性后面没有其他属性了，所以可以把结尾的分号省略，但是这样的写法允许但不规范</p>
+</blockquote>
+<p>核心代码如下：</p>
+<pre><code>&lt;!-- 设置字体的大小为12px --&gt;
+&lt;p style="font-size: 12px;"&gt;
+  一个轻量级和模块化的前端框架，用于开发快速和强大的web接口。
+&lt;/p&gt;
+&lt;!-- 设置字体的大小为24px --&gt;
+&lt;p style="font-size: 24px;"&gt;
+  一个轻量级和模块化的前端框架，用于开发快速和强大的web接口。
+&lt;/p</code></pre><h4 id="字体加粗"><a href="#字体加粗" class="headerlink" title="字体加粗"></a>字体加粗</h4><p>设置格式：font-weight:100</p>
+<blockquote>
+<p>设置文字的粗细时，不仅可以用数字，还可以用英文代替，normal（正常粗细），lighter（细），bold（粗），bolder（更粗）</p>
+</blockquote>
+<p>演示：</p>
+<pre><code>&lt;p style="font-weight: 200;"&gt;优课达--学的比别人好一点～&lt;/p&gt;
+&lt;p style="font-weight: lighter;"&gt;优课达--学的比别人好一点～&lt;/p&gt;
+&lt;p style="font-weight: 400;"&gt;优课达--学的比别人好一点～&lt;/p&gt;
+&lt;p style="font-weight: normal;"&gt;优课达--学的比别人好一点～&lt;/p&gt;
+&lt;p style="font-weight: 700;"&gt;优课达--学的比别人好一点～&lt;/p&gt;
+&lt;p style="font-weight: bold;"&gt;优课达--学的比别人好一点～&lt;/p&gt;</code></pre><p>练习：补全代码</p>
+<p><img src="https://qgt-document.oss-cn-beijing.aliyuncs.com/P3-1-HTML-CSS/1.5/5.2.3-zuoye.png" alt="image"></p>
+<pre><code>&lt;!DOCTYpE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+&lt;!--系统内置 start--&gt;
+&lt;script type="text/javascript" src="//qgt-style.oss-cn-hangzhou.aliyuncs.com/commonJSCSS/console.js"&gt;&lt;/script&gt;
+&lt;!--系统内置 end--&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;字体粗细&lt;/title&gt;
+    &lt;link rel="stylesheet" href="index.css"&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;h6 style="font-weight:200"&gt;UIKIT&lt;/h6&gt;
+    &lt;p &gt;A lightweight and modular front-end framework for developing fast and
+        powerful web interfaces.&lt;/p&gt;
+    &lt;h6 style="font-weight:400"&gt;JOHN&lt;/h6&gt;
+    &lt;p&gt;A lightweight and modular front-end framework for developing fast and
+        powerful web interfaces.&lt;/p&gt;
+    &lt;h6 style="font-weight:700"&gt;MARY&lt;/h6&gt;
+    &lt;p&gt;A lightweight and modular front-end framework for developing fast and
+        powerful web interfaces.&lt;/p&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre><h3 id="字体颜色-文字对齐方式"><a href="#字体颜色-文字对齐方式" class="headerlink" title="字体颜色/文字对齐方式"></a>字体颜色/文字对齐方式</h3><h4 id="颜色"><a href="#颜色" class="headerlink" title="颜色"></a>颜色</h4><h6 id="1-英文字母形式"><a href="#1-英文字母形式" class="headerlink" title="1.英文字母形式"></a>1.英文字母形式</h6><p>color：black</p>
+<h6 id="2-十六进制颜色"><a href="#2-十六进制颜色" class="headerlink" title="2.十六进制颜色"></a>2.十六进制颜色</h6><p>十六进制颜色由#开头，后面跟三个数字，每个数字的范围是00~FF，每个数字代表一种颜色，最终的颜色由这三种颜色调和而成</p>
+<p>这个颜色一般由设计师给我们，或者可以用吸色工具获取</p>
+<h6 id="3-rgb形式"><a href="#3-rgb形式" class="headerlink" title="3.rgb形式"></a>3.rgb形式</h6><p>与十六进制的原理相同，由三种颜色的深浅组成，，每种颜色的范围是0~255，代表每种颜色的深浅</p>
+<p>如：clolr:rgb(253,217,155)</p>
+<h6 id="4-rgba形式"><a href="#4-rgba形式" class="headerlink" title="4.rgba形式"></a>4.rgba形式</h6><p>多出来的a代表透明度，Alpha(透明度),a在0~1之间</p>
+<p><strong>注意：</strong></p>
+<ol>
+<li>多数情况下建议使用16进制表达方式</li>
+<li>调试的时候可以使用英文字母形式，初期的调试就是随便设置一个颜色，查看区块是否存在，区块大小等，在盒模型中我们会遇到gi</li>
+<li>如果要设置文字透明度或者背景透明度，就要用到abga形式</li>
+</ol>
+<p>举例：</p>
+<pre><code>&lt;h3 style="color:#ff9a9e;font-weight:700;font-size: 24px;"&gt;UIzards&lt;/h3&gt;
+&lt;h4 style="font-size: 16px;color: #474d5d;font-weight: 400;"&gt;
+  Senior UX Designer
+&lt;/h4&gt;
+&lt;p style="font-size: 14px;color:#84868d;"&gt;
+  Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet
+  doming id quom placerat facer possim assum. Typi non habent claritatem
+  insitam; est usus legentis in iis qui faorum claritatem. Investigationes
+  demonstraverunt lectores legere me lius quod ii legunt saepius.
+&lt;/p&gt;</code></pre><h4 id="文字居中-居左-居右"><a href="#文字居中-居左-居右" class="headerlink" title="文字居中/居左/居右"></a>文字居中/居左/居右</h4><p>格式如下：</p>
+<ul>
+<li>text-align:centre;文字居中对齐</li>
+<li>text-align:left;文字左对齐</li>
+<li>text-align:right；文字右对齐齐</li>
+</ul>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;文字对齐&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p style="text-align: left;"&gt;
+      西湖，位于浙江省杭州市西湖区龙井路1号，杭州市区西部，景区总面积49平方千米
+    &lt;/p&gt;
+    &lt;p style="text-align: right;"&gt;
+      西湖有100多处公园景点，有“西湖十景”、“新西湖十景”、“三评西湖十景”之说
+    &lt;/p&gt;
+    &lt;p style="text-align: center;"&gt;
+      2007年，杭州市西湖风景名胜区被评为“国家AAAAA级旅游景区”。
+    &lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre><p>综合作业：</p>
+<p>补全代码：</p>
+<p><img src="https://qgt-document.oss-cn-beijing.aliyuncs.com/P3-1-HTML-CSS/1.5/5.3.3.png" alt="image"></p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;文字居中&lt;/title&gt;
+    &lt;link rel="stylesheet" href="./index.css"&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;div class="container"&gt;
+        &lt;h3 style="color:#99f7e2;font-size:23px;text-align:left"&gt;Want to Start Conversation&lt;/h3&gt;
+        &lt;p style="color:#FFFFFF;font-size:8px;text-align:center"&gt;Reach out to us,if you need to learn more about
+            our company of get
+            our consulation and estimation of your
+            project.&lt;/p&gt;
+        &lt;a style="color:#FFFFFF;font-size:8px;text-align:center"&gt;CONTACT US&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre><h3 id="5-4文字行高-字间距-字体"><a href="#5-4文字行高-字间距-字体" class="headerlink" title="5.4文字行高/字间距/字体"></a>5.4文字行高/字间距/字体</h3><h4 id="行高"><a href="#行高" class="headerlink" title="行高"></a>行高</h4><p><img src="https://qgt-document.oss-cn-beijing.aliyuncs.com/P3-1-HTML-CSS/1.5/%E8%A7%A3%E9%87%8A%E8%A1%8C%E9%AB%981.png" alt="image"></p>
+<p>两行文字之间的距离就是由第一行文字下面的<code>4px</code>加上第二行上面的<code>4px</code>形成一个<code>8px</code>的间距，因此行高的大小决定了文字行与行之间的距离的大小。</p>
+<p>行高的设置格式为:line-height:30px</p>
+<p>其作用为：</p>
+<p><strong>第一个作用：改变段落中行与行之间的距离</strong></p>
+<p>默认的行高未必满足我们需要的效果</p>
+<p>例子：</p>
+<pre><code>&lt;p&gt;
+  We understand every aspect of project and we put a great amount of time in
+  understanding the project.
+&lt;/p&gt;
+
+&lt;p style="line-height:32px;"&gt;
+  We understand every aspect of project and we put a great amount of time in
+  understanding the project.
+&lt;/p&gt;</code></pre><p><strong>第二个作用：使文字上下居中</strong></p>
+<p>如下图随着行高的变化，文字的位置也在不断变化，当行高的矩形的高度一样的时候，文字在矩形中上下居中</p>
+<blockquote>
+<p>例如，文字外面的举行高度为80px，要让文字在举行中上下居中，就要设置文字的行高为80px</p>
+</blockquote>
+<p><img src="https://qgt-document.oss-cn-beijing.aliyuncs.com/P3-1-HTML-CSS/1.5/%E4%BD%BF%E7%94%A8%E8%A1%8C%E9%AB%98%E5%B1%85%E4%B8%AD1.png" alt="image"></p>
+<p>演示一个文字居中的按钮：<br>为了美观，背景颜色和圆角我们在index.css中写出</p>
+<pre><code>&lt;button
+  style="width: 120px;height:50px;text-align: center;line-height:50px;color:white;font-size: 18px;"
+&gt;
+  提交
+&lt;/button&gt;</code></pre><h4 id="字间距"><a href="#字间距" class="headerlink" title="字间距"></a>字间距</h4><p>即文字之间的距离，但中文和英文的字间距是不一样的</p>
+<ul>
+<li>英文的字间距是每个字母之间的距离，单词和单词之间的距离不属于字间距</li>
+<li>中文是每个汉字之间的距离</li>
+</ul>
+<p>格式为：letter-spacing:30px</p>
+<pre><code>&lt;p style="font-size: 25px;font-weight: 700;letter-spacing:30px;"&gt;设置字体的粗细和间距&lt;/p&gt;</code></pre><h4 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h4><p>我们如何去设置字体呢？</p>
+<p>关键字＋值即可</p>
+<p><code>font-family: sans-serif</code></p>
+<p>我们设置的字体能否被应用取决于使用者的电脑有没有安装这个字体，所以网页中会使用一些常见的字体，这样子网站的兼容性就更好了</p>
+<p>有些网站比较个性化就会多设置几个字体，比如：</p>
+<pre><code>font-family: 'Goudy Bookletter 1911', sans-serif, Gill Sans Extrabold;</code></pre><p>这段代码的意思就是页面加载以后先去找代码设置的字体，这里有三个备选的字体，浏览器会顺序加载，首先看“Goudy Bookletter 1911”有没有安装，如果没有就会去查看第二个字体，以此类推，如果都没有安装，那么这个字体就是使用默认的微软字体，此字体为所有电脑默认安装。</p>
+<p><strong>练习：</strong><br><img src="https://qgt-document.oss-cn-beijing.aliyuncs.com/P3-1-HTML-CSS/1.5/5.4.3zuoye.png" alt="image"></p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;作业1&lt;/title&gt;
+    &lt;link rel="stylesheet" href="index.css"&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;div class="container"&gt;
+        &lt;div&gt;&lt;/div&gt;
+        &lt;div&gt;
+            &lt;span style="font-size:20px;color:#FFFFFF;line-height:30px"&gt;Hi&lt;/span&gt;
+            &lt;h3 style="font-size:56px;color:#FFFFFF;line-height:60px"&gt;My name is Alex&lt;/h3&gt;
+            &lt;p style="font-size:28px;color:#FFFFFF;line-height:45px"&gt;
+                I am a product designer in Flexo. It is a high-quality UI kit which you can use to design a personal
+                website or portfolio.
+            &lt;/p&gt;
+            &lt;a style="font-size:18px;color:#FFFFFF"&gt;SEE MY PROJECTS&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre><h2 id="第六章：CSS引入方式"><a href="#第六章：CSS引入方式" class="headerlink" title="第六章：CSS引入方式"></a>第六章：CSS引入方式</h2><h3 id="6-1-CSS的三种引入方式"><a href="#6-1-CSS的三种引入方式" class="headerlink" title="6.1 CSS的三种引入方式"></a>6.1 CSS的三种引入方式</h3><h4 id="1-行内样式"><a href="#1-行内样式" class="headerlink" title="1.行内样式"></a>1.行内样式</h4><p>通过图画来理解第一种<code>CSS</code>的引入方式，<strong>行内式</strong></p>
+<p><img src="https://qgt-document.oss-cn-beijing.aliyuncs.com/P3-1-HTML-CSS/1.6/line-style-css.png" alt="image"></p>
+<p>行内样式需要内嵌在每一个<code>HTML</code>标签中，所以当我们有几百行<code>HTML</code>标签时我们就需要写几百个<code>style</code>，实际上在前面设置字体样式的时候，肯定会觉得繁琐，比如：</p>
+<pre><code>&lt;p style="font-size: 18px;font-weight: 700;color: blue;"&gt;
+  这是一个p标签，和第三个p标签样式一样
+&lt;/p&gt;
+&lt;p&gt;这是一个中立的p标签&lt;/p&gt;
+&lt;p style="font-size: 18px;font-weight: 700;color: blue;"&gt;
+  这是一个p标签，和第一个p标签样式一样
+&lt;/p&gt;</code></pre><p>明明两个样式是一样的，我们不得不重新写一次。</p>
+<p>因此，我们就要想办法把每一个标签中的<code>CSS</code>样式提取出来，抽取成一整段，放在<code>HTML</code>文件中的某个位置。这时候我们需要了解第二种引入方式——<strong>内部样式</strong></p>
+<h4 id="2-内部样式"><a href="#2-内部样式" class="headerlink" title="2.内部样式"></a>2.内部样式</h4><p>用一张图来介绍内部样式的抽离过程：<br><img src="https://qgt-document.oss-cn-beijing.aliyuncs.com/P3-1-HTML-CSS/1.6/head-style-css.png" alt="image"></p>
+<p>抽离步骤：</p>
+<ol>
+<li>首先我们将每一个标签里的<code>CSS</code>样式抽取出来</li>
+<li>然后再<code>head</code>标签里声明了一个<code>&lt;style&gt;&lt;/style&gt;</code>标签</li>
+<li>接下来将样式都放在<code>style</code>标签里，注意这里不是简单的复制粘贴</li>
+</ol>
+<p><img src="https://qgt-document.oss-cn-beijing.aliyuncs.com/P3-1-HTML-CSS/1.6/%E5%A4%B4%E9%83%A8%E6%A0%B7%E5%BC%8F%E6%8A%BD%E7%A6%BB.png" alt="image"></p>
+<ol start="4">
+<li>将相同标签的样式写在相同的打括号里<code>{}</code>，大括号前面加上标签名，形如：</li>
+</ol>
+<pre><code>p {
+  font-size: 16px;
+  color: #ffffff;
+}</code></pre><p>书写规则：<br><img src="https://qgt-document.oss-cn-beijing.aliyuncs.com/P3-1-HTML-CSS/1.6/%E6%A0%B7%E5%BC%8F%E9%87%8D%E7%82%B9%E8%A7%A3%E9%87%8A.png" alt="image"></p>
+<ul>
+<li>不要忘记声明标签<code>&lt;style&gt;&lt;/style&gt;</code></li>
+<li>样式要用花括号括起来</li>
+<li>每个样式后面要用分号结尾</li>
+</ul>
+<p>example：</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;内部样式演示&lt;/title&gt;
+&lt;style&gt;
+  /*给h3标签添加样式*/
+  h3{
+    font-size:28px;
+    color:#333;
+    letter-spacing:5px;
+  }
+    /*给p标签添加CSS样式*/
+    p{
+      font-size:12px;
+      color:#666;
+    }
+&lt;/style&gt;
+
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- 添加一个h3标题标签 --&gt;
+    &lt;h3&gt;练习内部样式&lt;/h3&gt;
+    &lt;!-- 添加一个p标签 --&gt;
+    &lt;p&gt;内部样式就是将HTML标签和CSS的样式文件分离开来&lt;/p&gt;
+
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre><h4 id="外部样式"><a href="#外部样式" class="headerlink" title="外部样式"></a>外部样式</h4><p>随着代码量的逐渐增多，整个<code>HTML</code>文件就会呈现头重脚轻的现象，即<code>CSS</code>代码要比<code>HTML</code>代码多得多，这样很不利于阅读和复查代码，更重要的是为了实现代码的分离，让<code>HTML</code>负责结构，<code>CSS</code>代码负责样式</p>
+<p>所以我们要进行进一步分离</p>
+<p><img src="https://qgt-document.oss-cn-beijing.aliyuncs.com/P3-1-HTML-CSS/1.6/%E5%A4%96%E9%83%A8%E6%A0%B7%E5%BC%8F%E5%BC%95%E5%85%A5%E6%AD%A5%E9%AA%A4.png" alt="image"></p>
+<p>步骤：</p>
+<ul>
+<li>新建一个<code>index.css</code>文件</li>
+<li>将html代码头部中的<code>style</code>标签内的样式全部拷贝过来</li>
+<li>将复制的<code>CSS</code>样式粘贴进index.css文件中</li>
+<li>建立<code>html</code>和<code>CSS</code>文件的联系，即用<code>link</code>标签引入<code>CSS</code>文件</li>
+</ul>
+<blockquote>
+<p>注意这里的link变迁引入的位置一定要在head标签内；关于引入的时候<code>./</code>什么意思，下一节再说</p>
+</blockquote>
+<p>演示以下整个文件分离的过程：</p>
+<p>HTML：</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;外部样式&lt;/title&gt;
+    &lt;!-- 引入外部index.css文件 --&gt;
+    &lt;link rel="stylesheet" href="./index.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h3&gt;练习外部样式&lt;/h3&gt;
+    &lt;p&gt;内部样式就是将HTML标签和CSS的样式文件分离开来&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre><h4 id="补充知识点"><a href="#补充知识点" class="headerlink" title="补充知识点"></a>补充知识点</h4><p>前文中我们知道HTML的注释方式是<code>&lt;!--内容--&gt;</code>,再CSS代码中的注释方式跟HTML中是不同的，格式为<code>/*CSS注释内容*/</code></p>
+<p>CSS的注释位置</p>
+<p><strong>1.内部样式注释</strong></p>
+<pre><code>&lt;style&gt;
+/* 写CSS的基础样式 */
+.base{
+  /* 基础字体大小 */
+  font-size: 14px;
+  /* 基础字体颜色 */
+  color:#000000;
+}
+&lt;/style&gt;</code></pre><p><strong>2.外部样式注释</strong></p>
+<p>直接在<code>.CSS</code>文件中注释即可</p>
+<pre><code>/* 写CSS的基础样式 */
+.base {
+  /* 基础字体大小 */
+  font-size: 14px;
+  /* 基础字体颜色 */
+  color: #000000;
+}</code></pre><p><strong>link</strong></p>
+<pre><code>&lt;link rel="stylesheet" type="text/css" href="index.css" /&gt;</code></pre><ol>
+<li><code>rel</code>属性规定了当前文档与被链接文档之间的关系，但是<code>rel</code>属性的<code>stylesheet</code>值被所有浏览器支持，也就是说你只要记住一个值即可</li>
+</ol>
+<p><code>stylesheet</code>的意思就是文档的外部样式表</p>
+<ol start="2">
+<li><code>type</code>属性规定了被链接文档的MIME（多用途互联网邮件扩展类型）,<code>type</code>属性对应的常见的值就是<code>text/css</code>，该类型描述样式表</li>
+<li><code>herf</code>属性后跟的是要引入的链接地址</li>
+</ol>
+<p>练习：</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;外部样式&lt;/title&gt;
+    &lt;link rel="stylesheet" href="./index.css"&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;h3&gt;小猴子M5&lt;/h3&gt;
+    &lt;p&gt;小猴子电摩电动车新款改装z6小怪兽电瓶车m3m5电动摩托车男女成人电动车72v代步车 改装版套餐三含72v32安超威电池&lt;/p&gt;
+    &lt;a href="#"&gt;点击进入详情页&lt;/a&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre><h3 id="6-2相对路径-绝对路径"><a href="#6-2相对路径-绝对路径" class="headerlink" title="6.2相对路径/绝对路径"></a>6.2相对路径/绝对路径</h3><h4 id="绝对路径"><a href="#绝对路径" class="headerlink" title="绝对路径"></a><strong>绝对路径</strong></h4><p>绝对路径指的是文件在硬盘上真正存放的路径，例如我们引入电脑E盘的图片，用绝对路径这样写</p>
+<pre><code>&lt;img src="E:\book\网页布局\bg.jpg" /&gt;</code></pre><p>但是有一个问题，当你的项目拷贝到其他同学的电脑上的时候，你会发现你引入的文件或者图片不见了。因为你同学的电脑E盘下根本不存在文件。</p>
+<blockquote>
+<p>因此我们要尽量避免使用绝对路径</p>
+</blockquote>
+<h4 id="相对路径"><a href="#相对路径" class="headerlink" title="相对路径"></a><strong>相对路径</strong></h4><p>为了避免绝对路径造成的页面资源丢失现象，在引入外部资源的时候我们都会选择使用相对路径</p>
+<blockquote>
+<p>所谓相对路径就是相对于文件本身位置，去寻找要引入的资源文件</p>
+</blockquote>
+<p>掌握：</p>
+<ul>
+<li><code>./</code>：当前文件夹目录，比如在下面这个目录结构下（test文件下有index.css和index.html两个文件），要在index.html中引入index.cxx就需要用到<code>./</code></li>
+</ul>
+<p><img src="https://qgt-document.oss-cn-beijing.aliyuncs.com/P3-1-HTML-CSS/1.6/dangqianmulu.png" alt="image"></p>
+<p>具体写法如下：</p>
+<pre><code>&lt;link rel="stylesheet" href="./index.css"&gt;
+&lt;!-- 或者./去掉也可以，效果是一样的 --&gt;
+&lt;link rel="stylesheet" href="index.css"&gt;</code></pre><ul>
+<li><code>../</code>：回到上一级目录，比如下面(index.html再test文件夹里面，index.cxx和test文件夹在同一目录下)，我们要在index.html中引入index.css文件，首先要从index.html文件所在目录即test文件夹里出来，才能找到index.css，从某个文件夹俩面出来，就要用到<code>../</code></li>
+</ul>
+<p>比如：<br><img src="https://qgt-document.oss-cn-beijing.aliyuncs.com/P3-1-HTML-CSS/1.6/fanhuishangyijimulu.png" alt="image"></p>
+<p>具体写法：</p>
+<pre><code>&lt;link rel="stylesheet" href="../index.css"&gt;</code></pre><blockquote>
+<p>用绝对路径记住三点：</p>
+<ul>
+<li>找到引用资源的文件所在位置，以引用资源的文件作为基准寻找资源</li>
+<li>../返回一层，如果有多层，舅用多个../，比如返回两层舅用../../</li>
+<li>文件夹名代表进入该文件加，例如css/,表示进入css文件夹，比如从test文件夹里出来进入css文件夹找到index.css文件，可以这样写../css/index.css</li>
+</ul>
+</blockquote>
+<h3 id="6-3常用选择器"><a href="#6-3常用选择器" class="headerlink" title="6.3常用选择器"></a>6.3常用选择器</h3><h4 id="标签选择器"><a href="#标签选择器" class="headerlink" title="标签选择器"></a>标签选择器</h4><p>标签选择器：使用标签的名字将标签选中，然后给标签中的文字设置字体样式</p>
+<p>如下图：选中所有叫<code>p</code>的标签，然后就可以统一给所有的<code>p</code>标签设置样式</p>
+<p><img src="https://qgt-document.oss-cn-beijing.aliyuncs.com/P3-1-HTML-CSS/1.6/xuanzeqi-1.png" alt="image"></p>
+<p>今后我们还会接触很多其他的选择器，记住选择器的作用就是选中，因为只有选中了以后，才能去对用的作出修改。接下来我们理解选择器的好处——<strong>减少代码量</strong></p>
+<p>案例：最初的行内样式</p>
+<pre><code>&lt;h3 style="font-size: 25px;color: #330867;"&gt;孟航沛&lt;/h3&gt;
+&lt;h4 style="font-size: 18px;color: #30cfd0;"&gt;平面设计师&lt;/h4&gt;
+&lt;p style="font-size: 14px;line-height: 28px;color: #4a5252"&gt;
+  专业综合性强，具有较强的综合能力，学习认真刻苦，虽然我的专业是思想政治教育，
+  但是我们所学的除了马克思主义的相关理论之外，同时还学习了管理学、心理学和法学的相关理论知识，
+  专业具有较强的综合性，使我具备较强的综合能力，基本能够胜任行政设计师助力这个岗位。
+&lt;/p&gt;</code></pre><p>现在我们将行内样式抽离出来，写在头部，即内部样式：</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8" /&gt;
+    &lt;title&gt;标签选择器&lt;/title&gt;
+    &lt;style&gt;
+      h3 {
+        font-size: 25px;
+        color: #330867;
+      }
+      h4 {
+        font-size: 18px;
+        color: #30cfd0;
+      }
+      p {
+        font-size: 14px;
+        line-height: 28px;
+        color: #4a5252;
+      }
+    &lt;/style&gt;
+  &lt;/head&gt;
+
+  &lt;body&gt;
+    &lt;h3&gt;孟航沛&lt;/h3&gt;
+    &lt;h4&gt;平面设计师&lt;/h4&gt;
+    &lt;p&gt;
+      专业综合性强，具有较强的综合能力，学习认真刻苦，虽然我的专业是思想政治教育，
+      但是我们所学的除了马克思主义的相关理论之外，同时还学习了管理学、心理学和法学的相关理论知识，
+      专业具有较强的综合性，使我具备较强的综合能力，基本能够胜任行政设计师助力这个岗位。
+    &lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre><h4 id="选择器的层叠性"><a href="#选择器的层叠性" class="headerlink" title="选择器的层叠性"></a>选择器的层叠性</h4><p>在写<code>CSS</code>样式的时候，有的时候因为粗心，之前写过的标签又会重写一次，然后给{}里面添加样式，这样做可能会造成两种结果</p>
+<ol>
+<li>添加新的效果（如果添加的是一个新属性）</li>
+<li>改变之前已经存在的效果（如果该属性之前就存在）</li>
+</ol>
+<p>如：</p>
+<pre><code>h3 {
+  font-size: 25px;
+  color: #330867;
+}
+
+h4 {
+  font-size: 18px;
+  color: #30cfd0;
+}
+
+p {
+  font-size: 14px;
+  line-height: 28px;
+  color: #4a5252;
+}
+/*在这里写一个同名标签名h3,所以你只要关注“孟航沛”的变化即可*/
+h3 {
+  /*font-weight属性在之前的h3标签里没有写，那么这里就会添加新的效果*/
+  font-weight: 700;
+  /*color这个属性前面已经定义了，这里再写，就会覆盖前面的字体颜色*/
+  color: red;
+}</code></pre><h4 id="类选择器"><a href="#类选择器" class="headerlink" title="类选择器"></a>类选择器</h4><p>在前面的标签选择器中我们通过标签选择器将很多重复的模块批量化的设置了它们的样式，但是在实际应用中，仅仅一个小标签选择器还不足以满足我们日常的开发需求；</p>
+<p>比如说，在一个标签选择器的案例中，我们是否想过，给”左小青”设置一个特殊的颜色呢？此时的标签选择器的功能就不足以实现我们预期的效果</p>
+<p>那么我们先来了解一下类选择器的定义和使用</p>
+<p><strong>定义</strong></p>
+<pre><code>&lt;p class="article"&gt;
+  class是定义类的关键字，article是类名，类名可以任意，但是要符合规范
+&lt;/p&gt;</code></pre><p>class是定义的关键字，article是类名，类名可以任意，但是要符合规范</p>
+<p><strong>使用</strong></p>
+<pre><code>.article {
+  color: red;
+  font-size: 14px;
+}</code></pre><p>如果是内部样式，上面的代码就要写在<code>&lt;style&gt;&lt;/style&gt;</code>标签之间，如果是外部样式则要直接写在<code>.css</code>文件中。</p>
+<p>类选择器的作用就是在普通中寻找特别，下面我们就来实现上面的需求，给“左小青”设置一个特殊的颜色</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;QQ&lt;/title&gt;
+    &lt;style&gt;
+        /* 给h3标签添加样式 */
+        h3 {
+            font-size: 25px;
+            color: #330867;
+        }
+
+        /* 给h4标签添加样式 */
+        h4 {
+            font-size: 18px;
+            color: #30cfd0;
+        }
+
+        /* 给p标签添加样式 */
+        p {
+            font-size: 14px;
+            line-height: 28px;
+            color: #4a5252
+        }
+
+      /*通过类名修改“左小青”的字体颜色（注意，这里用到了层叠性）*/
+      .special-title{
+          color:skyblue;
+      }
+      }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;h3&gt;孟航沛&lt;/h3&gt;
+    &lt;h4&gt;平面设计师&lt;/h4&gt;
+    &lt;p&gt;专业综合性强，具有较强的综合能力，学习认真刻苦，虽然我的专业是思想政治教育，但是我们所学的除了马克思主义的相关理论之外，同时还学习了管理学、心理学和法学的相关理论知识，专业具有较强的综合性，使我具备较强的综合能力，基本能够胜任行政设计师助力这个岗位。
+    &lt;/p&gt;
+    &lt;h3&gt;江晓风&lt;/h3&gt;
+    &lt;h4&gt;UI&lt;/h4&gt;
+    &lt;p&gt;专业综合性强，具有较强的综合能力，学习认真刻苦，虽然我的专业是思想政治教育，但是我们所学的除了马克思主义的相关理论之外，同时还学习了管理学、心理学和法学的相关理论知识，专业具有较强的综合性，使我具备较强的综合能力，基本能够胜任行政设计师助力这个岗位。
+    &lt;/p&gt;
+      &lt;!--添加类名--&gt;
+      &lt;h3 class="special-title"&gt;左小青&lt;/h3&gt;
+    &lt;h4&gt;插画师&lt;/h4&gt;
+    &lt;p&gt;专业综合性强，具有较强的综合能力，学习认真刻苦，虽然我的专业是思想政治教育，但是我们所学的除了马克思主义的相关理论之外，同时还学习了管理学、心理学和法学的相关理论知识，专业具有较强的综合性，使我具备较强的综合能力，基本能够胜任行政设计师助力这个岗位。
+    &lt;/p&gt;
+    &lt;h3&gt;蒋小鱼&lt;/h3&gt;
+    &lt;h4&gt;Java工程师&lt;/h4&gt;
+    &lt;p&gt;专业综合性强，具有较强的综合能力，学习认真刻苦，虽然我的专业是思想政治教育，但是我们所学的除了马克思主义的相关理论之外，同时还学习了管理学、心理学和法学的相关理论知识，专业具有较强的综合性，使我具备较强的综合能力，基本能够胜任行政设计师助力这个岗位。
+    &lt;/p&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre><p>除此之外，一个标签上面还可以添加多个类名，类名之间要用空格隔开，比如这样</p>
+<pre><code>&lt;p class="common color font-size"&gt;
+  common设置通用样式，color设置特殊颜色，font-size设置特殊字体大小
+&lt;/p&gt;</code></pre><p>案例：</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;多个类名&lt;/title&gt;
+    &lt;style&gt;
+        li {
+            list-style: none;
+        }
+    /*在这里书写通用样式*/
+    .common{
+      font-size: 22px;
+      color: #333333;
+      letter-spacing: 8px;
+    }
+    /*在这里书写特殊样式*/
+    .current{
+      color:#FF6973;
+    }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;ul&gt;
+        &lt;li class="common"&gt;白日依山尽，&lt;/li&gt;
+        &lt;li class="common current"&gt;黄河入海流。&lt;/li&gt;
+        &lt;li class="common"&gt;欲穷千里目，&lt;/li&gt;
+        &lt;li class="common"&gt;更上一层楼。&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;ul&gt;
+        &lt;li&gt;松下问童子，&lt;/li&gt;
+        &lt;li&gt;言师采药去。&lt;/li&gt;
+        &lt;li&gt;只在此山中，&lt;/li&gt;
+        &lt;li&gt;云深不知处。&lt;/li&gt;
+    &lt;/ul&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre><p>解释一下上面的案例</p>
+<ul>
+<li>为什么不用标签选择器，而要在4个<code>li</code>标签上添加类名呢？因为如果用<code>li</code>标签会在第二首诗也选中，而我们只要求选中一首</li>
+<li>前面我们学过的选择器的层叠性，那么这里是<code>class="common current"</code>类名的先后顺序影响最终样式呢？还是<code>&lt;style&gt;&lt;/style&gt;</code>标签中的类名先后顺序影响结果呢？将<code>class="common current"</code>改为<code>class="current common"</code>不会影响页面效果</li>
+</ul>
+<p>将</p>
+<pre><code>.common {
+  font-size: 22px;
+  color: #333333;
+  letter-spacing: 8px;
+}
+
+.current {
+  color: #ff6973;
+}</code></pre><p>改为</p>
+<pre><code>.current {
+  color: #ff6973;
+}
+
+.common {
+  font-size: 22px;
+  color: #333333;
+  letter-spacing: 8px;
+}
+</code></pre><p><code>.current</code>中的颜色会被<code>.common</code>中的颜色层叠掉</p>
+<h4 id="id选择器"><a href="#id选择器" class="headerlink" title="id选择器"></a>id选择器</h4><p>在标签中定义id</p>
+<pre><code>&lt;p id="p-item"&gt;这是一段文字&lt;/p&gt;</code></pre><p>使用id选择器</p>
+<pre><code>#p-item {
+  font-size: 24px;
+  font-weight: 400;
+}</code></pre><p>注意：</p>
+<ol>
+<li>id选择器在文档中只会出现一次，像下面这种使用方式是不对的：</li>
+</ol>
+<pre><code>&lt;a href="#" id="link"&gt;点击进入详情&lt;/a&gt;
+&lt;!-- link这个id名已经被使用，就不可以再次定义 --&gt;
+&lt;a href="#" id="link"&gt;点击进入主页&lt;/a&gt;</code></pre><p>id就像身份证号码一样，全国只能有一个，同样id选择器也一样，这里的link重复了</p>
+<ol start="2">
+<li>不能像类选择器一样，一个标签上定义多个id名，像下面这样是错误的</li>
+</ol>
+<pre><code>&lt;a href="#" id="link linkto"&gt;点击进入详情页&lt;/a&gt;</code></pre><p>id选择器在写页面的时候用的不是很广泛，其性质与类选择器也相似。</p>
+<h4 id="高级选择器"><a href="#高级选择器" class="headerlink" title="高级选择器"></a>高级选择器</h4><p>常用的高级选择器有四种：</p>
+<ul>
+<li>后代选择器</li>
+<li>交集选择器</li>
+<li>子选择器</li>
+<li>并集选择器</li>
+</ul>
+<h4 id="1-后代选择器（空格）"><a href="#1-后代选择器（空格）" class="headerlink" title="1.后代选择器（空格）"></a>1.后代选择器（空格）</h4><p><code>p a</code>————选择所有p标签内的a标签</p>
+<p>后代选择器的书写规则：用空格隔开，例如：</p>
+<pre><code>/* 选择id名为password的标签内部所有类名为box的元素内部的所有p标签 */
+#password .box p{}
+/* 选择所有p标签内部的所有span标签 */
+p span{}
+/* 选择所有p标签内部的所有类名为spanItem的标签 */
+p .spanItem{}</code></pre><p>案例：</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;案例&lt;/title&gt;
+    &lt;style&gt;
+ul li{
+  list-style: none;
+  font-size: 22px;
+}
+    .first-ul li{
+      color: rgb(212, 166, 28);
+    }
+    .second-ul li {
+      color: rgb(230, 127, 122);
+    }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;ul class="first-ul"&gt;
+        &lt;li&gt;苍苍竹林寺，杳杳钟声晚。&lt;/li&gt;
+        &lt;li&gt;荷笠带斜阳，青山独归远。&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;ul class="second-ul"&gt;
+        &lt;li&gt;白日依山尽，黄河入海流。&lt;/li&gt;
+        &lt;li&gt;欲穷千里目，更上一层楼。&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre><p>以上可以看出抽离的编程思想，将<code>li</code>标签公有的属性抽离在<code>ul li</code>选择器内，因为这个选择器选中的是所有的<code>li</code>,然后再分别用<code>.first-ul</code>和<code>.second-ul li</code>选择器来设置不同的属性。</p>
+<pre><code>.first-ul li {
+    list-style: none;
+    font-size: 22px;
+    color: rgb(212, 166, 28);
+}
+
+.second-ul li {
+    list-style: none;
+    font-size: 22px;
+    color: rgb(230, 127, 122);
+}</code></pre><p>随着经验的不断积累，我们要慢慢的思考着抽离</p>
+<p><strong>重点理解后代</strong></p>
+<p>什么是后代</p>
+<pre><code>&lt;ul&gt;父
+    &lt;li&gt;子
+        &lt;p&gt;孙
+            &lt;span&gt;曾孙
+                &lt;a href=""&gt;曾曾孙&lt;/a&gt;
+            &lt;/span&gt;
+        &lt;/p&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</code></pre><p>这段代码中，标签和中签当中就形成了子代关系a、span、p、li就是ul标签的后代,li既是ul的后代又是ul的子元素</p>
+<p>要选中上段代码的a标签，可以有</p>
+<pre><code>/* 方法一： */
+a{}
+/* 方法二 */
+ul a{}
+/* 方法三 */
+ul li p a{}
+/* 方法四 */
+ul li p span a{}</code></pre><p>具体选择什么要看具体的情况</p>
+<pre><code>&lt;ul&gt;父
+    &lt;li&gt;子
+        &lt;p class="p-one"&gt;孙
+            &lt;span&gt;曾孙
+                &lt;a href=""&gt;曾曾孙1&lt;/a&gt;
+            &lt;/span&gt;
+        &lt;/p&gt;
+        &lt;p class="p-two"&gt;孙
+            &lt;span&gt;曾孙
+                &lt;a href=""&gt;曾曾孙2&lt;/a&gt;
+            &lt;/span&gt;
+        &lt;/p&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</code></pre><p>此时我们用上面的四种方法都会选到两个a标签，但是我们的目的是选中“曾曾孙1”，所以我们要在最开始出现重复标签的那一级来做区分，给这一级分别加上类名，或者你可以只给你需要的那个标签添加类名即可，我们要选中“曾曾孙1”可以这样做：</p>
+<pre><code>/* 方法一 */
+ul li .p-one span a{}
+/* 方法二 */
+.p-one span a{}</code></pre><h4 id="2-交集选择器"><a href="#2-交集选择器" class="headerlink" title="2.交集选择器"></a>2.交集选择器</h4><p>书写规则</p>
+<p><code>a.special{}</code></p>
+<pre><code>&lt;a href="#" class="special"&gt;超链接&lt;/a&gt;
+&lt;a href="#"&gt;超链接&lt;/a&gt;
+&lt;a href="#"&gt;超链接&lt;/a&gt;
+&lt;a href="#"&gt;超链接&lt;/a&gt;</code></pre><p>案例：</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;案例&lt;/title&gt;
+    &lt;style&gt;
+      ul li {
+        list-style: none;
+        font-size: 22px;
+      }
+    ul li a {
+      /* 去除a标签的下划线 */
+      text-decoration: none;
+      /* 这里的颜色一定要在a标签上设置，因为a标签默认会去设置字体颜色，会层叠掉默认的黑色 */
+      color: black;
+    }
+    ul li a.special {
+      color: orangered;
+    }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href="" class="special"&gt;电子产品&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=""&gt;家居服饰&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=""&gt;电竞手办&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="" class="special"&gt;家装服务&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=""&gt;房屋出租&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre><h4 id="3-子选择器"><a href="#3-子选择器" class="headerlink" title="3.子选择器"></a>3.子选择器</h4><p>与后代选择器类似，不同的是后代选择器突出的是“后代“，子选择器突出的是”子“。</p>
+<h4 id="4-并集选择器"><a href="#4-并集选择器" class="headerlink" title="4.并集选择器"></a>4.并集选择器</h4><p>如果要给不同的标签，或者不同类名的标签添加相同的样式，此时就要用到并集选择器，并集选择器的规则是在标签名或者类名后面用逗号(，)隔开，例<br>如:</p>
+<pre><code>.box,p,h3,.phone{}</code></pre><p>并集选择器的作用是–“和”，上面这段代码的意思就是给类名为<code>box</code>、|<code>phone</code> 标签名为<code>p</code>、| <code>h3</code><br>的标签添加相同的属性。</p>
+<p>有了前面的选择器基础,相信并集选择器大家都可以理解.</p>
+<p>练习：</p>
+<p>实现下列效果</p>
+<p>设计图：<br><img src="https://qgt-document.oss-cn-beijing.aliyuncs.com/P3-1-HTML-CSS/1.6/6-4-2%E4%BD%9C%E4%B8%9A%E6%A0%87%E6%B3%A8.png" alt="image"></p>
+<p>要求：尽量使用高级选择器来实现页面效果</p>
+<p>css文件：</p>
+<pre><code>ul,
+li {
+    list-style: none;
+    padding: 0;
+    font-size: 14px;
+
+}
+
+h3 {
+  font-size: 16px;
+  color: #404040;
+  font-weight: bold;
+}
+
+ul {
+    font-size: 14px;
+    color: #404040;
+}
+
+
+ul li .first {
+  font-size: 26px;
+  color: #f34540;
+}
+
+/*灰色数字*/
+ul li .special {
+  font-size: 16px;
+  color: #888888;
+}
+
+ul li .current{
+  font-size: 14px;
+  color: #f34540;
+}</code></pre><p>html</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+&lt;!--系统内置 start--&gt;
+&lt;script type="text/javascript" src="//qgt-style.oss-cn-hangzhou.aliyuncs.com/commonJSCSS/console.js"&gt;&lt;/script&gt;
+&lt;!--系统内置 end--&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;练习&lt;/title&gt;
+    &lt;link rel="stylesheet" href="./index.css" &gt; 
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;h3&gt;热点排行&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;span class="first"&gt;1&lt;/span&gt;校招主持称山大女生漂亮留学生幸福 涉事企业回应&lt;span class="current"&gt;96844&lt;/span&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span class="first"&gt;2&lt;/span&gt;合肥"女黑老大"获刑25年:有受害人借900万还71套房&lt;span class="current"&gt;17556&lt;/span&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span class="first"&gt;3&lt;/span&gt;女子体检发现"包块" 尚未确诊跳楼身亡&lt;span class="current"&gt;15283&lt;/span&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span class="special"&gt;4&lt;/span&gt;到银行没领到20多个鸡蛋 7旬老人被气得脑出血&lt;span class="current"&gt;7471&lt;/span&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span class="special"&gt;5&lt;/span&gt;潘石屹要清空在中国的所有核心资产？SOHO中国回应&lt;span class="current"&gt;6581&lt;/span&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span class="special"&gt;6&lt;/span&gt;40名大学生因旷课太多被学校退学 教育部回了3个字&lt;span class="current"&gt;6463&lt;/span&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span class="special"&gt;7&lt;/span&gt;云南亿万富豪被杀案:家人怀疑买凶杀人弃百万赔偿&lt;span class="current"&gt;6416&lt;/span&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span class="special"&gt;8&lt;/span&gt;与父亲争吵怄气 22岁小伙喝百草枯抢救无效死亡&lt;span class="current"&gt;5723&lt;/span&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span class="special"&gt;9&lt;/span&gt;司机被黄牛收钱后万元罚款减半 山西祁县:正在调查&lt;span class="current"&gt;5433&lt;/span&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;span class="special"&gt;10&lt;/span&gt;蒙古国逮捕800名中国人：涉嫌从事电信诈骗活动&lt;span class="current"&gt;5425&lt;/span&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre><h3 id="6-5选择器的优先级"><a href="#6-5选择器的优先级" class="headerlink" title="6.5选择器的优先级"></a>6.5选择器的优先级</h3><h4 id="单个选择器的优先级"><a href="#单个选择器的优先级" class="headerlink" title="单个选择器的优先级"></a>单个选择器的优先级</h4><p>记住以下顺序：id选择器&gt;类选择器&gt;标签选择器</p>
+<p>举例：</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;案例&lt;/title&gt;
+    &lt;style&gt;
+      p{
+        color:blue;
+      }    
+    .poem{
+      color: red;
+    }
+    #ch-poem{
+      color:purple; 
+    }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;p class="poem" id="ch-poem"&gt;百川东到海，何时复西归？&lt;/p&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre><h4 id="文字属性的继承性"><a href="#文字属性的继承性" class="headerlink" title="文字属性的继承性"></a>文字属性的继承性</h4><p>除了<code>h</code>标签，其他的标签内写了文字后，默认会有相同的颜色、大小，这就是文字属性的继承性导致的，他们都继承了<code>body</code>标签的字体大小、颜色</p>
+<p>我们用代码验证一下</p>
+<pre><code>&lt;ul class="ul-item"&gt;
+  蒹葭
+  &lt;li&gt;蒹葭苍苍，白露为霜。所谓伊人，在水一方。&lt;/li&gt;
+  &lt;li&gt;溯洄从之，道阻且长。溯游从之，宛在水中央。&lt;/li&gt;
+  &lt;li&gt;蒹葭萋萋，白露未晞。所谓伊人，在水之湄。&lt;/li&gt;
+&lt;/ul&gt;</code></pre><p>下面我们在<code>ul</code>标签上修改文字的颜色</p>
+<pre><code>.ul-item {
+  color: #ff6973;
+}</code></pre><p>发现我们本来想修改的”蒹葭”两个字，但是却把<code>li</code>标签内的文字颜色也一起改变了——这就是文字属性的继承性</p>
+<h4 id="高级选择器的优先级"><a href="#高级选择器的优先级" class="headerlink" title="高级选择器的优先级"></a>高级选择器的优先级</h4><p>多个选择器的优先级如何去判断呢？</p>
+<p>这时候需要用到选择器权重的叠加性，按照优先级越高，权重越大的规则，假设id选择器的权重是100，类选择器的权重是10，标签选择器的权重为1，我们就可以计算一下这个高级选择器的权重</p>
+<pre><code>.param #item span {
+}</code></pre><p>此时的权重为111=100（#item）+10（.param）+1（span）</p>
+<p><strong>权重的应用</strong></p>
+<p>权重的作用是决定当两个不同的选择器给同一个标签设置了相同的属性，听谁的？</p>
+<p>案例：</p>
+<pre><code>&lt;ul class="ul-item"&gt;
+  &lt;li&gt;
+    &lt;p&gt;文字的颜色到底是什么颜色？&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+ul li p {
+  color: blue;
+}
+p {
+  color: red;
+}</code></pre><p>最终结果得到的是蓝色的</p>
+<p>这里我们专门设置了blue的选择器在上面。咋子这里注意层叠性只有在权重一样的情况下才会适用</p>
+<p>接下来我们推导一下：我们知道<br><strong>权重的作用就是决定当用两个不同的选择器给同一个标签设置了相同的属性，该听谁的</strong>，根据权重的计算，第一个选择器的权重为3，第二个为1，所以最终的字体颜色是蓝色</p>
+<p>此时我们再尝试以下内容</p>
+<pre><code>.ul-item li {
+  color: blue;
+}
+p {
+  color: red;
+}</code></pre><p>发现是红色，但是根据计算第一个选择器的权重是11，第二个是1，却和我们想的不一样。</p>
+<p>因为第一个选择器脱离了权重的适用范围，即<strong>选中</strong>，第一个选择器之选中了<code>li</code>标签，第二个选择器是直接选中了p标签。</p>
+<p>案例：</p>
+<pre><code>&lt;ul class="ul-item"&gt;
+  &lt;li class="li-item"&gt;
+    &lt;p&gt;文字的颜色到底是什么颜色？&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+
+.ul-item .li-item {
+  color: yellowgreen;
+}
+
+.ul-item li {
+  color: black;
+}</code></pre><p>此时两个选择器都选中了<code>li</code>标签，第一个选择器的权重大，所以选中了<code>yellowgreen</code></p>
+<h2 id="第七章：CSS-盒模型"><a href="#第七章：CSS-盒模型" class="headerlink" title="第七章：CSS-盒模型"></a>第七章：CSS-盒模型</h2><h3 id="7-1盒模型-content"><a href="#7-1盒模型-content" class="headerlink" title="7.1盒模型-content"></a>7.1盒模型-content</h3><p>我们要学习一新标签<code>div</code>，<code>div</code>可以理解为一个干净透彻的矩形。</p>
+<h5 id="content"><a href="#content" class="headerlink" title="content"></a>content</h5><p><code>div</code>标签写出来的时候是没有高度的，但是又默认的宽度，默认与父标签的宽度是一样的。</p>
+<p>比如</p>
+<pre><code>&lt;ul&gt;
+  &lt;li&gt;
+    &lt;div&gt;&lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</code></pre><p>此时<code>div</code>的默认宽度是<code>li</code>标签的宽度，这里的宽度是width属性设置的宽度</p>
+<p>我们来画一个宽200px，高100px的矩形：</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;案例&lt;/title&gt;
+&lt;style&gt;
+  .box{
+    width:200px;
+    height:100px;
+  }
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- 定义一个div标签 --&gt;
+    &lt;div class="box"&gt;&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre><p>发现啥都没有哈哈哈哈</p>
+<p>此时我们需要学习一个新的CSS属性，<code>background-color</code>——背景颜色，这个属性值跟我们设置字体颜色的时候学的一样，有十六进制，<code>rbg``rgba</code>，英文单词形式的颜色，下面是我们添加之后的效果：</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;案例&lt;/title&gt;
+    &lt;style&gt;
+      /*给div设置宽高，并添加背景颜色*/
+      .box{
+        width:200px;
+        height:100px;
+        background-color:purple;
+      }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- 定义一个div标签 --&gt;
+    &lt;div class="box"&gt;&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre><h4 id="百分百尺寸"><a href="#百分百尺寸" class="headerlink" title="百分百尺寸"></a>百分百尺寸</h4><p>设置块元素的高度，不仅有<code>px</code>形式，还有<code>%</code>形式</p>
+<pre><code>&lt;div class="father"&gt;
+  &lt;div class="son"&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+
+.father {
+  width: 200px;
+  height: 80px;
+  background-color: #5b6dcd;
+}
+.son {
+  width: 60%;
+  height: 20%;
+  background-color: #fec03e;
+}</code></pre><p><strong>注意：</strong>这里的%元素是相对于父亲的，比如子元素的宽度是<code>200px * %60 = 120px</code></p>
+<p>那么什么时候父元素的尺寸是不存在的呢？</p>
+<p>这时候发现浏览器依然是白色的，因为<code>.bg</code>的复原色<code>body</code>的高度默认是<code>0px</code>,<code>0px</code>的百分之百还是<code>0px</code>，但是<code>body</code>的宽度还是有的，默认和浏览器页面宽度一样。</p>
+<h3 id="7-2盒模型-padding"><a href="#7-2盒模型-padding" class="headerlink" title="7.2盒模型-padding"></a>7.2盒模型-padding</h3><p>内边距——padding</p>
+<p>例子：<br><img src="https://qgt-document.oss-cn-beijing.aliyuncs.com/P3-1-HTML-CSS/1.7/google-padding.png" alt="image"></p>
+<p>案例：</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;案例&lt;/title&gt;
+    &lt;style&gt;
+      /*给矩形设置宽高、颜色和内边距*/
+      .box{
+        width:300px;
+        height:300px;
+        background-color:purple;
+        padding:20px;
+      }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!--定义一个div标签--&gt;
+    &lt;div class="box"&gt;
+      All afternoon his tractor pulls a flat wagon with bales to the barn, then back to the waiting chopped field. 
+      It trails a feather of smoke. Down the block we bend with the season: shoes to polish for a big game,storm windows to batten or patch. 
+      And how like a field is the whole sky now that the maples have shed their leaves, too.
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre><p>参考：<br><img src="https://qgt-document.oss-cn-beijing.aliyuncs.com/P3-1-HTML-CSS/1.7/padding-explore.png" alt="image"></p>
+<blockquote>
+<p>注意：padding区域包含在背景颜色区域内的，也就是说背影颜色包含了padding和content</p>
+</blockquote>
+<h4 id="padding分开写"><a href="#padding分开写" class="headerlink" title="padding分开写"></a>padding分开写</h4><p>padding默认是给矩形四周添加相同的内边距，但是我们在实际应用当中会有四周内边距不同的情况，因此我们就要分别给矩形设置内边距，没有设置的内边距默认为0。</p>
+<pre><code>.box {
+    padding: 20px;
+}
+
+&lt;!--上面的代码等价于：--&gt;
+
+.box {
+    padding-top: 20px; /*上内边距*/
+    padding-right: 20px; /*右内边距*/
+    padding-bottom: 20px; /*下内边距*/
+    padding-left: 20px; /*左内边距*/
+}</code></pre><h4 id="padding简写"><a href="#padding简写" class="headerlink" title="padding简写"></a>padding简写</h4><pre><code>div{
+    padding:20px 20px 20px 20px;
+}</code></pre><p>代表上右下左，如果四个值一样就可以写成<strong>padding:20px</strong>，如果不一样可以分为以下情况</p>
+<ol>
+<li>上下一样，左右一样</li>
+</ol>
+<p>例如：</p>
+<pre><code>div{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}</code></pre><p>上下一样，写一个即可，同理左右也是一样</p>
+<pre><code>div{
+    padding: 20px 30px;
+}</code></pre><ol start="2">
+<li>上下一样，左右不一样</li>
+</ol>
+<pre><code>div{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 30px;
+}</code></pre><p>要写成</p>
+<pre><code>div{
+    padding: 20px 30px 20px 10px;
+}</code></pre><ol start="3">
+<li>上下不一样，左右一样</li>
+</ol>
+<pre><code>div{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}</code></pre><p>写成</p>
+<pre><code>div{
+    padding: 30px 10px 20px;
+}</code></pre><p>可以这样来理解，第一一个值是上30px，第二个值是右10px，第三个值是下20px，第四个值是<br>左，但是没有，所以要跟右一致。</p>
+<p>总结下来就是上、右、下、左按照顺序去填写,没有的值就跟对立面的值一样，下对上, 左对右。</p>
+<h4 id="box-sizing"><a href="#box-sizing" class="headerlink" title="box-sizing"></a>box-sizing</h4><p><code>box-sizing</code>规定了如何计算一个元素的总宽度和高度，它有两个值<code>content-box</code> ，<code>border- box</code>,<br>默认是<code>content-box</code>。</p>
+<p><code>content-box</code>尺寸计算公式:<br>width =内容的宽度<br>height =内容的高度。</p>
+<p><code>border-box</code>尺寸计算公式:<br>width = border + padding +内容的宽度<br>height = border + padding +内容的高度</p>
+<p>这里的内容就是我们学过的<code>content</code>,<code>border</code>属性我们还没有学,但是在这里已经可以说明一下<code>box-sizing</code>属性的性质，下一节学习<code>border</code> 的时候，我们会将<code>border</code>的尺寸也算进去。</p>
+<pre><code>.father{
+    width:200px;
+    height: 100px;
+    background-color: #5C70CA; 
+}
+
+.son{
+    box-sizing: content-box;
+    width: 100%;
+    height: 40px;
+    /* 添加padding */
+    padding: 0px 20px;
+    background-color:#FEC03E;
+}</code></pre><p>子元素超出的原因就是，width: 100% 属性给子元素设置了和父元素content一样的宽，又设置了<br>padding在原有的基础上又增加了左右padding超出了父元素content区域。</p>
+<pre><code>father{
+    width:200px;
+    height: 100px;
+    background-color: #5C70CA; 
+}
+
+.son{
+    /* 修改box-sizing */
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    /* 添加padding */
+    padding: 0px 20px;
+    background-color:#FEC03E;
+}</code></pre><p><code>border-box</code>的<code>width</code>包含了<code>content</code>、<br><code>padding</code>、 <code>border</code> ，所以设置<code>padding</code>,<br><code>border</code>后不会<br>溢出父元素的<code>content</code>。</p>
+<h3 id="7-3盒模型——border"><a href="#7-3盒模型——border" class="headerlink" title="7.3盒模型——border"></a>7.3盒模型——border</h3><p>边框——border：包裹在<code>padding</code>外面的一层线</p>
+<h4 id="给矩形设置边框线"><a href="#给矩形设置边框线" class="headerlink" title="给矩形设置边框线"></a>给矩形设置边框线</h4><pre><code>.box {
+  /* 设置矩形大小 */
+  width: 200px;
+  height: 30px;
+  /* 设置边框线 */
+  border-width: 2px;
+  border-color: grey;
+  border-style: solid;
+}</code></pre><ul>
+<li><code>border-width</code>：边框的粗细</li>
+<li><code>border-color</code>：边框的颜色</li>
+<li><code>border-style</code>：边框的线行，solid为实线，dashed为虚线</li>
+</ul>
+<p>案例：</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;案例&lt;/title&gt;
+&lt;style&gt;
+  .box{
+    /*设置矩形的宽*/
+    width:300px;
+    /*设置矩形的高*/
+    height:150px;
+    /*设置矩形的背景颜色*/
+    background-color:white;
+    /*设置矩形的边框*/
+    border-width:2px;
+    border-color:black;
+    border-style:solid;
+  }
+&lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+  &lt;!-- 定义一个div标签 --&gt;
+  &lt;div class="box"&gt;&lt;/div&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre><h4 id="边框的简写"><a href="#边框的简写" class="headerlink" title="边框的简写"></a>边框的简写</h4><pre><code>.box {
+  border: 2px solid blue;
+}</code></pre><p>顺序可以忽略</p>
+<h4 id="分别设置边框"><a href="#分别设置边框" class="headerlink" title="分别设置边框"></a>分别设置边框</h4><p>方法：</p>
+<pre><code>.box {
+  /* 添加顶部border */
+  border-top: 1px solid black;
+  /*添加右侧border*/
+  border-right: 3px solid orange;
+  /*添加底部border*/
+  border-bottom: 5px dashed pink;
+  /*添加左侧border*/
+  border-left: 10px dashed purple;
+}</code></pre><h4 id="利用层叠性设置边框"><a href="#利用层叠性设置边框" class="headerlink" title="利用层叠性设置边框"></a>利用层叠性设置边框</h4><p>在实际应用当中，我们可能会遇到这样一种情况， 要设置一个 矩形,<br>矩形的左、右、上的边框样式是相同的,但是下边框的样式是不一样的。</p>
+<p>这时候我们就可以用属性的层叠性来实现，核心代码如下:</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;案例&lt;/title&gt;
+&lt;style&gt;
+  .box{
+    /*设置矩形的宽*/
+    width:300px;
+    /*设置矩形的高*/
+    height:300px;
+    /*设置矩形的背景颜色*/
+    background-color:white;
+    /*设置矩形的边框*/
+    /*统一设置矩形的所有边框样式*/
+    border:2px solid black;
+    /*重新设置一个下边框的样式来层叠掉统一设置的边框的样式*/
+    border-bottom:5px solid orange;
+  }
+&lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+  &lt;!-- 定义一个div标签 --&gt;
+  &lt;div class="box"&gt;&lt;/div&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre><h4 id="无边框"><a href="#无边框" class="headerlink" title="无边框"></a>无边框</h4><pre><code>.box {
+  border-bottom: none;
+}</code></pre><h4 id="圆角"><a href="#圆角" class="headerlink" title="圆角"></a>圆角</h4><p>在很多场景下，矩形一般都不是四四方方的，需要一点点的圆角来点缀，圆角的属性是归类于边框的，即border-radius。有了之前的基础，相信圆角对大家来说很好理解。</p>
+<p>设置方法：</p>
+<pre><code>.box {
+  border-radius: 12px;
+}</code></pre><p>案例：</p>
+<pre><code>div {
+  width: 200px;
+  height: 200px;
+  background-color: violet;
+  border-radius: 18px;
+}</code></pre><p><strong>圆角分开设置</strong></p>
+<pre><code>.box {
+  width: 200px;
+  height: 200px;
+  background-color: violet;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 15px;
+}</code></pre><h4 id="阴影"><a href="#阴影" class="headerlink" title="阴影"></a>阴影</h4><pre><code>&lt;div class="box"&gt;&lt;/div&gt;
+
+
+.box {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #c4c4c4;
+  /* x偏移量 | y偏移量 | 阴影模糊半径 | 阴影扩散半径 | 阴影颜色 */
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+}</code></pre><p>阴影的实现原理可以看作是在矩形下面有一一个重叠的，同样大小的矩形，如果它在x轴、y轴上移动，就会有阴影的效果。</p>
+<ul>
+<li>x偏移量:在x轴上移动，向右为正</li>
+<li>y偏移量:在y轴上移动，向下为正</li>
+<li>阴影模糊半径:就是边线的清晰度</li>
+<li>阴影扩散半径:就是向外伸展</li>
+<li>阴影颜色:就是矩形下面那个矩形的背景色。</li>
+</ul>
+<p>案例：<br><img src="https://qgt-document.oss-cn-beijing.aliyuncs.com/P3-1-HTML-CSS/1.7/exercse-pic/7-3-1-%E8%AE%BE%E8%AE%A1%E5%9B%BE.png" alt="image"></p>
+<p>页面中:</p>
+<ul>
+<li>蓝色的背景颜色为:</li>
+</ul>
+<p><code>##0091ff</code></p>
+<ul>
+<li>黑色文字颜色为: #333333，白色文字颜色为: f#ffff</li>
+<li>字体大小为:16px</li>
+</ul>
+<p>index.css</p>
+<pre><code>ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  color: #333333;
+  font-size: 16px;
+  border: 1px solid #a4a4a4;
+  display: inline-block;
+}
+
+ul li {
+  /* 
+        display:inline-block可以让一个块元素和行内元素在同一行显示
+        具有想同属性的块元素也可以并排显示
+    */
+  display: inline-block;
+  padding-left: 15px;
+  padding-right: 15px;
+  line-height: 60px;
+}
+
+ul li.current {
+  color: #ffffff;
+  background-color: #0091ff;
+}
+</code></pre><p>index.html</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;练习&lt;/title&gt;
+    &lt;link rel="stylesheet" href="index.css"&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;ul&gt;
+        &lt;li class="current"&gt;首页&lt;/li&gt;
+        &lt;li&gt;优课达学院&lt;/li&gt;
+        &lt;li&gt;App下载&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre><p>案例：<br><img src="https://qgt-document.oss-cn-beijing.aliyuncs.com/P3-1-HTML-CSS/1.7/exercse-pic/3-2%E8%AE%BE%E8%AE%A1%E5%9B%BE.png" alt="image"></p>
+<ul>
+<li>矩形阴影的x轴偏移量为0, y轴偏移量为<br>1px，模糊度为17px,不扩散,阴影颜色<br>为rgb(0, 0, 0)，透明度为0.1 </li>
+<li>矩形圆角为7px</li>
+<li>“教学目标”文字的字体大小为14px,字<br>体颜色为rgb(0,0,0)透明度为0.65,文字<br>居中显示<br>介绍内容的文字字体大小为12px,文字<br>颜色为#2c2c2c</li>
+</ul>
+<p>提示:</p>
+<p>P、h、ul、|等标签有自己默认的margin.<br>padding,请用选择器将默认的值先设置为0<br>之后，再进行布局，如果你用的是div标签,<br>则不需要做这一步。</p>
+<p>index.css</p>
+<pre><code>h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  box-sizing: border-box;
+  width: 280px;
+  box-shadow: 0 1px 17px 0 rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  border-radius: 7px;
+}
+
+.box .title {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.65);
+  text-align: center;
+}
+
+.box p {
+  font-size: 12px;
+  color: #2c2c2c;
+  padding-top: 15px;
+}
+</code></pre><p>html</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;练习&lt;/title&gt;
+    &lt;link rel="stylesheet" href="index.css"&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;div class="box"&gt;
+        &lt;h3 class="title"&gt;教学目标&lt;/h3&gt;
+        &lt;p&gt;统地学习数据体系：MySQL、Redis、Mongodb 并深入全栈能力包括 Vue 框架和 SSM
+        框架（Spring、SpringMVC、MyBatis），掌握处理大数据的能力，可以独立完成复杂而真实的项目，比如美团外卖。
+        &lt;/p&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre><h3 id="7-4盒模型——margin"><a href="#7-4盒模型——margin" class="headerlink" title="7.4盒模型——margin"></a>7.4盒模型——margin</h3><p>margin-外边距：矩形与矩形之间的距离<br><img src="https://qgt-document.oss-cn-beijing.aliyuncs.com/P3-1-HTML-CSS/1.7/margin1.png" alt="image"></p>
+<p>案例：</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;案例&lt;/title&gt;
+    &lt;style&gt;
+        div {
+            width: 300px;
+            height: 100px;
+            background-color: #D5E8D4;
+            border: 1px solid #82B366;
+        }
+
+        .box{
+          background-color: #F5F5F5;
+          border: 1px solid #FF0818;
+          margin-top: 20px;
+          margin-bottom: 20px;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;div&gt;&lt;/div&gt;
+    &lt;div class="box"&gt;&lt;/div&gt;
+    &lt;div&gt;&lt;/div&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre><h4 id="两个盒子之间margin的计算"><a href="#两个盒子之间margin的计算" class="headerlink" title="两个盒子之间margin的计算"></a>两个盒子之间margin的计算</h4><h5 id="水平距离"><a href="#水平距离" class="headerlink" title="水平距离"></a><strong>水平距离</strong></h5><p>首先我们来看最容易理解的水平距离，下图中， 第-个盒子的右margin为30px，第二个盒子的左margin为20x，那么最后两个盒子之间的水平距离就是30px+ 20px=50px;如果第二个盒子没有设置magrin-left,那么默认为第二个盒子的margin-left为0px。</p>
+<p><img src="https://qgt-document.oss-cn-beijing.aliyuncs.com/P3-1-HTML-CSS/1.7/leftandrightmargin.png" alt="image"></p>
+<h5 id="垂直距离"><a href="#垂直距离" class="headerlink" title="垂直距离"></a><strong>垂直距离</strong></h5><p>水平距离很符合我们的常规理解，但是垂直距离就略有不同，垂直距离取两个盒子margin的最大值。</p>
+<p>如下图所示，首先，只给其中一个盒子设置margin-bottom,两个盒子之间的垂直距离就是第一个盒子的margin-bottom;</p>
+<p>然后,给第二个盒子设置一个margin-top,但是值小于第一个 盒子的margin-bottom的值，得到两个盒子之间的垂直距离，是取两个margin的最大值;最后，将下方盒子的margin-top设置为50px,大于第一个 盒子的margin-bottom,两盒子之间的垂直距离变成了50px。<br><img src="https://qgt-document.oss-cn-beijing.aliyuncs.com/P3-1-HTML-CSS/1.7/max_margin.png" alt="image"></p>
+<h4 id="盒子左右居中"><a href="#盒子左右居中" class="headerlink" title="盒子左右居中"></a>盒子左右居中</h4><p>margin还有-个作用就是使盒子可以在父盒子中左右居中，但是有一个前提，就是必须有宽度。</p>
+<p>案例：</p>
+<pre><code>&lt;div class="father"&gt; 
+    &lt;div class="son"&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+
+.father{
+    width:400px;
+    height:200px;
+    border: 1px solid #ccc;
+}
+
+.son{
+    width:200px;
+    height:100px;
+    margin:0 auto;
+    border: 1px solid #ccc;
+}</code></pre><p>案例：</p>
+<p><img src="https://qgt-document.oss-cn-beijing.aliyuncs.com/P3-1-HTML-CSS/1.7/exercse-pic/4-1-%E8%AE%BE%E8%AE%A1%E5%9B%BE1.png" alt="image"></p>
+<p>题目要求：</p>
+<ul>
+<li><p>边框颜色为#c4c4c4,粗细为1px,实线</p>
+</li>
+<li><p>鞋子描述，字体大小为14px,字体颜色为</p>
+</li>
+</ul>
+<p><code>#333333</code>,行高20px,超出部分要隐藏，字区域宽度为135px</p>
+<ul>
+<li>价格文字大小为18px，字体颜色为#FF0036,行高18px </li>
+</ul>
+<p>css:</p>
+<pre><code>.box{
+  width:234px;
+  box-sizing: border-box;
+  border: 1px solid #c4c4c4;
+  padding: 20px 0px;
+  text-align: center;
+}
+
+div img{
+  width: 185px;
+  height: 185px;
+}
+
+.troduction{
+  font-size: 14px;
+  color: #333333;
+  line-height: 20px;
+  width: 135px;
+  margin: 8px auto;
+}
+
+.price {
+  font-size: 18px;
+  color: #FF0036;
+  margin: 10px auto 0;
+  line-height: 18px;
+}</code></pre><p>html:</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+&lt;!--系统内置 start--&gt;
+&lt;script type="text/javascript" src="//qgt-style.oss-cn-hangzhou.aliyuncs.com/commonJSCSS/console.js"&gt;&lt;/script&gt;
+&lt;!--系统内置 end--&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+    &lt;link rel="stylesheet" href="./index.css"&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;div class = "box"&gt;
+
+        &lt;img src="https://gw.alicdn.com/bao/uploaded/i1/749716436/O1CN01OSPWqa1xPjeErSSzf_!!749716436-0-pixelsss.jpg"&gt;
+        &lt;!-- 图片链接地址为：https://gw.alicdn.com/bao/uploaded/i1/749716436/O1CN01OSPWqa1xPjeErSSzf_!!749716436-0-pixelsss.jpg --&gt;
+        &lt;div class = "introduction"&gt;人本春季红色帆布鞋男网红休闲布鞋潮鞋百搭运动小白鞋子男运动鞋&lt;/div&gt;
+        &lt;div class="price"&gt;¥78.3&lt;/div&gt;
+
+    &lt;/div&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre><h3 id="7-5-盒模型——display-block-none"><a href="#7-5-盒模型——display-block-none" class="headerlink" title="7.5 盒模型——display:block/none"></a>7.5 盒模型——display:block/none</h3><h4 id="display-block"><a href="#display-block" class="headerlink" title="display:block"></a>display:block</h4><p><strong>块元素性质一——独占一行</strong></p>
+<p><strong>块元素性质二——可以设置宽高</strong></p>
+<p>做一个对比</p>
+<p>行内标签span:</p>
+<pre><code>&lt;span class="demo"&gt;    
+    这是一个span标签
+&lt;/span&gt;
+
+
+.demo{
+    width:300px;
+    height:100px;
+    background-color:#FFF2CC
+}</code></pre><p>发现宽与高不会生效</p>
+<p>再试div标签</p>
+<pre><code>&lt;div class="demo"&gt; 
+    这是一个div标签
+&lt;/div&gt;
+
+.demo{
+    width:300px;
+    height:100px;
+    background-color:#FFF2CC
+}</code></pre><p>发现其宽与高生效了</p>
+<p>标签是行内元素还是块元素，其根本原因就是标签</p>
+<p>自带的默认display属性:</p>
+<ul>
+<li>块元素默认的display属性的值是block</li>
+<li>行内元素默认的display属性的值是inline</li>
+</ul>
+<p><strong>行内元素转块元素</strong><br>接_上面的那个案例，我们要想给span<br>标签设置宽、高，首先要让<code>span</code>标签转换成块元素，然后再给它设置宽高,我们的做法是这样:</p>
+<pre><code>&lt;span class="demo"&gt;    
+    这是一个span标签
+&lt;/span&gt;
+
+.demo{
+    /*将span标签转换成块元素*/
+    display: block;
+    width: 300px;
+    height: 100px;
+    background-color: #FFF2CC
+}</code></pre><p><strong>块内元素转行内元素</strong></p>
+<p>行内元素可以通过display属性转换成块元素，从而达到设置宽高的目的，那么我们也可以用这个方法让块元素失去设置宽高的能力，我们的做法是这样:</p>
+<pre><code>&lt;div class="demo"&gt;    
+    这是一个span标签
+&lt;/div&gt;
+
+.demo{
+    /*将div标签转换成行内元素*/
+    display: inline;
+    /* 转换成行内元素以后，宽、高的设置就会失效，即使我们仍然设置了它们 */
+    width: 300px;
+    height: 100px;
+    /* 背景颜色也不会是300*100范围，而是文字有多少面积，背景颜色就又多少面积 */
+    background-color: #FFF2CC
+}</code></pre><h5 id="display-none"><a href="#display-none" class="headerlink" title="display:none;"></a>display:none;</h5><p><code>none</code>就是无的意思，也就是说，当给标签设置了这个属性值，标签就会消失，在网页布局中最常用的就是用<code>none</code>、<code>block</code>来控制元素的显示和隐藏。</p>
+<p>案例：</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;案例&lt;/title&gt;
+    &lt;style&gt;
+        div {
+            width: 300px;
+            height: 100px;
+            /* 使用margin属性让文字左右居中 */
+            text-align: center;
+            margin-bottom: 10px;
+            background-color: #D5E8D4;
+            /* 使用行高让文字上下居中 */
+            line-height: 100px;
+        }
+        .box2{
+          display: none;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;div&gt;盒子1&lt;/div&gt;
+    &lt;div class="box2"&gt;盒子2&lt;/div&gt;
+    &lt;div&gt;盒子3&lt;/div&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre><p>案例：</p>
+<pre><code>div {
+    width: 300px;
+    height: 50px;
+    background-color: #FFCE9F;
+}
+
+a {
+    text-decoration: none;
+    color: #666666;
+}
+
+.notes {
+  display:inline;
+}
+
+.link {
+  display: block;
+  width: 100px;
+  height: 50px;
+  margin-top: 10px;
+  background-color: #B0E3E6;
+  text-align: center;
+  line-height: 50px;
+
+}</code></pre><h3 id="7-6盒模型——display-inline-inline-block"><a href="#7-6盒模型——display-inline-inline-block" class="headerlink" title="7.6盒模型——display:inline/inline-block"></a>7.6盒模型——display:inline/inline-block</h3><h4 id="1-行内元素不能设置宽、高"><a href="#1-行内元素不能设置宽、高" class="headerlink" title="1. 行内元素不能设置宽、高;"></a>1. 行内元素不能设置宽、高;</h4><h4 id="2-行内元素可以设置padding"><a href="#2-行内元素可以设置padding" class="headerlink" title="2.行内元素可以设置padding"></a>2.行内元素可以设置<code>padding</code></h4><pre><code>&lt;a href="#"&gt;超链接&lt;/a&gt;
+a {
+  background-color: #fff2cc;
+  padding: 20px;
+}</code></pre><blockquote>
+<p>注意:虽然这样做可以给人块元素的感觉，但是还是有区别的，不要用这种方式去设置一个规定大小的块，否则会出现如下的奇怪现象。</p>
+</blockquote>
+<p>如：</p>
+<pre><code>&lt;a href="#"&gt;超链接&lt;/a&gt;
+&lt;div&gt;&lt;/div&gt;
+a {
+  background-color: #fff2cc;
+  padding: 20px;
+}
+div {
+  width: 300px;
+  height: 50px;
+  background-color: #b0e3e6;
+}</code></pre><h4 id="3-行内元素可以设置左右margin，但是不能设置上下margin"><a href="#3-行内元素可以设置左右margin，但是不能设置上下margin" class="headerlink" title="3. 行内元素可以设置左右margin，但是不能设置上下margin"></a>3. 行内元素可以设置左右margin，但是不能设置上下margin</h4><p>案例：</p>
+<pre><code>&lt;a href="#"&gt;点击跳转到&lt;/a&gt;
+&lt;span&gt;优课达&lt;/span&gt;
+&lt;div&gt;&lt;/div&gt;
+a {
+  margin-left: 40px;
+  margin-right: 30px;
+  margin-top: 400px;
+  margin-bottom: 400px;
+}
+
+span {
+  margin-left: 20px;
+}
+
+div {
+  width: 300px;
+  height: 50px;
+  background-color: #b0e3e6;
+}</code></pre><p><img src="https://qgt-document.oss-cn-beijing.aliyuncs.com/P3-1-HTML-CSS/1.7/inline3.png" alt="image"></p>
+<p>可以看到，我们虽然设置了很大上下<code>margin</code>，但是毫无效果，但是左右<code>margin</code>实现的效果与块元素的margin效果是一样的。</p>
+<h4 id="inline-block"><a href="#inline-block" class="headerlink" title="inline-block"></a>inline-block</h4><p>从名字可以看出，<code>inline-block</code>既具有<code>block</code> 的性质，还具有<code>inline</code>的性质，可以简单的理解为，<code>inline-block</code>就是一个可以在同一行显示的块元素。</p>
+<p><code>inline-block</code>要比<code>block</code>在应用中更为广泛，因为我们更多的时候需要的是一个能和其他元素共存的盒子，相比而言，<code>block</code> 显得较为孤僻。</p>
+<p>关于<code>inline-block</code>这个值的作用，大家可以根据<code>block</code>的性质去理解，这里主要给大家介绍一下空白折叠的现象。</p>
+<p>按照常理，我们将<code>div</code>的<code>display</code>属性从<code>block</code>切换成<code>inline-block</code>之后，我们得到的结果会发现两个盒子中间多了一点空白，但是我们并没有设置margin,这就是传说中的空白折叠现象，其原因就是因为两个<code>div</code><br>之间多了一个回车,在<code>html</code>中，回车被当作是一个文字，所以这里的空白就是文字的空白，相当于在两个<code>div</code>之间加了一个字母。</p>
+<p>解决这个空白的办法有三种:</p>
+<p><strong>1. 去除回车</strong></p>
+<pre><code>&lt;!-- 将div标签写在一行 --&gt;
+&lt;div class="box1"&gt;&lt;/div&gt;
+&lt;div class="box2"&gt;&lt;/div&gt;
+
+div {
+  width: 200px;
+  height: 50px;
+  display: inline-block;
+}
+
+.box1 {
+  background-color: #fff2cc;
+}
+
+.box2 {
+  background-color: #b0e3e6;
+}</code></pre><p><strong>2. 给父元素添加word-spacing属性</strong><br><code>word-spacing</code>就是单词和单词之间的距离，这里将这个距离写成负值就可以了，这个值要尽量小，我们一般写小于-20px的值。</p>
+<pre><code>&lt;div class="father"&gt;
+  &lt;div class="box1"&gt;&lt;/div&gt;
+  &lt;div class="box2"&gt;&lt;/div&gt;
+&lt;/div&gt;
+.father {
+  word-spacing: -50px;
+}
+
+.box1 {
+  width: 200px;
+  height: 50px;
+  display: inline-block;
+  background-color: #fff2cc;
+}
+
+.box2 {
+  width: 200px;
+  height: 50px;
+  display: inline-block;
+  background-color: #b0e3e6;
+}</code></pre><p><strong>3.给父元素设置<code>font-size: 0px</code>;</strong></p>
+<p>从第二点我们了解到，回车可以当作是一个文字，那么如果将文字大小设置为0,空隙自然就会消失。</p>
+<pre><code>&lt;div class="father"&gt;
+  &lt;div class="box1"&gt;&lt;/div&gt;
+  &lt;div class="box2"&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+.father {
+  font-size: 0px;
+}
+
+.box1 {
+  width: 200px;
+  height: 50px;
+  display: inline-block;
+  background-color: #fff2cc;
+}
+
+.box2 {
+  width: 200px;
+  height: 50px;
+  display: inline-block;
+  background-color: #b0e3e6;
+}</code></pre><p>案例：<br><img src="https://qgt-document.oss-cn-beijing.aliyuncs.com/P3-1-HTML-CSS/1.7/exercse-pic/6-1-%E8%AE%BE%E8%AE%A1%E5%9B%BE.png" alt="image"></p>
+<p>将li标签:</p>
+<ul>
+<li>字体大小为12px</li>
+<li>字体颜色为fffff</li>
+<li>文字左右居中</li>
+<li>背景颜色为#783A3E</li>
+</ul>
+<pre><code>li {
+    display: inline-block;
+    list-style: none;
+    font-size: 12px;
+    color: #ffffff;
+    text-align: center;
+    background-color: #783A3E;
+    width: 70px;
+    height: 30px;
+    line-height: 30px;;
+}
+
+ul {
+
+  font-size: 0px;
+  margin: 0px;
+  padding: 0px;
+}</code></pre><p>案例：<br><img src="https://qgt-document.oss-cn-beijing.aliyuncs.com/P3-1-HTML-CSS/1.7/exercse-pic/6-2-%E8%AE%BE%E8%AE%A1%E5%9B%BE.png" alt="image"></p>
+<ul>
+<li>页面中所有文字颜色均为#ffff</li>
+<li>顶部”商品分类”背景色为#C60A0A,”天猫双十一”背景色为#464444，底部列表背景色为#413F3F</li>
+<li>“商品分类”、”天猫双十一”字体大小为12px</li>
+<li>列表边框颜色为#cb0c10,粗细1px，倒角10px</li>
+<li>列表里的每个选项都是超链接，要用a标签包裹起来，可点击范围不能只是文字，而是红色边框内的所有区域。</li>
+</ul>
+<p>css:</p>
+<pre><code>ul,
+li {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.head {
+  width:200px;
+  color: #ffffff;
+  font-size: 0px;
+}
+
+.head li {
+  display: inline-block;
+  line-height: 36px;
+  font-size: 12px;
+  text-align: center;
+  width: 100px;
+}
+
+.head .head-first{
+  background-color: #C60A0A;
+}
+
+.head .head-second {
+  background-color: #464444;
+}
+
+.list {
+  width: 200px;
+  background-color: #413F3F;
+  padding-top: 29px;
+  padding-bottom: 14px;
+  box-sizing: border-box;
+}
+
+.list li {
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-bottom: 14px;
+}
+
+.list li a {
+  display: block;
+  border: 1px solid #cb0c10;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 29px;
+  color: #ffffff;
+  text-decoration: none;
+}
+</code></pre><p>html</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;案例&lt;/title&gt;
+    &lt;link rel="stylesheet" href="./index.css"&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;ul class="head"&gt;
+      &lt;li class="head-first"&gt;商品分类&lt;/li&gt;
+      &lt;li class="head-second"&gt;天猫双十一&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;ul class="list"&gt;
+      &lt;li&gt;&lt;a href="#"&gt;大牌女装&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;运动户外&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;潮流男装&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;美妆洗护&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;母婴好货&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;数码家电&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;家具建材&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;全球尖货&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;苏宁易购&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;汽车用品&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre><h2 id="第八章：CSS定位（一）"><a href="#第八章：CSS定位（一）" class="headerlink" title="第八章：CSS定位（一）"></a>第八章：CSS定位（一）</h2><h3 id="8-1Position-static"><a href="#8-1Position-static" class="headerlink" title="8.1Position-static"></a>8.1Position-static</h3><p>这节我们学习非常关键的属性——<code>position</code>，用于定位DOM元素，修改DOM元素的布局</p>
+<p>先看之前的案例：</p>
+<pre><code>body {
+  margin: 0; /*去掉默认的样式*/
+  font-family: Sans-serif;
+  color: rgba(0, 0, 0, 0.84);
+  font-size: 16px;
+  padding: 30px;
+}
+
+img{
+  width: 100%;
+}
+
+
+&lt;!DOCTYPE html&gt;
+&lt;head&gt;
+&lt;!--系统内置 start--&gt;
+&lt;script type="text/javascript" src="//qgt-style.oss-cn-hangzhou.aliyuncs.com/commonJSCSS/console.js"&gt;&lt;/script&gt;
+&lt;!--系统内置 end--&gt;
+  &lt;meta charset="utf-8" /&gt;
+  &lt;link rel="stylesheet" type="text/css" href="./index.css" /&gt;
+  &lt;title&gt;优课达&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1 class="title"&gt;MOUNTAIN&lt;/h1&gt;
+  &lt;p&gt;
+    The Facebook post was heartfelt. We like our little town just as it is:
+    Little. Homey. Just us’ns.
+  &lt;/p&gt;
+  &lt;div class="img-box"&gt;
+    &lt;img
+      class="first"
+      alt=""
+      src="https://document.youkeda.com/P3-1-HTML-CSS/1.8/1.jpg?x-oss-process=image/resize,h_300"
+    /&gt;
+    &lt;img
+      alt=""
+      src="https://document.youkeda.com/P3-1-HTML-CSS/1.8/2.jpg?x-oss-process=image/resize,h_300"
+    /&gt;
+    &lt;img
+      alt=""
+      src="https://document.youkeda.com/P3-1-HTML-CSS/1.8/3.jpg?x-oss-process=image/resize,h_300"
+    /&gt;
+    &lt;img
+      alt=""
+      src="https://document.youkeda.com/P3-1-HTML-CSS/1.8/4.jpg?x-oss-process=image/resize,h_300"
+    /&gt;
+  &lt;/div&gt;
+  &lt;h2&gt;LISTEN&lt;/h2&gt;
+  &lt;p&gt;
+    Listen, I can empathize. As someone who’s lived in the Denver area since
+    1971 — right about the time John Denver’s songs were enticing folks to move
+  &lt;/p&gt;
+  &lt;footer&gt;&lt;/footer&gt;
+&lt;/body&gt;</code></pre><p>大家可能会发现，我们在<code>index.css</code>中并没有设置任何的<code>position</code>属性。浏览器会自动给所有的DOM元素,添加<code>position: static</code></p>
+<p><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.8/1-static/1.png" alt="image"></p>
+<blockquote>
+<p>因此static遵循默认的文档流布局，top、 left、 right、bottom(我们在后面几节会讲到这几个属性)属性都无效。</p>
+</blockquote>
+<p><code>position</code>除了<code>static</code>属性值外，还有4个常用值,分别为:</p>
+<ul>
+<li>relative (相对定位)</li>
+<li>absolute (绝对定位)</li>
+<li>fixed (固定定位)</li>
+<li>sticky (粘性定位)</li>
+<li>接下来，我们分别来学些下这几个值有什么特点。</li>
+</ul>
+<h3 id="8-2Position——relative（相对定位）"><a href="#8-2Position——relative（相对定位）" class="headerlink" title="8.2Position——relative（相对定位）"></a>8.2Position——relative（相对定位）</h3><p>如何实现以下图片呢</p>
+<p><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.8/2-relative/1.jpeg" alt="image"></p>
+<p>如果如下操作</p>
+<pre><code>.first {
+  margin-left: 50px;
+  margin-top: 50px;
+}</code></pre><p><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.8/2-relative/2.jpeg" alt="image"></p>
+<p>结果预览和我们想要的效果不太一样。第一张图片确实右下移动了，但是文档下面部分也同样往下移动了50px。 也就是<code>margin</code> 会引起文档流的变化。</p>
+<p>这里我们就便可以利用<code>left, top</code>来实现想要的效果。 在上一节<br>中，我们知道position: static<br>下不能使用<code>left, top, right, bottom</code>属性, 如果我们想在当前位置进行偏<br>移，同时不影响整体页面布局。可以使用<br><code>relative</code></p>
+<pre><code>.first {
+  position: relative;
+  left: 50px;
+  top: 50px;
+}</code></pre><ul>
+<li>left: 50px,表示距离自己原来位置左侧50px</li>
+<li>top: 50px,表示距离自己原来位置顶部50px</li>
+</ul>
+<p>案例：<br><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.8/2-relative/3.jpeg" alt="image"></p>
+<pre><code>body {
+  margin: 0; /*去掉默认的样式*/
+  font-family: Sans-serif;
+  color: rgba(0, 0, 0, 0.84);
+  font-size: 16px;
+  padding: 30px;
+}
+
+img {
+  width: 100%;
+}
+
+.second {
+  position: relative;
+  left: 100px;
+}</code></pre><h3 id="8-3Position——cbsolute（绝对定位）"><a href="#8-3Position——cbsolute（绝对定位）" class="headerlink" title="8.3Position——cbsolute（绝对定位）"></a>8.3Position——cbsolute（绝对定位）</h3><p>演示：</p>
+<pre><code>body {
+  margin: 0; /*去掉默认的样式*/
+  font-family: Sans-serif;
+  color: rgba(0, 0, 0, 0.84);
+  font-size: 16px;
+  padding: 30px;
+}
+
+img {
+  width: 100%;
+}
+
+.first {
+  position: absolute;
+  left: 50px;
+  top: 50px;
+}
+</code></pre><p><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.8/3-absolute/1.jpeg" alt="image"></p>
+<p>在图中和<code>relative</code>相比较</p>
+<ol>
+<li>文档第-张下面的所有DOM元素，自动往上移动占据了第一张图片的位置，文档流(布局)已经没有为第一张图预留空间了</li>
+<li>第一张图片脱离了文档流，变成了第二个图层，再在新的图层中往右下偏移50px</li>
+</ol>
+<p>在MDN中，官方描述为.</p>
+<blockquote>
+<p>absolute被称为<strong>绝对定位</strong><br>绝对定位不为元素预留空间，通过指定元素相对于最近的非static定位祖先元素的偏移，来确定元素位置</p>
+</blockquote>
+<p>我们重点理解下，什么叫做<strong>相对于最近的非static定位祖先元素的偏移</strong>?</p>
+<p>在这里，我们提取三个关键词<strong>最近</strong>和<strong>非static定位</strong>和<strong>祖先元素</strong>。</p>
+<p>连贯起来分析下在上面的网页中，浏览器是怎么布局absolute元素的。</p>
+<ol>
+<li><p>首先我们获取到第一张图片元素<code>&lt;img class="first” src="xxx"/&gt;</code>,我们发现它是<strong>absolute</strong>布<br>局</p>
+</li>
+<li><p>因此寻找它的父亲节点<code>&lt;div class="img -box"&gt;</code>,我们发现此元素并未配置position属性，其遵循默认布局<strong>position=static</strong>，并不符合非static要求。</p>
+</li>
+<li><p>因此继续找<code>&lt;div class="img-box"&gt;</code>的父亲节点，找到</p>
+</li>
+<li><p><code>&lt;body&gt;</code>已经没有父亲节点了，所以按照的位置为标准进行偏移</p>
+</li>
+</ol>
+<p>案例：</p>
+<pre><code>body {
+  margin: 0; /*去掉默认的样式*/
+  font-family: Sans-serif;
+  color: rgba(0, 0, 0, 0.84);
+  font-size: 16px;
+  padding: 30px;
+}
+
+img {
+  width: 100%;
+}
+
+.img-box {
+  position: relative;
+}
+.first {
+  position: absolute;
+  left: 50px;
+  top: 50px;
+}
+
+
+&lt;!DOCTYPE html&gt;
+&lt;head&gt;
+&lt;!--系统内置 start--&gt;
+&lt;script type="text/javascript" src="//qgt-style.oss-cn-hangzhou.aliyuncs.com/commonJSCSS/console.js"&gt;&lt;/script&gt;
+&lt;!--系统内置 end--&gt;
+  &lt;meta charset="utf-8" /&gt;
+  &lt;link rel="stylesheet" type="text/css" href="./index.css" /&gt;
+  &lt;title&gt;优课达&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1 class="title"&gt;MOUNTAIN&lt;/h1&gt;
+  &lt;p&gt;
+    The Facebook post was heartfelt. We like our little town just as it is:
+    Little. Homey. Just us’ns.
+  &lt;/p&gt;
+  &lt;div class="img-box"&gt;
+    &lt;img
+      class="first"
+      alt=""
+      src="https://document.youkeda.com/P3-1-HTML-CSS/1.8/1.jpg?x-oss-process=image/resize,h_300"
+    /&gt;
+    &lt;img
+      alt=""
+      src="https://document.youkeda.com/P3-1-HTML-CSS/1.8/2.jpg?x-oss-process=image/resize,h_300"
+    /&gt;
+    &lt;img
+      alt=""
+      src="https://document.youkeda.com/P3-1-HTML-CSS/1.8/3.jpg?x-oss-process=image/resize,h_300"
+    /&gt;
+    &lt;img
+      alt=""
+      src="https://document.youkeda.com/P3-1-HTML-CSS/1.8/4.jpg?x-oss-process=image/resize,h_300"
+    /&gt;
+  &lt;/div&gt;
+  &lt;h2&gt;LISTEN&lt;/h2&gt;
+  &lt;p&gt;
+    Listen, I can empathize. As someone who’s lived in the Denver area since
+    1971 — right about the time John Denver’s songs were enticing folks to move
+  &lt;/p&gt;
+  &lt;footer&gt;&lt;/footer&gt;
+&lt;/body&gt;
+</code></pre><p><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.8/3-absolute/2.jpeg" alt="image"></p>
+<p>我们会发现第一-张图片相对<code>&lt;div class="img -box"&gt;</code>进行了偏移，而不是之前的body元素。</p>
+<blockquote>
+<p>总结下: absolute (绝对定位)和relation (相对定位)的区别，relation是相对自己进行top、left、 right、 bottom 进行偏<br>移，而absolute寻找最近的非static的祖先节点进行偏移。</p>
+</blockquote>
+<h3 id="8-4Position-fixed-固定定位"><a href="#8-4Position-fixed-固定定位" class="headerlink" title="8.4Position-fixed(固定定位)"></a>8.4Position-fixed(固定定位)</h3><p>在很多场景下，文章的标题会一直停留在浏览器的顶部， 不会随着页面的滚动而消失</p>
+<p>这就是fixed的功能，和英文单词意思非常相近————固定。<br><img src="http://document.youkeda.com/P3-1-HTML-CSS/1.8/4-fixed/6.png" alt="image"></p>
+<pre><code>body {
+  margin: 0; /*去掉默认的样式*/
+  font-family: Sans-serif;
+  color: rgba(0, 0, 0, 0.84);
+  font-size: 16px;
+  padding: 30px;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  position: fixed;
+
+  /*去掉H1默认的样式*/
+  padding: 0;
+  margin: 0;
+
+  left: 30px;
+  top: 50px;
+  color: yellowgreen; /*为了方便观看，我们修改MOUNTAIN的颜色*/
+}
+
+.img-box {
+  position: relative;
+}</code></pre><p>我们会发现无论怎么滚动，MOUNTAIN永远在窗口的左上角。</p>
+<blockquote>
+<p>fixed为固定定位</p>
+</blockquote>
+<blockquote>
+<p>固定定位和绝对定位类似，元素的包含块为屏幕视口(viewport)</p>
+</blockquote>
+<blockquote>
+<p>固定定位不为元素预留空间，而是通过指定元素相对于屏幕视口(viewport)</p>
+</blockquote>
+<blockquote>
+<p>的位置来指定元素位置。元素的位置在屏幕滚动时不会改变。</p>
+</blockquote>
+<p>但继续滚动，我们会发现MOUNTAIN被图片区域遮挡了，这是为什么呢?</p>
+<p>此时需要z-index解决</p>
+<p><strong>z-index</strong></p>
+<p>在刚才 <code>absolute</code> ,<code>fixed</code>演示中，我们知道HTML页面是由多<br>个图层构成的，那浏览器怎么决定不同的图层优先级呢(到底是谁覆盖谁、谁在谁的上面，谁离观察者最近) ?这就是z-index 决<br>定。</p>
+<blockquote>
+<p>1.默认非static元素的z-index都为0<br>2. z-index越大，则越在最上面，离观察者越近<br>3.同样的z-index，在HTML中的元素越靠后，则越在最上面，离观察者越近</p>
+</blockquote>
+<p>因此，分析下上面的场景中<code>&lt;h1 &gt;MOUNTAIN&lt;/h1&gt;</code>元素和<code>&lt;div class=" img-box"&gt;&lt;/div&gt;</code>元素都是非static 元素，<code>z- index</code> 都为0。</p>
+<p>而因为<code>&lt;h1&gt;</code>在文档流前部，因此会被后者遮挡，所以MOUNTAIN移动到图片区域时，被图片遮挡了，那我们如何解决?</p>
+<p>很简单，我们修改<code>&lt;h1&gt;</code>的Z- index大于0即可!大家可以修改下代码，观察下效果，如下所示:</p>
+<pre><code>h1 {
+  position: fixed;
+  left: 30px;
+  top: 30px;
+  z-index: 1;
+  color: yellowgreen;
+}</code></pre><p>案例：</p>
+<p>为了实现每张图片的名称都显示在其右上角，我们需要把图片和名字包裹在一一个容器里面，再利用学习到的绝对定位进行渲染<br><img src="http://document.youkeda.com/P3-1-HTML-CSS/1.8/5-homework/2.png" alt="image"></p>
+<pre><code>body {
+  margin: 0; /*去掉默认的样式*/
+  font-family: Sans-serif;
+  color: rgba(0, 0, 0, 0.84);
+  font-size: 16px;
+  padding: 30px;
+}
+
+img {
+  width: 100%;
+}
+
+.img-item {
+  position: relative;
+}
+
+.img-item &gt; span {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 20px;
+  color: yellow;
+}</code></pre><pre><code>&lt;!DOCTYPE html&gt;
+&lt;head&gt;
+  &lt;meta charset="utf-8" /&gt;
+  &lt;link rel="stylesheet" type="text/css" href="./index.css" /&gt;
+  &lt;title&gt;优课达&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1 class="title"&gt;MOUNTAIN&lt;/h1&gt;
+  &lt;p&gt;
+    The Facebook post was heartfelt. We like our little town just as it is:
+    Little. Homey. Just us’ns.
+  &lt;/p&gt;
+
+  &lt;div class="img-box"&gt;
+    &lt;div class="img-item"&gt;
+      &lt;img
+        class="first"
+        src="https://document.youkeda.com/P3-1-HTML-CSS/1.8/1.jpg?x-oss-process=image/resize,h_300"
+      /&gt;
+      &lt;span&gt;图片1&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class="img-item"&gt;
+      &lt;img
+        src="https://document.youkeda.com/P3-1-HTML-CSS/1.8/2.jpg?x-oss-process=image/resize,h_300"
+      /&gt;
+      &lt;span&gt;图片2&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class="img-item"&gt;
+      &lt;img
+        src="https://document.youkeda.com/P3-1-HTML-CSS/1.8/3.jpg?x-oss-process=image/resize,h_300"
+      /&gt;
+      &lt;span&gt;图片3&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class="img-item"&gt;
+      &lt;img
+        src="https://document.youkeda.com/P3-1-HTML-CSS/1.8/4.jpg?x-oss-process=image/resize,h_300"
+      /&gt;
+      &lt;span&gt;图片4&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;h2&gt;LISTEN&lt;/h2&gt;
+  &lt;p&gt;
+    Listen, I can empathize. As someone who’s lived in the Denver area since
+    1971 — right about the time John Denver’s songs were enticing folks to move
+  &lt;/p&gt;
+  &lt;footer&gt;&lt;/footer&gt;
+&lt;/body&gt;</code></pre><h3 id="8-6Position——sticky（课外阅读）"><a href="#8-6Position——sticky（课外阅读）" class="headerlink" title="8.6Position——sticky（课外阅读）"></a>8.6Position——sticky（课外阅读）</h3><p><a href="https://document.youkeda.com/P3-1-HTML-CSS/1.8/6-sticky/1.mp4" target="_blank" rel="noopener">效果视频</a></p>
+<p>注意MOUNTAIN的效果，在它滚动到顶部时，黏在了顶部。而当页面往下面滚动时，MOUNTAIN又会恢复其在文档中的位置，这种效果就是sticky的效果，我们看下代码</p>
+<pre><code>body {
+  margin: 0; /*去掉默认的样式*/
+  font-family: Sans-serif;
+  color: rgba(0, 0, 0, 0.84);
+  font-size: 16px;
+  padding: 30px;
+}
+
+img {
+  width: 100%;
+}
+h1 {
+  position: sticky;
+  color: yellowgreen;
+  top: 50px;
+  z-index: 1;
+}
+</code></pre><p>这个布局是position的新特性，sticky中文叫做粘性,因此这种布局，我们叫做粘性布局。在很多网站都有sticky效果，我们来看几个实际场.景，大家可以实际滚动页面，观察高亮元素的位置。</p>
+<p><a href="https://www.taobao.com/" target="_blank" rel="noopener">淘宝网</a></p>
+<p><a href="https://www.zhihu.com/" target="_blank" rel="noopener">知乎</a></p>
+<p><a href="https://www.apple.com/cn/macbook-air/" target="_blank" rel="noopener">苹果</a></p>
+<h2 id="第九章-CSS—（定位二）"><a href="#第九章-CSS—（定位二）" class="headerlink" title="第九章:CSS—（定位二）"></a>第九章:CSS—（定位二）</h2><h3 id="9-1：Float"><a href="#9-1：Float" class="headerlink" title="9.1：Float"></a>9.1：Float</h3><p>float是CSS中最常用的布局属性，使用他可以让元素靠<br>左或者靠右排版。</p>
+<p>它使用起来的是非常简单的。但使用后引起的行为是千变<br>万化了，可能会引起祖先，兄弟，后代元素布局的变化,<br>如果以后因为float遇到奇奇怪怪问题，不要着急，耐心<br>解决。我们先从一个案例开始:</p>
+<p><a href="https://document.youkeda.com/P3-1-HTML-CSS/1.9/1-float/1.mp4" target="_blank" rel="noopener">视频地址</a></p>
+<p>大家可以发现，我们在上一篇文章的基础上，加上了一个导航栏，显示优课达logo和用户头像。</p>
+<p>分析下整个网页，它主要由两部分构成</p>
+<ul>
+<li>顶部导航栏,分为左边logo和右边人物头像</li>
+<li>主体区域是4个图片组成</li>
+</ul>
+<p><strong>主体布局实现</strong><br>先用上一节的知识实现一下上下布局</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;优课达&lt;/title&gt;
+    &lt;link rel="stylesheet" type="text/css" href="./index.css" /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;nav&gt;&lt;/nav&gt;
+    &lt;main&gt;
+      &lt;img
+        src="https://document.youkeda.com/P3-1-HTML-CSS/1.8/1.jpg?x-oss-process=image/resize,h_500"
+      /&gt;
+      &lt;img
+        src="https://document.youkeda.com/P3-1-HTML-CSS/1.8/2.jpg?x-oss-process=image/resize,h_500"
+      /&gt;
+      &lt;img
+        src="https://document.youkeda.com/P3-1-HTML-CSS/1.8/3.jpg?x-oss-process=image/resize,h_500"
+      /&gt;
+      &lt;img
+        src="https://document.youkeda.com/P3-1-HTML-CSS/1.8/4.jpg?x-oss-process=image/resize,h_500"
+      /&gt;
+    &lt;/main&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre><p>在这里我们看到两个新标签<code>nav</code> <code>main</code> , 这两个标签都<br>是<code>HTML5</code>标签。相比较div,它们是有含义的，可以更明确的传达区块的含义。</p>
+<blockquote>
+<p>nav: -般用于表示此区块是导航区域<br>main:一般用户表示此区块是网页的主体区域<br>还有其他标签，我们之后会慢慢学到</p>
+</blockquote>
+<p>然后我们用上一节学到的知识，把头部导航fixed住,<br>CSS如下:</p>
+<pre><code>body {
+  /*去除默认的样式*/
+  padding: 0;
+  margin: 0;
+  background-color: #f5f5f5;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  height: 68px;
+  border: 1px solid #f4f4f4;
+  background-color: #fff;
+}
+
+img {
+  width: 100%;
+}
+
+main {
+  padding-top: 68px; /*1*/
+}</code></pre><p>注意1处代码，因为nav的fixed属性会导致其脱离正<br>常的文档流，因此main区域会上移,导致第一张图片被<br>遮挡显示不全，所以我们设置一个padding-top解决遮<br>挡问题，最终效果如下:<br><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.9/1-float/4.jpg" alt="image"></p>
+<p><strong>头部导航实现</strong></p>
+<p>基本头部元素</p>
+<p><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.9/1-float/5.png" alt="image"></p>
+<p>首先补全html代码</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;优课达&lt;/title&gt;
+    &lt;link rel="stylesheet" type="text/css" href="./index.css" /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;nav class="nav"&gt;
+      &lt;img class="logo" src="https://style.youkeda.com/img/ykd-components/logo.png" /&gt;
+      &lt;img class="avatar" src="https://qgt-document.oss-cn-beijing.aliyuncs.com/P3-1-HTML-CSS/1.9/1-float/avatar.png"/&gt;
+    &lt;/nav&gt;
+    &lt;main&gt;
+      &lt;img
+        src="https://document.youkeda.com/P3-1-HTML-CSS/1.8/1.jpg?x-oss-process=image/resize,h_500"
+      /&gt;
+      &lt;img
+        src="https://document.youkeda.com/P3-1-HTML-CSS/1.8/2.jpg?x-oss-process=image/resize,h_500"
+      /&gt;
+      &lt;img
+        src="https://document.youkeda.com/P3-1-HTML-CSS/1.8/3.jpg?x-oss-process=image/resize,h_500"
+      /&gt;
+      &lt;img
+        src="https://document.youkeda.com/P3-1-HTML-CSS/1.8/4.jpg?x-oss-process=image/resize,h_500"
+      /&gt;
+    &lt;/main&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre><p>在导航栏中，加入两张图片，一张logo, 一张头像。</p>
+<p>补全标注中基本的宽高样式</p>
+<pre><code>.logo {
+  width: 100px;
+  height: 36px;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+}</code></pre><pre><code>body {
+  /*去除默认的样式*/
+  padding: 0;
+  margin: 0;
+  background-color: #f5f5f5;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  height: 68px;
+  border: 1px solid #f4f4f4;
+  background-color: #fff;
+}
+
+img {
+  width: 100%;
+}
+
+main {
+  padding-top: 68px; /*1*/
+}
+
+.logo {
+  width: 100px;
+  height: 36px;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+}</code></pre><p>效果:<br><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.9/1-float/3.jpg" alt="image"></p>
+<p>已经完成了头部元素的创建，接下来我们怎么才能使优课达图标靠左，而头像靠右呢?这就是本节的重点<strong>float</strong>.</p>
+<p><strong>float</strong>–中文意思<strong>浮动</strong>，当然就有往左浮动，往右浮动。这就是float的两个最基本的属性:</p>
+<ul>
+<li>left</li>
+<li>right<br>在这里，我们分别设置两个图标的CSS如下:</li>
+</ul>
+<p>添加：</p>
+<pre><code>.logo {
+  float: left;
+}
+
+.avatar {
+  float: right;
+}</code></pre><p><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.9/1-float/2.jpg" alt="image"></p>
+<p>在什么时候需要使用float呢?主要使用场景有两种:</p>
+<ol>
+<li>如果我们想要一组元素同时靠左靠右对齐， 可以使用float,正<br>如上面案例一样</li>
+<li>如果我们想要文字围绕图片，可以使用float,这个大家先了解.<br>下，后面用到，我们会具体讲到。</li>
+</ol>
+<p>作业：</p>
+<p>利用<code>float</code>,<code>盒模型</code>知识完成<strong>QQ注册页头部开发</strong>，如下图红框区域</p>
+<p><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.9/3-qq/2.jpeg" alt="image"></p>
+<p>注意</p>
+<ol>
+<li>QQ注册页是全屏页面，需要使用浏览器右上角的全屏按钮查看演示效果</li>
+<li>导航栏高度为84px</li>
+</ol>
+<p><strong>图片资源</strong></p>
+<p><a href="https://document.youkeda.com/P3-1-HTML-CSS/1.9/3-qq/arrow-down.png" target="_blank" rel="noopener">向下箭头</a></p>
+<p><a href="https://document.youkeda.com/P3-1-HTML-CSS/1.9/3-qq/qq.png" target="_blank" rel="noopener">QQlogo</a></p>
+<p><a href="https://document.youkeda.com/P3-1-HTML-CSS/1.9/3-qq/bright.png" target="_blank" rel="noopener">QQ靓号</a></p>
+<p><strong>figma</strong><br>从这次作业开始，我们将利用Figma给大家提供标注。让大家学习下，如何根据专业设计师的设计稿进行开发。。<br>本次作业设计稿地址:<br><a href="https://www.figma.com/file/QlB3P8eWLONdMhfRxirqVw/QQ%E6%B3%A8%E5%86%8C%E9%A1%B5" target="_blank" rel="noopener">QQ头部设计稿</a></p>
+<p>figma注册/登录视频</p>
+<p><a href="https://document.youkeda.com/P3-1-HTML-CSS/figma%E7%99%BB%E5%BD%95%E8%A7%86%E9%A2%91.mp4" target="_blank" rel="noopener">figma注册/登录视频</a></p>
+<p>figma操作</p>
+<p><a href="https://document.youkeda.com/P3-1-HTML-CSS/figma%E6%93%8D%E4%BD%9C%E8%A7%86%E9%A2%91.mp4" target="_blank" rel="noopener">figma操作</a></p>
+<h3 id="9-2定位实战（一）：模态框"><a href="#9-2定位实战（一）：模态框" class="headerlink" title="9.2定位实战（一）：模态框"></a>9.2定位实战（一）：模态框</h3><p>大家可能对模态框这个概念比较模糊，我们来看几个案例，注意这几个页面弹框部分<br><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.9/combat-1-modal/1.png" alt="image"></p>
+<p><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.9/combat-1-modal/2.png" alt="image"></p>
+<p>当然还有很多很多，通过这些案例，我们总结下模态框的特点</p>
+<blockquote>
+<ol>
+<li>模态框总是在浏览器的中心，浏览器随意的放大缩小，模态框还是在浏览器中心</li>
+<li>模态框总有一个半透明的背景</li>
+</ol>
+</blockquote>
+<p>接下来，我们试着开发下模态框</p>
+<h4 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h4><p>我们继续在float小节的案例上继续开发，在页面中心完成一个优课达模态框，如下图所示:</p>
+<p><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.9/combat-1-modal/4.png" alt="image"></p>
+<p>首先回顾一下之前的<code>HTML</code>代码</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;head&gt;
+  &lt;link rel="stylesheet" type="text/css" href="./index.css" /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;nav class="nav"&gt;
+    &lt;img
+      class="logo"
+      src="https://style.youkeda.com/img/ykd-components/logo.png"
+    /&gt;
+    &lt;img
+      class="avatar"
+      src="https://thirdqq.qlogo.cn/g?b=oidb&amp;k=xnT9D0hzSGjSOOZkzqoutA&amp;s=100&amp;t=1555898643"
+    /&gt;
+  &lt;/nav&gt;
+  &lt;main&gt;
+    &lt;img
+      src="https://document.youkeda.com/P3-1-HTML-CSS/1.8/1.jpg?x-oss-process=image/resize,h_500"
+    /&gt;
+    &lt;img
+      src="https://document.youkeda.com/P3-1-HTML-CSS/1.8/2.jpg?x-oss-process=image/resize,h_500"
+    /&gt;
+    &lt;img
+      src="https://document.youkeda.com/P3-1-HTML-CSS/1.8/3.jpg?x-oss-process=image/resize,h_500"
+    /&gt;
+    &lt;img
+      src="https://document.youkeda.com/P3-1-HTML-CSS/1.8/4.jpg?x-oss-process=image/resize,h_500"
+    /&gt;
+  &lt;/main&gt;
+&lt;/body&gt;</code></pre><p>CSS代码：</p>
+<pre><code>body {
+  /*去除默认的样式*/
+  padding: 0;
+  margin: 0;
+  background-color: #f5f5f5;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  height: 68px;
+  border: 1px solid #f4f4f4;
+  background-color: #fff;
+}
+
+img {
+  width: 100%;
+}
+
+main {
+  padding-top: 68px;
+}
+
+.logo {
+  float: left;
+  width: 100px;
+  height: 36px;
+  margin-left: 30px;
+  margin-top: 16px;
+}
+
+.avatar {
+  float: right;
+  width: 36px;
+  height: 36px;
+  margin-right: 30px;
+  margin-top: 17px;
+  border-radius: 50%;
+}</code></pre><p><strong>第一步：完成半透明背景</strong></p>
+<p>整个半透明背景是撑满整个浏览器的,并且覆盖在所有的网页内容上面，因此我们需要设置一个fixed的容器放在BODY的最下面，如下面的HTML代码中的<code>&lt;div class="mask"&gt;&lt;/div&gt;</code></p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;head&gt;
+  &lt;link rel="stylesheet" type="text/css" href="./index.css" /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;nav class="nav"&gt;
+    ……
+  &lt;/nav&gt;
+  &lt;main&gt;
+    ……
+  &lt;/main&gt;
+  &lt;div class="mask"&gt;&lt;/div&gt;
+&lt;/body&gt;</code></pre><p>我们继续给这个mask添加CSS属性</p>
+<pre><code>.mask {
+  position: fixed; /*1*/
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7); /*2*/
+}</code></pre><p>我们来解读下CSS的代码</p>
+<blockquote>
+<p>1.通过fixed,. 上下左右都为0，设置mask是撑满整个屏幕的</p>
+<ol start="2">
+<li>background-color我们使用了rgba颜色设置方法，最后一位可以设 置颜色透明度，在这里，我们设置色0.7 透明</li>
+</ol>
+</blockquote>
+<p>到这里，我们变完成了模态框背景半透明效果。如下图所示,我们可以尝试在全屏模式下改变浏览器大小，会发现蒙层会一直覆盖整个页面，完美达到我们想要的效果。</p>
+<p><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.9/combat-1-modal/5.png" alt="image"></p>
+<p><strong>第二步：完成模态框内部</strong></p>
+<p>我们先来看看内部元素的标注<br><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.9/combat-1-modal/6.png" alt="image"></p>
+<p>我们先完成内部样式,在刚才的蒙层下面,我们继续添加dom元素</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;head&gt;
+  &lt;link rel="stylesheet" type="text/css" href="./index.css" /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;nav class="nav"&gt;
+    ……
+  &lt;/nav&gt;
+  &lt;main&gt;
+    ……
+  &lt;/main&gt;
+  &lt;div class="mask"&gt;&lt;/div&gt;
+  &lt;div class="modal"&gt;
+    &lt;img src="https://style.youkeda.com/img/ykd-components/logo.png" /&gt;
+  &lt;/div&gt;
+&lt;/body&gt;</code></pre><p>html代码很简单,div 里面套一个<code>img</code>标签。我们继续完善CSS代码，如下所示</p>
+<pre><code>.modal {
+  background-color: #fff;
+
+  /* 设置长宽 */
+  width: 300px;
+  height: 150px;
+
+  /* 设置圆角20px */
+  border-radius: 20px;
+}
+
+.modal &gt; img {
+  display: block;
+  width: 200px;
+  margin: 39px auto; /*1*/
+}</code></pre><p>上面CSS代码基本没问题,我们需要强调一点，大家注意<strong>标<br>注1</strong>处的代码，这里的代码是为了让<strong>优课达Logo</strong>上下左右居中。</p>
+<p>常用的居中方法如下:</p>
+<p><strong>元素水平居中。</strong></p>
+<ol>
+<li>如果内部是行内元素,我们可以在父容器上使用<code>text-align: center</code>。</li>
+<li>如果内部是块状元素，我们可以在子容器上使用<code>margin: 0 auto</code> (如果此元素不是块状元素， 需要设置<br><code>display: block;</code> )。</li>
+</ol>
+<p><strong>元素垂直居中</strong></p>
+<p>之后我们会讲到如何使用<code>flex</code> 实现元素的垂直居中。在这<br>里,大家可以先使用<code>margin</code>完成垂直居中效果。</p>
+<blockquote>
+<p>margin-top = (modal 高度- img高度) /2 //因此算下<br>来margin-top: 39px;</p>
+</blockquote>
+<p>到目前为止，我们完成了模态框内部的开发，下面我们将完成模态框在整个页面中居中显示。</p>
+<p><strong>第三步：完成模态框布局</strong><br>我们需要把整个中间区域显示在浏览器的中间，我们肯定需要把设置为<code>position: fixed</code>，如下CSS</p>
+<pre><code>.modal {
+  position: fixed; /*1*/
+  left: 50%; /*2*/
+  top: 50%; /*3*/
+  background-color: #fff;
+
+  /* 设置长宽 */
+  width: 300px;
+  height: 150px;
+
+  /* 设置圆角20px */
+  border-radius: 20px;
+}
+
+.modal &gt; img {
+  display: block;
+  width: 200px;
+  margin: 39px auto;
+}</code></pre><p>通过1、2、3设置可以初步将modal居中，但是会往右下偏<br>移部分</p>
+<p>为什么呢?因为<code>left, top</code>都是DOM元素左上角顶点的<br>偏移。</p>
+<p>在这种情况下，我们需要使用margin进行修正。</p>
+<pre><code>.modal {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+
+  margin-left: -150px; /*1*/
+  margin-top: -75px; /*2*/
+
+  background-color: #fff;
+
+  /*设置长宽*/
+  width: 300px;
+  height: 150px;
+
+  /*设置圆角20px*/
+  border-radius: 20px;
+}</code></pre><p>作业：</p>
+<p>完成优课达登录页开发：<br><a href="https://www.figma.com/file/tDjSDAGbfCF02UA1PrpHng/%E9%80%89%E6%8B%A9%E7%AC%AC%E4%B8%89%E6%96%B9%E7%99%BB%E9%99%86" target="_blank" rel="noopener">优课达登录页</a></p>
+<p><strong>注意</strong></p>
+<blockquote>
+<p>1.注意图片和文字之间的默认距离的去除，在第7章节第6小节<br><code>display: inline</code> 中有过描述,否则视觉还原度较差。<br>2. 整个页面的背景图片我们已经帮大家写好了，大家不用太纠<br>结，在下一章我们就会学习。<br>3. 整个页面其他部分,不需要用背景图片的知识。<br>4. 建议使用全屏浏览器进行查看。</p>
+</blockquote>
+<p><strong>图片资源</strong></p>
+<p>整个背景图片大图:<br><a href="https://document.youkeda.com/P3-1-HTML-CSS/1.8/login-bg.svg" target="_blank" rel="noopener">1</a><br>微信登录图标: <a href="https://style.youkeda.com/img/pizza/weixin.png" target="_blank" rel="noopener">2</a><br>QQ登录图标: <a href="https://style.youkeda.com/img/pizza/qq.png" target="_blank" rel="noopener">3</a><br>分割线:<a href="https://document.youkeda.com/P3-1-HTML-CSS/1.9/combat-1-modal/sep.png" target="_blank" rel="noopener">4</a></p>
+<p>CSS:</p>
+<pre><code>html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* 浏览器都有自己的默认样式，以上部分为清除浏览器默认样式 */
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  background-image: url(https://document.youkeda.com/P3-1-HTML-CSS/1.8/login-bg.svg);
+  background-size: cover;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -245px;
+  margin-top: -201.5px;
+  width: 490px;
+  height: 403px;
+  border-radius: 16px;
+  background-color: white;
+}
+
+.logo {
+  display: block;
+  width: 179px;
+  height: 64px;
+  margin: 0 auto;
+  margin-top: 62px;
+}
+
+.slogan {
+  text-align: center;
+  margin-top: 14px;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 7.3px;
+  opacity: 0.45;
+  color: #3a3a3a;
+}
+
+/* 分割线区域 */
+.sep {
+  margin-top: 40px;
+  height: 17px;
+}
+
+.left {
+  float: left;
+  margin-left: 20px;
+}
+
+.right {
+  float: right;
+  margin-right: 20px;
+}
+
+.sep &gt; .line {
+  width: 163px;
+  height: 1px;
+  margin-top: 8px;
+}
+
+.sep &gt; span {
+  display: block;
+  float: left;
+  text-align: center;
+  width: 124px;
+  font-size: 12px;
+  line-height: 17px;
+}
+
+.login-channel {
+  margin-top: 40px;
+}
+
+.login-channel &gt; .icon {
+  display: block;
+  width: 64px;
+  height: 64px;
+}
+
+.login-channel &gt; p {
+  margin-top: 20px;
+  width: 64px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 22px;
+  color: #292929;
+}
+
+.wechat {
+  float: left;
+  margin-left: 116px;
+}
+
+.qq {
+  float: right;
+  margin-right: 116px;
+}
+</code></pre><p>html</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8" /&gt;
+    &lt;link rel="stylesheet" type="text/css" href="./index.css" /&gt;
+    &lt;title&gt;优课达&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div class="modal"&gt;
+      &lt;img
+        class="logo"
+        src="https://document.youkeda.com/P3-1-HTML-CSS/1.9/combat-1-modal/9.svg"
+      /&gt;
+      &lt;div class="slogan"&gt;学得比别人好一点&lt;/div&gt;
+      &lt;div class="sep"&gt;
+        &lt;img
+          class="line left"
+          src="https://document.youkeda.com/P3-1-HTML-CSS/1.9/combat-1-modal/sep.png"
+        /&gt;
+        &lt;span&gt;请选择登录方式&lt;/span&gt;
+        &lt;img
+          class="line right"
+          src="https://document.youkeda.com/P3-1-HTML-CSS/1.9/combat-1-modal/sep.png"
+        /&gt;
+      &lt;/div&gt;
+      &lt;div class="login-channel wechat"&gt;
+        &lt;img
+          class="icon"
+          src="https://style.youkeda.com/img/pizza/weixin.png"
+        /&gt;
+        &lt;p&gt;微信登录&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class="login-channel qq"&gt;
+        &lt;img class="icon" src="https://style.youkeda.com/img/pizza/qq.png" /&gt;
+        &lt;p&gt;QQ登录&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre><h3 id="9-3定位实战（二）：搜索框"><a href="#9-3定位实战（二）：搜索框" class="headerlink" title="9.3定位实战（二）：搜索框"></a>9.3定位实战（二）：搜索框</h3><h4 id="搜索框"><a href="#搜索框" class="headerlink" title="搜索框"></a>搜索框</h4><p>在很多网站的头部都有一个搜索框，我们这一小节就来学习下这种搜索框如何进行开发，我们先来看下需要完成的案例:<br><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.9/combat-2-search/1.png" alt="image"></p>
+<p>大家注意图片中红色部分，就是我们这小节需要搞定的部分，这部分由两个组件构建，一个搜索框，一个搜索结果列表。</p>
+<p>由于我们还没学习JS，因此我们不需要完成鼠标点击，键盘输入响应事件，我们默认搜索结果是直接展示的。</p>
+<h4 id="再次回到第二小节的代码"><a href="#再次回到第二小节的代码" class="headerlink" title="再次回到第二小节的代码"></a>再次回到第二小节的代码</h4><p>在第二小节，不含模态框的HTML代码如下(<strong>为了方便窄屏浏览器预览,我们把左侧的LOGO去掉</strong>)</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8" /&gt;
+  &lt;link rel="stylesheet" type="text/css" href="./index.css" /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;nav class="nav"&gt;
+    &lt;img
+      class="avatar"
+      src="https://thirdqq.qlogo.cn/g?b=oidb&amp;k=xnT9D0hzSGjSOOZkzqoutA&amp;s=100&amp;t=1555898643"
+    /&gt;
+  &lt;/nav&gt;
+  &lt;main&gt;
+    &lt;img
+      src="https://document.youkeda.com/P3-1-HTML-CSS/1.8/1.jpg?x-oss-process=image/resize,h_500"
+    /&gt;
+    &lt;img
+      src="https://document.youkeda.com/P3-1-HTML-CSS/1.8/2.jpg?x-oss-process=image/resize,h_500"
+    /&gt;
+    &lt;img
+      src="https://document.youkeda.com/P3-1-HTML-CSS/1.8/3.jpg?x-oss-process=image/resize,h_500"
+    /&gt;
+    &lt;img
+      src="https://document.youkeda.com/P3-1-HTML-CSS/1.8/4.jpg?x-oss-process=image/resize,h_500"
+    /&gt;
+  &lt;/main&gt;
+&lt;/body&gt;
+CSS 为
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #f5f5f5;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  height: 68px;
+  border: 1px solid #f4f4f4;
+  background-color: #fff;
+}
+
+.logo {
+  width: 100px;
+  height: 36px;
+  margin-top: 16px;
+  margin-left: 30px;
+  float: left;
+}
+
+.avatar {
+  height: 34px;
+  width: 34px;
+  margin-top: 17px;
+  border-radius: 50%;
+  margin-right: 30px;
+  float: right;
+}</code></pre><h5 id="第一步-完成搜索框"><a href="#第一步-完成搜索框" class="headerlink" title="第一步:完成搜索框"></a>第一步:完成搜索框</h5><p>我们来看看头部搜索框的标注<br><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.9/combat-2-search/2.png" alt="image"><br>在效果图中，<strong>优课达</strong>靠佐,<strong>搜索框和头像</strong>靠右，通过第二节的学习,我们知道可以用<code>float</code>来实现。在这里，我们需要把右侧输入框和头像整体包裹起来，实现靠右效果，我们来看下HTML代码</p>
+<pre><code>……
+&lt;nav class="nav"&gt;
+  &lt;div class="right"&gt;
+    &lt;div class="search"&gt;
+      &lt;input placeholder="搜你想要的东西" /&gt;
+      &lt;img src="//style.youkeda.com/img/ykd-components/search.png" /&gt;
+    &lt;/div&gt;
+    &lt;img
+      class="avatar"
+      src="https://thirdqq.qlogo.cn/g?b=oidb&amp;k=xnT9D0hzSGjSOOZkzqoutA&amp;s=100&amp;t=1555898643"
+    /&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;
+……</code></pre><p>我们通过一个<code>&lt;div class="right"&gt;</code> 容器包裹<code>&lt;div class="search"&gt;</code>和 <code>&lt;img class="avatar"/&gt;</code>元素，那只要我们设置<code>&lt;div Class="right"&gt;</code>靠右，那其所有的内容则会跟着靠右了。我们添加一些基础的CSS样式</p>
+<pre><code>.right {
+  float: right;
+}
+
+.search {
+  float: left;
+  margin-right: 20px;
+}
+
+.search &gt; input {
+  width: 220px;
+  height: 36px;
+  margin-top: 16px; /*1*/
+
+  font-size: 12px;
+  box-sizing: border-box; /*2*/
+  padding: 0 50px 0 15px;
+  background-color: #ededed;
+  border-radius: 18px;
+
+  /*3*/
+  border: none;
+  outline: none;
+}
+
+.search &gt; img {
+  /*4*/
+  width: 34px;
+  height: 34px;
+}
+</code></pre><p>我们稍微解释下.上面的代码</p>
+<ol>
+<li><code>margin-top: 16px</code> 是计算出来的，(nav 高度- input高度) /2,和模态框中使用的计算规则一致。</li>
+<li><code>box-sizing</code>在同时设置<code>width``height``padding</code>的时候一般会使用，防止宽度或高度异常，忘记的同学可以回顾<strong>盒模型章节</strong></li>
+<li>去掉默认的input效果</li>
+<li><code>&gt;</code> CSS代表直接子元毒，见<strong>CSS样式章节</strong><br><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.9/combat-2-search/3.png" alt="image"></li>
+</ol>
+<p>可以看到<strong>搜索图标</strong>还占用页面位置，我们希望其能往左下移动到<strong>Input</strong>框里面。利用之前的知识，我们可以使用<code>position:absolute</code> 让其脱离文档流。</p>
+<p>我们给<code>.search  &gt;img</code>元素添加定位属性,切勿忘记父元素设置<code>position: relative</code></p>
+<pre><code>.search {
+  position: relative;
+  ……
+}
+.search &gt; img {
+  position: absolute;
+  right: 10px;
+  top: 17px;
+
+  width: 34px;
+  height: 34px;
+}</code></pre><h5 id="第二部分：完成搜索结果"><a href="#第二部分：完成搜索结果" class="headerlink" title="第二部分：完成搜索结果"></a>第二部分：完成搜索结果</h5><p><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.9/combat-2-search/4.png" alt="image"></p>
+<p>我们分析下搜索结果列表的特性:</p>
+<ol>
+<li>搜索结果宽度和头部搜索框的宽度一致。</li>
+<li>搜索结果脱离文档流，是浮在所有元素上面。</li>
+</ol>
+<p>我们在原来的<code>search</code>元素中加入搜索结果的内容，如下HTML所示:</p>
+<pre><code>……
+&lt;nav class="nav"&gt;
+  &lt;div class="right"&gt;
+    &lt;div class="search"&gt;
+      &lt;input placeholder="搜你想要的东西" /&gt;
+      &lt;img src="//style.youkeda.com/img/ykd-components/search.png" /&gt;
+      &lt;!-- 搜索结果页面 --&gt;
+      &lt;ul class="search-result"&gt;
+        &lt;li&gt;优课达1号&lt;/li&gt;
+        &lt;li&gt;优课达2号&lt;/li&gt;
+        &lt;li&gt;优课达3号&lt;/li&gt;
+        &lt;li&gt;优课达4号&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;img
+      class="avatar"
+      src="https://thirdqq.qlogo.cn/g?b=oidb&amp;k=xnT9D0hzSGjSOOZkzqoutA&amp;s=100&amp;t=1555898643"
+    /&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;
+……</code></pre><p>注意HTML元素含义，<code>search-result</code>属于搜索内容，所以和输入框、搜索图标，一起包裹放在<code>search</code>元素内部。</p>
+<p>我们继续给搜索结果添加样式</p>
+<pre><code>.search-result {
+  position: absolute; /*1*/
+  left: 0;
+  top: 60px;
+
+  padding: 0 15px;
+
+  background-color: #fff;
+  border-radius: 5px;
+
+  box-shadow: 0px 1px 11px 0px rgba(0, 0, 0, 0.16); /*2*/
+}
+
+.search-result &gt; li {
+  font-size: 12px;
+  color: #1f2c41;
+
+  height: 36px;
+  line-height: 36px; /*3*/
+
+  width: 190px;
+  border-bottom: 1px solid #f3f3f3;
+}</code></pre><p>重点解释下标注1.2.3</p>
+<ol>
+<li>因为要脱离文档流，并且相对于| search| 父元素进行定位,因此使用绝<br>对布局。</li>
+<li>这个CSS的一个新属性一- -阴影， 合适的阴影让元素具有层次感MDN阴<br>影</li>
+<li>为了使文字在每个li元素中垂直居中，我们使用line-height = height进行解决。</li>
+</ol>
+<p>最后我们在加入去掉ul和li的默认样式</p>
+<pre><code>ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none; /*去掉li左侧的点*/
+}</code></pre><p>CSS</p>
+<pre><code>body {
+  /*去除默认的样式*/
+  padding: 0;
+  margin: 0;
+  background-color: #f5f5f5;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  height: 68px;
+  border: 1px solid #f4f4f4;
+  background-color: #fff;
+}
+
+img {
+  width: 100%;
+}
+
+main {
+  padding-top: 68px; /*1*/
+}
+
+.logo {
+  float: left;
+  width: 100px;
+  height: 36px;
+  margin-left: 30px;
+  margin-top: 16px;
+}
+
+.avatar {
+  float: right;
+  width: 36px;
+  height: 36px;
+  margin-right: 30px;
+  margin-top: 17px;
+  border-radius: 50%;
+}
+
+.right {
+  float: right;
+}
+
+.search {
+  position: relative;
+  float: left;
+  margin-right: 20px;
+}
+
+.search &gt; input {
+  width: 220px;
+  height: 36px;
+  margin-top: 16px;
+
+  font-size: 12px;
+  box-sizing: border-box;
+  padding: 0 50px 0 15px;
+  background-color: #ededed;
+  border-radius: 18px;
+
+  border: none;
+  outline: none;
+}
+
+.search &gt; img {
+  position: absolute;
+  right: 10px;
+  top: 17px;
+
+  width: 34px;
+  height: 34px;
+}
+
+.search-result {
+  position: absolute;
+  left: 0;
+  top: 60px;
+
+  padding: 0 15px;
+
+  background-color: #fff;
+  border-radius: 5px;
+
+  box-shadow: 0px 1px 11px 0px rgba(0, 0, 0, 0.16);
+}
+
+.search-result &gt; li {
+  font-size: 12px;
+  color: #1f2c41;
+
+  height: 36px;
+  line-height: 36px;
+
+  width: 190px;
+  border-bottom: 1px solid #f3f3f3;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none; /*去掉li左侧的点*/
+}</code></pre><p>html</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+&lt;!--系统内置 start--&gt;
+&lt;script type="text/javascript" src="//qgt-style.oss-cn-hangzhou.aliyuncs.com/commonJSCSS/console.js"&gt;&lt;/script&gt;
+&lt;!--系统内置 end--&gt;
+    &lt;title&gt;优课达&lt;/title&gt;
+    &lt;meta charset="utf-8" /&gt;
+    &lt;link rel="stylesheet" type="text/css" href="./index.css" /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;nav class="nav"&gt;
+      &lt;div class="right"&gt;
+        &lt;div class="search"&gt;
+          &lt;input placeholder="搜你想要的东西" /&gt;
+          &lt;img src="//style.youkeda.com/img/ykd-components/search.png" /&gt;
+          &lt;!-- 搜索结果页面 --&gt;
+          &lt;ul class="search-result"&gt;
+            &lt;li&gt;优课达1号&lt;/li&gt;
+            &lt;li&gt;优课达2号&lt;/li&gt;
+            &lt;li&gt;优课达3号&lt;/li&gt;
+            &lt;li&gt;优课达4号&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;img
+          class="avatar"
+          src="https://thirdqq.qlogo.cn/g?b=oidb&amp;k=xnT9D0hzSGjSOOZkzqoutA&amp;s=100&amp;t=1555898643"
+        /&gt;
+      &lt;/div&gt;
+    &lt;/nav&gt;
+    &lt;main&gt;
+      &lt;img
+        src="https://document.youkeda.com/P3-1-HTML-CSS/1.8/1.jpg?x-oss-process=image/resize,h_500"
+      /&gt;
+      &lt;img
+        src="https://document.youkeda.com/P3-1-HTML-CSS/1.8/2.jpg?x-oss-process=image/resize,h_500"
+      /&gt;
+      &lt;img
+        src="https://document.youkeda.com/P3-1-HTML-CSS/1.8/3.jpg?x-oss-process=image/resize,h_500"
+      /&gt;
+      &lt;img
+        src="https://document.youkeda.com/P3-1-HTML-CSS/1.8/4.jpg?x-oss-process=image/resize,h_500"
+      /&gt;
+    &lt;/main&gt;
+    &lt;div class="mask"&gt;&lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre><p>完成知乎网页头部的开发，具体如下图亮色部分</p>
+<p><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.9/combat-2-search/5.png" alt="image"></p>
+<p>figma地址<br><a href="https://www.figma.com/file/mqzUsRYM6BNOZRVJzwUvyV/%E7%9F%A5%E4%B9%8E" target="_blank" rel="noopener">标注地址</a></p>
+<p><strong>提示.</strong></p>
+<ol>
+<li>为了简化大家的难度，我们去掉的一些还未学习到的知识点，大家以figma的视觉效果为准。</li>
+<li>最后的检查会在浏览器宽度1400px下面进行，大家最好(不强求)在1400px下调整视觉效果(中间区域应该是永远左右剧中的)。</li>
+<li>如果想修改input中placeholder的样式，在chrome中可以使用如下代码。</li>
+</ol>
+<pre><code>::-webkit-input-placeholder {
+  color: red;
+}</code></pre><p><strong>图片资源</strong></p>
+<p><a href="https://document.youkeda.com/P3-1-HTML-CSS/1.8/zhihu/zhihu.png" target="_blank" rel="noopener">知乎logo</a></p>
+<p><a href="http://document.youkeda.com/P3-1-HTML-CSS/1.8/zhihu/search.png" target="_blank" rel="noopener">搜索图标</a></p>
+<p><a href="https://document.youkeda.com/P3-1-HTML-CSS/1.8/zhihu/%E4%BD%8D%E5%9B%BE.png" target="_blank" rel="noopener">个人头像</a></p>
+<p><a href="https://document.youkeda.com/P3-1-HTML-CSS/1.8/zhihu/%E6%B6%88%E6%81%AF.png" target="_blank" rel="noopener">消息图标</a></p>
+<p><a href="https://document.youkeda.com/P3-1-HTML-CSS/1.8/zhihu/%E9%80%9A%E7%9F%A5.png" target="_blank" rel="noopener">通知图标</a></p>
+<p><a href="http://document.youkeda.com/P3-1-HTML-CSS/1.8/zhihu/%E4%B8%AA%E4%BA%BA.png" target="_blank" rel="noopener">个人设置-我的主页</a></p>
+<p><a href="http://document.youkeda.com/P3-1-HTML-CSS/1.8/zhihu/%E8%AE%BE%E7%BD%AE.png" target="_blank" rel="noopener">个人设置-设置</a></p>
+<p><a href="https://document.youkeda.com/P3-1-HTML-CSS/1.8/zhihu/%E9%80%80%E5%87%BA.png" target="_blank" rel="noopener">个人设置-退出</a></p>
+<p>zhihu.css</p>
+<pre><code>html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* 浏览器都有自己的默认样式，以上部分为清除浏览器默认样式 */
+
+.nav {
+  height: 54px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.content {
+  position: relative;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.logo {
+  width: 64px;
+  height: 30px;
+  margin-top: 12px;
+  margin-right: 40px;
+  float: left;
+}
+
+ul.menu {
+  float: left;
+  height: 100%;
+}
+
+ul.menu li {
+  height: 100%;
+  float: left;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 54px;
+  color: #8892a6;
+  margin-right: 30px;
+}
+
+ul.menu li.active {
+  position: relative;
+  color: #1c1c1c;
+}
+
+ul.menu li.active .bottom {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -15px;
+  width: 30px;
+  height: 3px;
+  background-color: #1987fb;
+}
+
+.search {
+  position: relative;
+  float: left;
+  width: 326px;
+  height: 34px;
+  margin-top: 10px;
+  margin-right: 16px;
+  margin-left: 10px;
+}
+
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #8892a6;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.search input {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  background: #f6f6f6;
+  border: 1px solid #ebebeb;
+  border-radius: 3px;
+  padding: 7px 15px;
+  font-size: 14px;
+}
+
+.search-icon {
+  position: absolute;
+  right: 15px;
+  top: 9px;
+  width: 16px;
+  height: 16px;
+}
+
+.ask-btn {
+  width: 58px;
+  height: 34px;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 34px;
+  color: #ffff;
+  background: #0084ff;
+  border: 1px solid #0084ff;
+  border-radius: 3px;
+}
+
+.avatar {
+  float: right;
+}
+
+ul.right li {
+  float: right;
+  margin-left: 36px;
+  width: 26px;
+  height: 26px;
+  margin-top: 14px;
+}
+
+ul.right li &gt; img {
+  width: 100%;
+  height: 100%;
+}
+
+ul.right li.avatar {
+  width: 30px;
+  height: 30px;
+  margin-top: 12px;
+}
+
+.setting {
+  position: absolute;
+  right: -52px;
+  top: 48px;
+  box-sizing: border-box;
+  width: 134px;
+  height: 122px;
+  background: #ffffff;
+  border: 1px solid #ebebeb;
+  border-radius: 4px;
+  padding: 16px 18px 0 18px;
+}
+
+.setting ul li {
+  margin-bottom: 15px;
+  height: 20px;
+}
+
+.setting ul li.last {
+  margin-bottom: 0;
+}
+
+.setting ul li img {
+  margin-top: 2px;
+  width: 16px;
+  height: 16px;
+  float: left;
+}
+
+.setting ul li div {
+  float: left;
+  height: 20px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #8892a6;
+  margin-left: 5px;
+}
+</code></pre><p>zhihu.html</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8" /&gt;
+    &lt;link rel="stylesheet" type="text/css" href="./zhihu.css" /&gt;
+    &lt;title&gt;知乎&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;nav class="nav"&gt;
+      &lt;div class="content"&gt;
+        &lt;div class="left"&gt;
+          &lt;img
+            class="logo"
+            src="https://document.youkeda.com/P3-1-HTML-CSS/1.8/zhihu/zhihu.png"
+          /&gt;
+          &lt;ul class="menu"&gt;
+            &lt;li class="active"&gt;
+              首页
+              &lt;div class="bottom"&gt;&lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li&gt;发现&lt;/li&gt;
+            &lt;li&gt;等你来答&lt;/li&gt;
+          &lt;/ul&gt;
+          &lt;div class="search"&gt;
+            &lt;input type="text" placeholder="美妆博主" /&gt;
+            &lt;img
+              class="search-icon"
+              src="https://document.youkeda.com/P3-1-HTML-CSS/1.8/zhihu/search.png"
+            /&gt;
+          &lt;/div&gt;
+          &lt;button class="ask-btn"&gt;提问&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;ul class="right"&gt;
+          &lt;li class="avatar"&gt;
+            &lt;img
+              src="https://document.youkeda.com/P3-1-HTML-CSS/1.8/zhihu/%E4%BD%8D%E5%9B%BE.png"
+            /&gt;
+          &lt;/li&gt;
+          &lt;li class="message"&gt;
+            &lt;img
+              src="https://document.youkeda.com/P3-1-HTML-CSS/1.8/zhihu/%E6%B6%88%E6%81%AF.png"
+            /&gt;
+          &lt;/li&gt;
+          &lt;li class="notice"&gt;
+            &lt;img
+              src="https://document.youkeda.com/P3-1-HTML-CSS/1.8/zhihu/%E9%80%9A%E7%9F%A5.png"
+            /&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;div class="setting"&gt;
+          &lt;ul&gt;
+            &lt;li&gt;
+              &lt;img
+                src="https://document.youkeda.com/P3-1-HTML-CSS/1.8/zhihu/%E4%B8%AA%E4%BA%BA.png"
+              /&gt;
+              &lt;div&gt;我的主页&lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;img
+                src="https://document.youkeda.com/P3-1-HTML-CSS/1.8/zhihu/%E8%AE%BE%E7%BD%AE.png"
+              /&gt;
+              &lt;div&gt;设置&lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li class="last"&gt;
+              &lt;img
+                src="https://document.youkeda.com/P3-1-HTML-CSS/1.8/zhihu/%E9%80%80%E5%87%BA.png"
+              /&gt;
+              &lt;div&gt;退出&lt;/div&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/nav&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre><h2 id="第十章：CSS背景"><a href="#第十章：CSS背景" class="headerlink" title="第十章：CSS背景"></a>第十章：CSS背景</h2><h3 id="10-1背景颜色"><a href="#10-1背景颜色" class="headerlink" title="10.1背景颜色"></a>10.1背景颜色</h3><h4 id="渐变色"><a href="#渐变色" class="headerlink" title="渐变色"></a>渐变色</h4><p>在之前的课程中，我们已经介绍了怎么设置背景颜色，我们先来温故一下普通颜色的几种写法:</p>
+<pre><code>background: red;
+background: #ffffff;
+background: rgba(200, 200, 200);
+background: rgba(0, 0, 0, 0.5);</code></pre><p>之前的颜色都是纯色,这一节我们来学习一些高级的技巧，怎么利用<code>background</code>这个属性设置渐变色。<br><img src="http://document.youkeda.com/P3-1-HTML-CSS/1.10/1-gradient/1.png" alt="image"></p>
+<pre><code>左边的色值:   #95CA47
+右边的设置为:  #4DC891</code></pre><p>我们先实现主体的按钮样式，HTML 和CSS如下:</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;head&gt;
+  &lt;meta charset="utf-8" /&gt;
+  &lt;link rel="stylesheet" type="text/css" href="./index.css" /&gt;
+  &lt;title&gt;优课达&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;button class="publish"&gt;我要提问&lt;/button&gt;
+&lt;/body&gt;</code></pre><pre><code>.publish {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+
+  color: #fff;
+  font-size: 18px;
+  border-radius: 4px;
+  font-weight: 500;
+  box-shadow: 0 2px 6px 0 rgba(104, 200, 116, 0.3); /*1*/
+}</code></pre><blockquote>
+<p>标注1处的代码是添加阴影效果，大家马上会学到，先不用特别纠结</p>
+</blockquote>
+<p>效果：<br><img src="http://document.youkeda.com/P3-1-HTML-CSS/1.10/1-gradient/2.png" alt="image"></p>
+<p>在图中，我们看到已经有了<strong>边框,阴影，圆角</strong>效果，文字因为是白色所以看不出来，下面我们需要给按钮加入渐变背景色。</p>
+<p>我们得学习<code>background</code>的一个新的值– <strong>linear-gradiente</strong><br><img src="http://document.youkeda.com/P3-1-HTML-CSS/1.10/1-gradient/3.png" alt="image"><br>根据上图，我们设置好<strong>渐变类型、渐变方向、开始颜色、结束颜色</strong>即可实现简单的渐变效果。</p>
+<h4 id="渐变方向"><a href="#渐变方向" class="headerlink" title="渐变方向"></a>渐变方向</h4><p>渐变方向使用的语义化英文实现，具体有如下值</p>
+<ul>
+<li>to right/ to left向右/向左渐变</li>
+<li>to top/ to bottom向上/向下渐变</li>
+<li>to right bottom / to right top向右下/向右上渐变</li>
+<li>toleft bottom / to left top向左下向左上渐变</li>
+<li>xxxdeg xxx范围(0到360)更精确的渐变方向</li>
+</ul>
+<p>演示一下，如何把背景渐变色改为从右上到左下</p>
+<pre><code>.publish {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+
+  background: linear-gradient(to left bottom, #95ca47, #4dc891);
+  color: #fff;
+  font-size: 18px;
+  border-radius: 4px;
+  font-weight: 500;
+  box-shadow: 0 2px 6px 0 rgba(104, 200, 116, 0.3); /*1*/
+}
+</code></pre><h4 id="渐变位置"><a href="#渐变位置" class="headerlink" title="渐变位置"></a>渐变位置</h4><p>渐变不一定是从开始到结束，我们可以设置各种中间状态。我们来看一个更复杂的例子，在上面的例子下升级,我们不需要一开始就进行渐变，而是在30% ~ 70%之间进行渐变,如图所示:<br><img src="http://document.youkeda.com/P3-1-HTML-CSS/1.10/1-gradient/4.png" alt="image"><br>我们可以在每个色值后面跟一个值<strong>百分比，PX</strong>,来约定变色起止位置。</p>
+<p>演示一下:</p>
+<pre><code>.publish {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+
+  background: linear-gradient(to right, #95ca47 30%, #4dc891 70%);
+  color: #fff;
+  font-size: 18px;
+  border-radius: 4px;
+  font-weight: 500;
+  box-shadow: 0 2px 6px 0 rgba(104, 200, 116, 0.3); /*1*/
+}
+</code></pre><p>上面讲的是最通用，最常见的渐变效果。除此之外，还支持多颜色渐<br>变、弧形渐变，<a href="https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Using_CSS_gradients" target="_blank" rel="noopener">MDN</a>, 有兴趣的同学可以仔细学习下。</p>
+<p>在使用网易云音乐网页版的时候，<strong>每日推荐</strong>是我们很常用的一个功能，<br>如下图所示，会显示当前的星期数和日期.<br><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.10/1-gradient/5.jpeg" alt="image"><br>在网易云音乐源码中，该元素是用图片实现的，太简单了。我们要挑战下，尝试使用本节学习的背景颜色和渐变实现这个效果。</p>
+<p><strong>标注</strong><br><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.10/1-gradient/6.png" alt="image"></p>
+<p><strong>思路</strong></p>
+<ol>
+<li>页面可以分为3部分，头部红色区域，中间数字区域，数字区域的蒙层</li>
+<li>头部区域背景颜色是一个自上而下的渐变色，头部区域注意文字有阴影<br>效果</li>
+<li><strong>蒙层区域需要浮在数字.上面，而不是整个容器，需需要使用绝对定位</strong></li>
+<li>蒙层区域需要使用百分比定位渐变色</li>
+</ol>
+<p><strong>字体</strong><br>这里数字字体很特殊，需要设置<code>font-family</code></p>
+<pre><code>font-family: Arial, Helvetica, sans-serif;</code></pre><p><strong>圆角</strong></p>
+<p>我们可以选择性的设置容器4个角圆角属性</p>
+<pre><code>border-top-left-radius: 2px; /*只设置左上角的圆角*/
+border-top-right-radius: 2px; /*只设置右上角的圆角*/
+border-bottom-left-radius: 2px; /*只设置左下角的圆角*/
+border-bottom-right-radius: 2px; /*只设置右下角的圆角*/</code></pre><p>代码：</p>
+<p>CSS：</p>
+<pre><code>.box {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.head {
+  height: 33px;
+  line-height: 33px;
+  color: #fed9d9;
+  font-size: 14px;
+  text-align: center;
+  background: linear-gradient(to bottom, #d94747, #b9191a);
+}
+
+.date {
+  height: 107px;
+  line-height: 107px;
+  text-align: center;
+  font-size: 94px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #202020;
+}
+
+.mask {
+  position: absolute;
+  top: 33px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.05),
+    rgba(0, 0, 0, 0.15) 50%,
+    rgba(0, 0, 0, 0.05) 50%,
+    rgba(0, 0, 0, 0.15) 100%
+  );
+}</code></pre><p>HTML：</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8" /&gt;
+    &lt;link rel="stylesheet" type="text/css" href="./index.css" /&gt;
+    &lt;title&gt;每日推荐&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div class="box"&gt;
+      &lt;div class="head"&gt;星期二&lt;/div&gt;
+      &lt;div class="date"&gt;17&lt;/div&gt;
+      &lt;div class="mask"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre><h3 id="10-2背景图片"><a href="#10-2背景图片" class="headerlink" title="10.2背景图片"></a>10.2背景图片</h3><p>CSS除了设置背景颜色，还可以设置背景图片,背景图片在网页中使用十分常见。我们来看-下网上一些背景图片使用案例。</p>
+<ol>
+<li>微博个人主页<a href="https://weibo.com/u/1350995007头部区域和整个页面背景" target="_blank" rel="noopener">https://weibo.com/u/1350995007头部区域和整个页面背景</a><br><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.10/2-background/2.png" alt="image"></li>
+<li>网易云音乐客户端下载区域<a href="https://music.163.com/" target="_blank" rel="noopener">https://music.163.com/</a><br><a href="https://document.youkeda.com/P3-1-HTML-CSS/1.10/2-background/3.png" target="_blank" rel="noopener">https://document.youkeda.com/P3-1-HTML-CSS/1.10/2-background/3.png</a></li>
+</ol>
+<h4 id="基础使用"><a href="#基础使用" class="headerlink" title="基础使用"></a>基础使用</h4><p>实现<br><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.10/2-background/4.png" alt="image"></p>
+<blockquote>
+<p>一个容器中，有一串HELLO WORLD字，同时有一张居中的优课达LOGO的背景图。</p>
+</blockquote>
+<p>原始HTML</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;head&gt;
+  &lt;meta charset="utf-8" /&gt;
+  &lt;link rel="stylesheet" type="text/css" href="./index.css" /&gt;
+  &lt;title&gt;优课达&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div class="box"&gt;
+    HELLO WORLD
+  &lt;/div&gt;
+&lt;/body&gt;</code></pre><p>原始CSS</p>
+<pre><code>.box {
+  width: 100%;
+  height: 250px;
+  border: 1px solid #e8e8e8;
+  font-size: 30px;
+  font-weight: bold;
+  color: yellowgreen;
+}</code></pre><p>下面我们给box元素设置背景图片<br><a href="https://style.youkeda.com/img/ykd-components/logo.png" target="_blank" rel="noopener">https://style.youkeda.com/img/ykd-components/logo.png</a></p>
+<p>首先学习怎么给一个元素设置背景图片<br><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.10/2-background/6.png" alt="image"></p>
+<p>一个<code>background-image</code>标签,加一个<code>url</code>包裹的远程或者本地图片地址。</p>
+<blockquote>
+<p>注意url里面的图片地址不需要用引号包裹。</p>
+</blockquote>
+<p><strong>1. 背景图片出现了重复</strong></p>
+<p>当背景图片长宽任意一项小于容器的长宽，默认CSS会让图片重复,直到铺满整个容器位置。</p>
+<p>我们可以使用<code>background-repeat: no-repeat;</code>禁止图片的重复，演示一下:</p>
+<pre><code>.box {
+  width: 100%;
+  height: 250px;
+  border: 1px solid #e8e8e8;
+  font-size: 30px;
+  font-weight: bold;
+  color: yellowgreen;
+  background-image: url(https://style.youkeda.com/img/ykd-components/logo.png);
+  background-repeat: no-repeat;
+}
+</code></pre><p>效果：<br><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.10/2-background/8.png" alt="image"></p>
+<p>我们来完整的学习下<code>background-repeat</code>的值。</p>
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>repeat</td>
+<td>这是默认值。如果背景图片比容器小，将在垂直和水平方向进行重复</td>
+</tr>
+<tr>
+<td>repeat-x</td>
+<td>背景图片只在水平方向重复</td>
+</tr>
+<tr>
+<td>repeat-y</td>
+<td>背景图片只在垂直方向重复</td>
+</tr>
+<tr>
+<td>no-repeat</td>
+<td>背景图片将只显示一次,不重复</td>
+</tr>
+</tbody></table>
+<p>演示一下使用repeat-x的情况</p>
+<pre><code>.box {
+  width: 100%;
+  height: 250px;
+  border: 1px solid #e8e8e8;
+  font-size: 30px;
+  font-weight: bold;
+  color: yellowgreen;
+  background-image: url(https://style.youkeda.com/img/ykd-components/logo.png);
+  background-repeat: repeat-x;
+}
+</code></pre><p><strong>2. 背景图片不居中</strong></p>
+<p>默认情况下，背景图片是从容器的左上角开始布局，为了使容器垂直水平居中，我们可以使用<code>background-position: center;</code>解决，到现在为止的完整代码如下:。</p>
+<pre><code>.box {
+  width: 350px;
+  height: 250px;
+  border: 1px solid #e8e8e8;
+  font-size: 30px;
+  font-weight: bold;
+  color: yellowgreen;
+
+  background-image: url(https://style.youkeda.com/img/ykd-components/logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}</code></pre><p>我们来完整的学习下 <code>background-position</code>的值。</p>
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>描述</th>
+</tr>
+</thead>
+</table>
+<p><code>top left/top center/top right/center left/center center/center right/bottom left/bottom center/bottom right</code>| 左侧两个元素为一组一起出现，分别代表垂直和水平布局<strong>比如:</strong>background-position: top left;效果等于background-position-x: left;background-position-y: top;如果只写一个关键词，那么另一个关键词默认是center<br>%x %y | 第一个值是水平位置，第二个值是垂直位置。<br>左上角是0%0%。右下角是100% 100%。如果只写一个值，另一个值将是50%。<br>xpx ypx | 第一个值是水平位置，第二个值是垂直位置。左上角是00，单位是像素(0px 0px)或任何其他的CSS单位。如果只写一个值，另一个值将是50%</p>
+<p>演示一下，把背景图片放在右下角</p>
+<pre><code>.box {
+  width: 100%;
+  height: 250px;
+  border: 1px solid #e8e8e8;
+  font-size: 30px;
+  font-weight: bold;
+  color: yellowgreen;
+  background-image: url(https://style.youkeda.com/img/ykd-components/logo.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+</code></pre><h4 id="高级特性"><a href="#高级特性" class="headerlink" title="高级特性"></a>高级特性</h4><p><strong>背景图片撑满整个容器</strong></p>
+<p>在上面的基础上，我们希望背景图片放大撑满整个容器,如下图所示:<br><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.10/2-background/9.png" alt="image"></p>
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>cover</td>
+<td>把背景图像扩展至足够大，以使背景图像完全覆盖背景区域。背景图像的某些部分也许无法显示在背景定位区域中。</td>
+</tr>
+<tr>
+<td>contain</td>
+<td>把图像图像扩展至最大尺寸,以使其宽度和高度完全适应内容区域。</td>
+</tr>
+<tr>
+<td>xpx ypx</td>
+<td>手动设置宽度和高度</td>
+</tr>
+<tr>
+<td>%x %y</td>
+<td>手动设置宽度和高度相对于容器的百分比</td>
+</tr>
+</tbody></table>
+<p>通过描述，我们想想要实现.图效果，我们应该选用那个值?</p>
+<p>如果还是不知道，不如我们直接用代码试一下。前端开发的好处，可以直接在线测试。</p>
+<p>演示设置为<code>contain</code></p>
+<pre><code>.box {
+  width: 100%;
+  height: 250px;
+  border: 1px solid #e8e8e8;
+  font-size: 30px;
+  font-weight: bold;
+  color: yellowgreen;
+  background-image: url(https://style.youkeda.com/img/ykd-components/logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+</code></pre><p>演示设置为<code>cover</code></p>
+<pre><code>.box {
+  width: 100%;
+  height: 250px;
+  border: 1px solid #e8e8e8;
+  font-size: 30px;
+  font-weight: bold;
+  color: yellowgreen;
+  background-image: url(https://style.youkeda.com/img/ykd-components/logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}</code></pre><p>我们分别把<code>position-size</code>设置为<code>contain cover</code></p>
+<p>效果很明显，左边contain是我们想要的效果。回过头来，我们再仔细分析下这两个值的区别，其实也比较容易理解:</p>
+<blockquote>
+<p>cover就是满足图片长宽中较小的一方撑满屏幕。</p>
+</blockquote>
+<blockquote>
+<p>contain就是满足图片 长宽中较大的一方撑满屏幕。</p>
+</blockquote>
+<p><strong>background合并写法</strong></p>
+<pre><code>.box {
+  width: 350px;
+  height: 250px;
+  border: 1px solid #e8e8e8;
+  font-size: 30px;
+  font-weight: bold;
+  color: yellowgreen;
+
+  background-image: url(https://style.youkeda.com/img/ykd-components/logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}</code></pre><p>下面4条都用于背景图片布局，会不会觉得很繁琐?在CSS中对于背景有一种非常简单书写的方式</p>
+<p><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.10/2-background/12.png" alt="image"></p>
+<blockquote>
+<p>在background后连续跟随多个背景属性值，如果没有此属性，则置空。在上面例子中，我们会使用<code>background-image``background-repeat</code>，<code>background-position</code>，<code>background-size</code>四个属性，合并之后的结果是:</p>
+</blockquote>
+<pre><code>.box {
+  width: 350px;
+  height: 250px;
+  border: 1px solid #e8e8e8;
+  font-size: 30px;
+  font-weight: bold;
+  color: yellowgreen;
+
+  background: url(https://style.youkeda.com/img/ykd-components/logo.png)
+    no-repeat center / contain;
+}</code></pre><p>其他属性：<br>position-attachment:<a href="https://developer.moilla.org/zh-CN/docs/Web/CSS/background-attachment" target="_blank" rel="noopener">https://developer.moilla.org/zh-CN/docs/Web/CSS/background-attachment</a></p>
+<p>position-clip：<a href="https://developer.moilla.org/zh-CN/docs/Web/CSS/background-clip" target="_blank" rel="noopener">https://developer.moilla.org/zh-CN/docs/Web/CSS/background-clip</a></p>
+<p>这两个属性大家可以简单阅读下，不是重点。</p>
+<p>作业1：</p>
+<p>在上一节基础上，我们继续完善网易云音乐个人推荐页banner效果，如下图所示<br><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.10/2-background/13.png" alt="image"></p>
+<p><strong>提示</strong></p>
+<ol>
+<li>已经内置了上一节的标准答案，大家可以仔细阅读下</li>
+<li>为了防止容器留白，一般背景图片会使用cover</li>
+</ol>
+<p><strong>标注</strong></p>
+<p><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.10/2-background/14.png" alt="image"></p>
+<p><strong>图片资源</strong></p>
+<p>背景图片: <a href="https://document.youkeda.com/P3-1-HTML-CSS/1.9/music-bg.jpg" target="_blank" rel="noopener">https://document.youkeda.com/P3-1-HTML-CSS/1.9/music-bg.jpg</a> </p>
+<p>CSS</p>
+<pre><code>.banner {
+  background-image: url(https://document.youkeda.com/P3-1-HTML-CSS/1.9/music-bg.jpg);
+  background-size: cover;
+  padding-left: 48px;
+  padding-top: 30px;
+  box-sizing: border-box;
+  width: 715px;
+  height: 200px;
+}
+
+.box {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.head {
+  height: 33px;
+  line-height: 33px;
+  color: #fed9d9;
+  font-size: 14px;
+  text-align: center;
+  background: linear-gradient(to bottom, #d94747, #b9191a);
+}
+
+.date {
+  background-color: white;
+  height: 107px;
+  line-height: 107px;
+  text-align: center;
+  font-size: 94px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #202020;
+}
+
+.mask {
+  position: absolute;
+  top: 33px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.05),
+    rgba(0, 0, 0, 0.15) 50%,
+    rgba(0, 0, 0, 0.05) 50%,
+    rgba(0, 0, 0, 0.15) 100%
+  );
+}
+</code></pre><p>HTML：</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8" /&gt;
+    &lt;link rel="stylesheet" type="text/css" href="./index.css" /&gt;
+    &lt;title&gt;每日推荐&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div class="banner"&gt;
+      &lt;div class="box"&gt;
+        &lt;div class="head"&gt;星期二&lt;/div&gt;
+        &lt;div class="date"&gt;17&lt;/div&gt;
+        &lt;div class="mask"&gt;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre><p>作业2：<strong>微博Banner</strong></p>
+<p>在本节课中，我们需要完成微博轮播图视觉效果们看看微博的页，如下图高亮区域<br><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.10/2-background/15.png" alt="image"></p>
+<p>我们分解下banner区域，暂时不需要做滚动播放(以后学习JS,再完成这部分功能)。</p>
+<ol>
+<li>banner区域由-张文章大图和一段文章描述组成</li>
+<li>文章描述包含标题、讨论数、阅读量组成</li>
+<li>文章描述背后有一段渐变的蒙层<br>具体的标注如下:<br><img src="https://note.youdao.com/favicon.ico" alt="image"></li>
+</ol>
+<p>背景图片资源<br><a href="https://document.youkeda.com/P3-1-HTML-CSS/1.9/weibo-banner.jpg" target="_blank" rel="noopener">https://document.youkeda.com/P3-1-HTML-CSS/1.9/weibo-banner.jpg</a></p>
+<p>CSS：</p>
+<pre><code>.banner {
+  position: relative;
+  width: 600px;
+  height: 300px;
+  background-image: url(https://document.youkeda.com/P3-1-HTML-CSS/1.9/weibo-banner.jpg);
+  background-size: cover;
+}
+
+.info {
+  float: left;
+}
+
+.main {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  padding-left: 10px;
+  color: #fff;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
+}
+
+.title {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.ext {
+  margin-top: 4px;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.discuss {
+  margin-right: 20px;
+}
+</code></pre><p>HTML：</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8" /&gt;
+  &lt;link rel="stylesheet" type="text/css" href="./index.css" /&gt;
+  &lt;title&gt;微博&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div class="banner"&gt;
+    &lt;div class="main"&gt;
+      &lt;div class="info"&gt;
+        &lt;div class="title"&gt;
+          #一直单身但颜值超高的人#
+        &lt;/div&gt;
+        &lt;div class="ext"&gt;
+          &lt;span class="discuss"&gt;1.4万讨论&lt;/span&gt;
+          &lt;span class="read"&gt;2443.3万阅读&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+</code></pre><h2 id="第十一章：实战"><a href="#第十一章：实战" class="headerlink" title="第十一章：实战"></a>第十一章：实战</h2><p>学到这里，相信大家已经收获满满了。接下来我们做一个完整了页面，为本课程画上完美的句号。</p>
+<h5 id="作业描述"><a href="#作业描述" class="headerlink" title="作业描述"></a>作业描述</h5><p>在之前我们完成了QQ注册页的头部的开发，本次作业是完成整个QQ注册页的开发，如下图所示:<br><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.11/demo.png" alt="image"></p>
+<p><strong>标注</strong></p>
+<p>本次作业设计稿地址<br><a href="https://www.figma.com/file/QlB3P8eWLONdMhfRxirqVw/QQ%E6%B3%A8%E5%86%8C%E9%A1%B5?node-id=1%3A137" target="_blank" rel="noopener">QQ头部设计稿</a></p>
+<p><strong>分析</strong></p>
+<p>整个页面主题由3部分组成-<strong>头部区域，主体左侧背景区域，主体右侧表单区域</strong>，如图: </p>
+<p><img src="http://document.youkeda.com/P3-1-HTML-CSS/1.11/analysis.png" alt="image"></p>
+<p><strong>1、头部区域</strong></p>
+<p>头部区域是一个fixed在顶部的容器，之前已经完成了，这里不多说，代码中已经加入头部答案，大家可以仔细看看。</p>
+<p><strong>2、左侧区域</strong></p>
+<p>在真实的QQ注册页面中，左侧图片是响应式的(也就是在不同浏览器宽度中，显示效果不同)。本课程还未学习这部分知识，我们暂时只适配最宽的情况，也就是宽度永远固定为480px.</p>
+<p><strong>3、右侧区域</strong></p>
+<p>右侧区域是占满整个浏览器除开左侧图片的剩余宽度，这里介绍一个新知识，可以使用CSS<code>calc</code>通过计算得到宽度，在这里可以使用</p>
+<pre><code>width: calc(100% - 480px); /*表示整个宽度100%减去480px*/</code></pre><p>右侧区域中心的表单是在整个右侧区域中<strong>左右上下居中</strong>，需要用到之前学习的模态框知识，如何让容器左右.上下居中?</p>
+<p>整体分析下来，如下图示意图所示:</p>
+<p><img src="https://document.youkeda.com/P3-1-HTML-CSS/1.11/layout.png" alt="image"></p>
+<p><strong>图片资源</strong></p>
+<p><a href="http://document.youkeda.com/P3-1-HTML-CSS/1.11/bg.png" target="_blank" rel="noopener">左侧背景图片</a></p>
+<p>CSS</p>
+<pre><code>html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* 浏览器都有自己的默认样式，以上部分为清除浏览器默认样式 */
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 20px;
+}
+
+a.qq {
+  margin-left: 10px;
+  margin-top: 20px;
+  float: left;
+  cursor: pointer;
+  font-size: 0;
+}
+
+a.qq &gt; img {
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+}
+
+a.qq &gt; span {
+  vertical-align: middle;
+  font-size: 36px;
+  line-height: 43px;
+  margin-left: 6px;
+}
+
+ul.right {
+  float: right;
+}
+
+ul.right &gt; li {
+  float: left;
+  margin-top: 20px;
+  margin-right: 40px;
+
+  font-size: 16px;
+  line-height: 24px;
+
+  cursor: pointer;
+}
+
+.bright {
+  width: 95px;
+  height: 34px;
+}
+
+.bright &gt; img {
+  width: 100%;
+  height: 100%;
+}
+
+ul.right &gt; li.language {
+  font-size: 0;
+  margin-top: 30px;
+}
+
+ul.right &gt; li.language span {
+  font-size: 16px;
+  vertical-align: middle;
+}
+
+ul.right &gt; li.language .arrow {
+  vertical-align: middle;
+  width: 12px;
+  height: 8px;
+}
+
+ul.right &gt; li.contact {
+  margin-top: 30px;
+}
+
+/*上面是QQ注册页头部CSS*/
+
+.main {
+  height: 100%;
+  overflow: hidden;
+}
+
+.bg {
+  float: left;
+  width: 480px;
+  height: 100%;
+  background: url(http://qgt-document.oss-cn-beijing.aliyuncs.com/P3-1-HTML-CSS/1.11/bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content {
+  position: relative;
+  box-sizing: border-box;
+  width: calc(100% - 480px);
+  margin-left: 480px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.core {
+  width: 480px;
+  height: 571px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -240px;
+  margin-top: -285.5px;
+}
+
+h1 {
+  font-size: 44px;
+  line-height: 62px;
+  font-weight: normal;
+}
+
+.subtitle {
+  margin-top: 13px;
+  height: 34px;
+}
+
+h2 {
+  font-size: 27px;
+  line-height: 34px;
+  font-weight: normal;
+  float: left;
+}
+
+.free-bright {
+  float: right;
+  font-size: 23px;
+  line-height: 34px;
+  color: #359eff;
+  cursor: pointer;
+}
+
+form {
+  margin-top: 63px;
+}
+
+select,
+input {
+  box-sizing: border-box;
+  width: 480px;
+  height: 52px;
+  border: 1px solid #aaaaaa;
+  border-radius: 4px;
+  padding: 15px 20px;
+  font-size: 19px;
+}
+
+.mobile,
+input.password {
+  margin-top: 32px;
+}
+
+.mobile &gt; select {
+  width: 154px;
+  background-color: white;
+  outline: none;
+}
+
+.mobile &gt; input {
+  width: 307px;
+  float: right;
+}
+::placeholder {
+  color: #aaaaaa;
+  font-size: 19px;
+  font-weight: normal;
+}
+
+.mobile-tip {
+  margin-top: 10px;
+  font-size: 13px;
+  line-height: 14px;
+  color: #999;
+}
+
+.submit {
+  margin-top: 38px;
+  width: 480px;
+  box-sizing: border-box;
+  height: 60px;
+  background-color: #3487ff;
+  border: 1px solid #3083ff;
+  box-sizing: border-box;
+  box-shadow: 0px 5px 8px rgba(24, 95, 255, 0.1);
+  border-radius: 4px;
+  outline: none;
+
+  font-weight: 200;
+  font-size: 24px;
+  line-height: 60px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.agreement {
+  margin-top: 32px;
+  font-size: 13px;
+  line-height: 30px;
+  color: #aaaaaa;
+}
+
+.agreement &gt; input {
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+  padding: 0;
+  margin: 0;
+}
+
+.agreement &gt; label {
+  vertical-align: middle;
+}
+
+footer {
+  position: absolute;
+  width: 344px;
+  bottom: 26px;
+  left: 50%;
+  margin-left: -172px;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #bbbbbb;
+}
+</code></pre><p>HTML</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8" /&gt;
+  &lt;link rel="stylesheet" type="text/css" href="./index.css" /&gt;
+  &lt;title&gt;QQ注册&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;nav class="nav"&gt;
+    &lt;a class="qq"&gt;
+      &lt;img src="https://document.youkeda.com/P3-1-HTML-CSS/1.9/3-qq/qq.png" /&gt;
+      &lt;span&gt;QQ&lt;/span&gt;
+    &lt;/a&gt;
+    &lt;ul class="right"&gt;
+      &lt;li class="bright"&gt;
+        &lt;img
+          src="https://document.youkeda.com/P3-1-HTML-CSS/1.9/3-qq/bright.png"
+          alt="QQ靓号"
+        /&gt;
+      &lt;/li&gt;
+      &lt;li class="language"&gt;
+        &lt;span&gt;简体中文&lt;/span&gt;
+        &lt;img
+          class="arrow"
+          src="https://document.youkeda.com/P3-1-HTML-CSS/1.9/3-qq/arrow-down.png"
+        /&gt;
+      &lt;/li&gt;
+      &lt;li class="contact"&gt;意见反馈&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+  &lt;main class="main"&gt;
+    &lt;div class="bg"&gt;&lt;/div&gt;
+    &lt;div class="content"&gt;
+      &lt;div class="core"&gt;
+        &lt;h1&gt;欢迎注册QQ&lt;/h1&gt;
+        &lt;div class="subtitle"&gt;
+          &lt;h2&gt;每一天，乐在沟通。&lt;/h2&gt;
+          &lt;a class="free-bright"&gt;免费靓号&lt;/a&gt;
+        &lt;/div&gt;
+
+        &lt;form action=""&gt;
+          &lt;input type="text" placeholder="昵称" /&gt;
+          &lt;input class="password" type="password" placeholder="密码" /&gt;
+          &lt;div class="mobile"&gt;
+            &lt;select&gt;
+              &lt;option&gt;+86&lt;/option&gt;
+              &lt;option&gt;+852&lt;/option&gt;
+            &lt;/select&gt;
+            &lt;input type="text" placeholder="手机号码" /&gt;
+          &lt;/div&gt;
+          &lt;p class="mobile-tip"&gt;可通过该手机号找回密码&lt;/p&gt;
+          &lt;button class="submit"&gt;立即注册&lt;/button&gt;
+          &lt;div class="agreement"&gt;
+            &lt;input type="checkbox" /&gt;
+            &lt;label&gt;我已阅读并同意相关服务条款和隐私政策&lt;/label&gt;
+          &lt;/div&gt;
+        &lt;/form&gt;
+      &lt;/div&gt;
+      &lt;footer&gt;Copyright © 1998-2019Tencent All Rights Reserved&lt;/footer&gt;
+    &lt;/div&gt;
+  &lt;/main&gt;
+&lt;/body&gt;
+</code></pre><script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://github.com/zrz15751005135/zrz15751005135.github.io" rel="external nofollow noreferrer">张睿喆</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://github.com/zrz15751005135/zrz15751005135.github.io/2020/10/26/web-qian-duan-ji-chu/">https://github.com/zrz15751005135/zrz15751005135.github.io/2020/10/26/web-qian-duan-ji-chu/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="https://github.com/zrz15751005135/zrz15751005135.github.io" target="_blank">张睿喆</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+
+<div id="article-share">
+    
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+        <style>
+    .valine-card {
+        margin: 1.5rem auto;
+    }
+
+    .valine-card .card-content {
+        padding: 20px 20px 5px 20px;
+    }
+
+    #vcomments textarea {
+        box-sizing: border-box;
+        background: url("/medias/comment_bg.png") 100% 100% no-repeat;
+    }
+
+    #vcomments p {
+        margin: 2px 2px 10px;
+        font-size: 1.05rem;
+        line-height: 1.78rem;
+    }
+
+    #vcomments blockquote p {
+        text-indent: 0.2rem;
+    }
+
+    #vcomments a {
+        padding: 0 2px;
+        color: #4cbf30;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    #vcomments img {
+        max-width: 100%;
+        height: auto;
+        cursor: pointer;
+    }
+
+    #vcomments ol li {
+        list-style-type: decimal;
+    }
+
+    #vcomments ol,
+    ul {
+        display: block;
+        padding-left: 2em;
+        word-spacing: 0.05rem;
+    }
+
+    #vcomments ul li,
+    ol li {
+        display: list-item;
+        line-height: 1.8rem;
+        font-size: 1rem;
+    }
+
+    #vcomments ul li {
+        list-style-type: disc;
+    }
+
+    #vcomments ul ul li {
+        list-style-type: circle;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    #vcomments table, th, td {
+        border: 0;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments h1 {
+        font-size: 1.85rem;
+        font-weight: bold;
+        line-height: 2.2rem;
+    }
+
+    #vcomments h2 {
+        font-size: 1.65rem;
+        font-weight: bold;
+        line-height: 1.9rem;
+    }
+
+    #vcomments h3 {
+        font-size: 1.45rem;
+        font-weight: bold;
+        line-height: 1.7rem;
+    }
+
+    #vcomments h4 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    #vcomments h5 {
+        font-size: 1.1rem;
+        font-weight: bold;
+        line-height: 1.4rem;
+    }
+
+    #vcomments h6 {
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+
+    #vcomments p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    #vcomments hr {
+        margin: 12px 0;
+        border: 0;
+        border-top: 1px solid #ccc;
+    }
+
+    #vcomments blockquote {
+        margin: 15px 0;
+        border-left: 5px solid #42b983;
+        padding: 1rem 0.8rem 0.3rem 0.8rem;
+        color: #666;
+        background-color: rgba(66, 185, 131, .1);
+    }
+
+    #vcomments pre {
+        font-family: monospace, monospace;
+        padding: 1.2em;
+        margin: .5em 0;
+        background: #272822;
+        overflow: auto;
+        border-radius: 0.3em;
+        tab-size: 4;
+    }
+
+    #vcomments code {
+        font-family: monospace, monospace;
+        padding: 1px 3px;
+        font-size: 0.92rem;
+        color: #e96900;
+        background-color: #f8f8f8;
+        border-radius: 2px;
+    }
+
+    #vcomments pre code {
+        font-family: monospace, monospace;
+        padding: 0;
+        color: #e8eaf6;
+        background-color: #272822;
+    }
+
+    #vcomments pre[class*="language-"] {
+        padding: 1.2em;
+        margin: .5em 0;
+    }
+
+    #vcomments code[class*="language-"],
+    pre[class*="language-"] {
+        color: #e8eaf6;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+
+    #vcomments b,
+    strong {
+        font-weight: bold;
+    }
+
+    #vcomments dfn {
+        font-style: italic;
+    }
+
+    #vcomments small {
+        font-size: 85%;
+    }
+
+    #vcomments cite {
+        font-style: normal;
+    }
+
+    #vcomments mark {
+        background-color: #fcf8e3;
+        padding: .2em;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+</style>
+
+<div class="card valine-card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="vcomments" class="card-content" style="display: grid">
+    </div>
+</div>
+
+<script src="/libs/valine/av-min.js"></script>
+<script src="/libs/valine/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '#vcomments',
+        appId: 'f6UEXTOH6kp1XbaMiuRnQJSU-gzGzoHsz',
+        appKey: 'mMbPFpStLoaC4G4K67DX70ks',
+        notify: 'false' === 'true',
+        verify: 'false' === 'true',
+        visitor: 'true' === 'true',
+        avatar: 'mm',
+        pageSize: '10',
+        lang: 'zh-cn',
+        placeholder: 'just go go'
+    });
+</script>
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2020/10/30/js-ji-chu/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="JS基础自学了解">
+                        
+                        <span class="card-title">JS基础自学了解</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            JS基础了解
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-10-30
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/JS%E5%9F%BA%E7%A1%80/" class="post-category">
+                                    JS基础
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2020/08/01/pyday2/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="python自学day2">
+                        
+                        <span class="card-title">python自学day2</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            day2
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-08-01
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/python%E8%87%AA%E5%AD%A6%E7%AC%94%E8%AE%B0/" class="post-category">
+                                    python自学笔记
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/python%E8%87%AA%E5%AD%A6%E7%AC%94%E8%AE%B0/">
+                        <span class="chip bg-color">python自学笔记</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+    
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+<!-- 代码块折行 -->
+
+<style type="text/css">
+code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }
+</style>
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+    <footer class="page-footer bg-color">
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            <span id="sitetime"></span>
+            <span id="year">2020</span>
+            <a href="https://github.com/zrz15751005135/zrz15751005135.github.io" target="_blank">张睿喆</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">71.7k</span>&nbsp;字
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:410899047@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+    <a href="https://www.facebook.com/xxx" class="tooltipped" target="_blank" data-tooltip="关注我的Facebook: https://www.facebook.com/xxx" data-position="top" data-delay="50">
+        <i class="fab fa-facebook-f"></i>
+    </a>
+
+
+
+    <a href="https://twitter.com/xxx" class="tooltipped" target="_blank" data-tooltip="关注我的Twitter: https://twitter.com/xxx" data-position="top" data-delay="50">
+        <i class="fab fa-twitter"></i>
+    </a>
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=410899047" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 410899047" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+    <a href="https://weibo.com/xxx" class="tooltipped" target="_blank" data-tooltip="关注我的微博: https://weibo.com/xxx" data-position="top" data-delay="50">
+        <i class="fab fa-weibo"></i>
+    </a>
+
+
+
+    <a href="https://www.zhihu.com/xxx" class="tooltipped" target="_blank" data-tooltip="关注我的知乎: https://www.zhihu.com/xxx" data-position="top" data-delay="50">
+        <i class="fab fa-zhihu1">知</i>
+    </a>
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+<script language=javascript>
+    function siteTime() {
+        window.setTimeout("siteTime()", 1000);
+        var seconds = 1000;
+        var minutes = seconds * 60;
+        var hours = minutes * 60;
+        var days = hours * 24;
+        var years = days * 365;
+        var today = new Date();
+        var todayYear = today.getFullYear();
+        var todayMonth = today.getMonth() + 1;
+        var todayDate = today.getDate();
+        var todayHour = today.getHours();
+        var todayMinute = today.getMinutes();
+        var todaySecond = today.getSeconds();
+        /* Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)
+        year - 作为date对象的年份，为4位年份值
+        month - 0-11之间的整数，做为date对象的月份
+        day - 1-31之间的整数，做为date对象的天数
+        hours - 0(午夜24点)-23之间的整数，做为date对象的小时数
+        minutes - 0-59之间的整数，做为date对象的分钟数
+        seconds - 0-59之间的整数，做为date对象的秒数
+        microseconds - 0-999之间的整数，做为date对象的毫秒数 */
+        var t1 = Date.UTC(2020, 04, 01, 00, 00, 00); //北京时间2018-2-13 00:00:00
+        var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+        var diff = t2 - t1;
+        var diffYears = Math.floor(diff / years);
+        var diffDays = Math.floor((diff / days) - diffYears * 365);
+        var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+        var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) / minutes);
+        var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours - diffMinutes * minutes) / seconds);
+        document.getElementById("sitetime").innerHTML = "本站已运行 " +diffYears+" 年 "+diffDays + " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+    }/*因为建站时间还没有一年，就将之注释掉了。需要的可以取消*/
+    siteTime();
+</script>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script src="/js/search.js"></script>
+<script type="text/javascript">
+$(function () {
+    searchFunc("/" + "search.xml", 'searchInput', 'searchResult');
+});
+</script>
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>

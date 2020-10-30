@@ -1,0 +1,3920 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="JS基础自学了解, 我的个人blog">
+    <meta name="description" content="JS基础了解">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>JS基础自学了解 | 我的个人blog</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+    
+    <script src="/libs/jquery/jquery.min.js"></script>
+    
+<meta name="generator" content="Hexo 4.2.0"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"><link rel="alternate" href="/atom.xml" title="我的个人blog" type="application/atom+xml">
+</head>
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper head-container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">我的个人blog</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="" class="waves-effect waves-light">
+
+      
+      <i class="fas fa-list" style="zoom: 0.6;"></i>
+      
+      <span>Medias</span>
+      <i class="fas fa-chevron-down" aria-hidden="true" style="zoom: 0.6;"></i>
+    </a>
+    <ul class="sub-nav menus_item_child ">
+      
+      <li>
+        <a href="/musics">
+          
+          <i class="fas fa-music" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>Musics</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/movies">
+          
+          <i class="fas fa-film" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>Movies</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/books">
+          
+          <i class="fas fa-book" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>Books</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/galleries">
+          
+          <i class="fas fa-image" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>Galleries</span>
+        </a>
+      </li>
+      
+    </ul>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">我的个人blog</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			Contact
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="javascript:;">
+			
+				<i class="fa-fw fas fa-list"></i>
+			
+			Medias
+			<span class="m-icon"><i class="fas fa-chevron-right"></i></span>
+		</a>
+            <ul  style="background:  ;" >
+              
+                <li>   
+				
+                  <a href="/musics " style="margin-left:75px";>
+				  
+				   <i class="fa fas fa-music" style="position: absolute;left:50px" ></i>
+			      
+		          <span>Musics</span>
+                  </a>
+                </li>
+              
+                <li>   
+				
+                  <a href="/movies " style="margin-left:75px";>
+				  
+				   <i class="fa fas fa-film" style="position: absolute;left:50px" ></i>
+			      
+		          <span>Movies</span>
+                  </a>
+                </li>
+              
+                <li>   
+				
+                  <a href="/books " style="margin-left:75px";>
+				  
+				   <i class="fa fas fa-book" style="position: absolute;left:50px" ></i>
+			      
+		          <span>Books</span>
+                  </a>
+                </li>
+              
+                <li>   
+				
+                  <a href="/galleries " style="margin-left:75px";>
+				  
+				   <i class="fa fas fa-image" style="position: absolute;left:50px" ></i>
+			      
+		          <span>Galleries</span>
+                  </a>
+                </li>
+               
+            </ul>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">JS基础自学了解</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        margin: 35px 0 15px 0;
+        padding-left: 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        height: calc(100vh - 250px);
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #toc-content .is-active-link::before {
+        background-color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/JS%E5%9F%BA%E7%A1%80/" class="post-category">
+                                JS基础
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2020-10-30
+                </div>
+                
+
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    27.1k
+                </div>
+                
+
+                
+				
+                
+            </div>
+            
+        </div>
+        <hr class="clearfix">
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h2 id="第一章-走进JavaScript"><a href="#第一章-走进JavaScript" class="headerlink" title="第一章 走进JavaScript"></a>第一章 走进JavaScript</h2><h3 id="1-1认识JavaScript"><a href="#1-1认识JavaScript" class="headerlink" title="1.1认识JavaScript"></a>1.1认识JavaScript</h3><p>主要由三部分组成</p>
+<ol>
+<li>核心（ECMAScript）</li>
+<li>文档对象模型（DOM）</li>
+<li>浏览器对象模型（BOM）</li>
+</ol>
+<h4 id="核心"><a href="#核心" class="headerlink" title="核心"></a>核心</h4><p><code>ECMASCript</code>规定了这门语言的基本组成部分，主要由以下组成</p>
+<ul>
+<li>语法</li>
+<li>类型</li>
+<li>语句</li>
+<li>关键字</li>
+<li>保留字</li>
+<li>操作符</li>
+<li>对象</li>
+</ul>
+<p>有了这些基本组成部分，<code>js</code>就可以完成基本的<strong>逻辑以及数据处理</strong></p>
+<h4 id="文档对象模型（DOM）"><a href="#文档对象模型（DOM）" class="headerlink" title="文档对象模型（DOM）"></a>文档对象模型（DOM）</h4><p>其功能简单来说就是获取我们写的所有的<code>HTML</code>标签，并给标签添加或者删除样式，并可以给标签添加事件（例如点击或者拖动等）。这些功能的实现是基于下面几种接口的：</p>
+<ul>
+<li><strong>DOM遍历和范围：</strong>可以找到页面中所有的标签</li>
+<li><strong>DOM事件：</strong>例如给某个图片添加拖动事件，使图片可以随意拖动</li>
+<li><strong>DOM样式：</strong>可以改变页面中所有元素的样式</li>
+</ul>
+<h4 id="浏览器对象模型（BOM）"><a href="#浏览器对象模型（BOM）" class="headerlink" title="浏览器对象模型（BOM）"></a>浏览器对象模型（BOM）</h4><p><code>BOM</code>只会处理跟浏览器相关的东西，比如：</p>
+<ul>
+<li>弹出新窗口功能</li>
+<li>移动、缩放、关闭浏览器窗口的功能</li>
+<li>给用户提供显示器分辨率的功能</li>
+<li>提供浏览器信息</li>
+</ul>
+<h3 id="1-2在HTML中使用JavaScript"><a href="#1-2在HTML中使用JavaScript" class="headerlink" title="1.2在HTML中使用JavaScript"></a>1.2在HTML中使用JavaScript</h3><h4 id="JavaScript的书写位置"><a href="#JavaScript的书写位置" class="headerlink" title="JavaScript的书写位置"></a><code>JavaScript</code>的书写位置</h4><p>与CSS类似，分为HTML内部和外部</p>
+<h4 id="JavaScript写在HTML内部"><a href="#JavaScript写在HTML内部" class="headerlink" title="JavaScript写在HTML内部"></a><code>JavaScript</code>写在<code>HTML</code>内部</h4><ol>
+<li>使用<code>script</code>标签嵌入<code>JavaScript</code></li>
+</ol>
+<p><code>&lt;script&gt;&lt;/script&gt;</code>标签可以将<code>JavaScript</code>代码嵌入到<code>HTML</code>内部，方式如下</p>
+<pre><code>// script标签嵌入JavaScript代码
+&lt;script&gt;
+    // JavaScript代码
+    let name = "Bob";
+    function(){
+        console.log("我的名字叫："+name);
+    }
+&lt;/script&gt;</code></pre><ol start="2">
+<li>注意<code>script</code>标签在<code>HTML</code>文件中的位置</li>
+</ol>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8" /&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;!-- 正常的html标签一定要写在script标签的前面 --&gt;
+    &lt;div&gt;&lt;/div&gt;
+    &lt;!-- 在body标签的内部并在末尾 --&gt;
+    &lt;script&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre><blockquote>
+<p><code>script</code>标签在<code>HTML</code>文件中的位置很随意，可以说写在哪里都无所谓，但是在学习<code>JavaScript</code>的<code>DOM</code>的时候，如果不注意<code>script</code>标签的址位，会出现意想不到的报错</p>
+</blockquote>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;案例&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;!-- 正常的html标签一定要写在script标签的前面 --&gt;
+    &lt;div&gt;&lt;/div&gt;
+    &lt;!-- 在body标签的内部并在末尾 --&gt;
+    &lt;script&gt;
+      //JavaScript代码
+    &lt;/script&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre><h4 id="JavaScript写在HTML外部"><a href="#JavaScript写在HTML外部" class="headerlink" title="JavaScript写在HTML外部"></a><code>JavaScript</code>写在<code>HTML</code>外部</h4><p>JavaScript代码写在xxx.js文件中，然后由引入标签去引入即可</p>
+<p>这里引入的是script标签，不一样的是在标签上多了一个<code>src</code>参数</p>
+<p>方式如下：<br><code>&lt;script src='index.js'&gt;&lt;/script&gt;</code></p>
+<p>案例：</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;案例&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+    &lt;!-- 写在body的末尾 --&gt;
+    &lt;script src="index.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre><h3 id="1-3JavaScript入门"><a href="#1-3JavaScript入门" class="headerlink" title="1.3JavaScript入门"></a>1.3JavaScript入门</h3><h4 id="JavaScript注释"><a href="#JavaScript注释" class="headerlink" title="JavaScript注释"></a>JavaScript注释</h4><p>包括单行注释可块级注释</p>
+<p>单行注释：</p>
+<pre><code>// </code></pre><p>多行注释：</p>
+<pre><code>/*
+* 注释
+*/
+</code></pre><h4 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h4><p>字符串就是用引号引起来的，可以是单引号也可以是双引号</p>
+<h4 id="console访问控制台"><a href="#console访问控制台" class="headerlink" title="console访问控制台"></a>console访问控制台</h4><p>JavaScript的输出在控制台中显示</p>
+<pre><code>&lt;script&gt;console.log("Hello World");&lt;/script&gt;</code></pre><p>console是访问控制台，log()表示控制台输出信息</p>
+<p>注意，在index.js文件中写JavaScript代码不需要加script标签，只有在HTML代码中才需要加script标签</p>
+<h4 id="模板字符串"><a href="#模板字符串" class="headerlink" title="模板字符串"></a>模板字符串</h4><p>如果要将字符串和变量拼接起来，要用加号去拼接</p>
+<pre><code>let firstName = '胡';
+let lastName = '雪岩';
+
+let say = '大家好，我姓' + firstName + '，名' + lastName;
+
+console.log(say);</code></pre><p>此时我们可以用反引号和占位符$来插入变量，我们改造如上代码为</p>
+<pre><code>let firstName = '胡';
+let lastName = '雪岩';
+
+let say = `大家好，我姓${firstName}，名${lastName}`;
+
+console.log(say);</code></pre><p>案例：</p>
+<pre><code>let number1 = 20;
+let number2 = 10;
+console.log(`两个数的和是：${number1 + number2} 
+两个数的差是：${number1 - number2} 。`);</code></pre><h4 id="三元字符串"><a href="#三元字符串" class="headerlink" title="三元字符串"></a>三元字符串</h4><p>案例：</p>
+<pre><code>let str = `这里是${false ? '浙江' : `江苏-${true ? '南京' : '常州'}`}`;
+
+console.log(str); // 这里是江苏-南京</code></pre><p>使用场景：</p>
+<pre><code>// 定义屏幕的宽度，当然这个宽度是根据window的api去获取的
+let screen = 760;
+
+// 判断屏幕是大屏还是小屏，这里我们认为大于760px的就是大屏
+function isLargeScreen() {
+  return screen &gt; 800;
+}
+
+// 定义元素的排列方式，大屏row排列，小屏column排列
+// 具体什么排列方式，是根据屏幕大小决定的
+let item = {
+  isCollapsed: screen &gt; 800,
+};
+
+// 这里我们就要根据上面的信息来动态的获取类名（多个）
+const classes = `header ${
+  isLargeScreen() ? '' : `icon-${item.isColumn ? 'column' : 'row'}`
+}`;
+
+console.log(classes);</code></pre><p>使用场景二</p>
+<pre><code>let htmlCode = `
+    &lt;img src='' /&gt;
+    ${
+      true
+        ? `&lt;img src='https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1906469856,4113625838&amp;fm=26&amp;gp=0.jpg' /&gt;`
+        : `&lt;img src='' /&gt;`
+    }
+`;
+console.log(htmlCode);
+// &lt;img src='' /&gt;
+//    &lt;img src='https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1906469856,4113625838&amp;fm=26&amp;gp=0.jpg' /&gt;</code></pre><h2 id="第二章-基础数据类型"><a href="#第二章-基础数据类型" class="headerlink" title="第二章 基础数据类型"></a>第二章 基础数据类型</h2><h3 id="2-1变量"><a href="#2-1变量" class="headerlink" title="2.1变量"></a>2.1变量</h3><p>格式：</p>
+<p><img src="https://qgt-document.oss-cn-beijing.aliyuncs.com/P3-4-HTML-CSS/1/2j/%E5%8F%98%E9%87%8F%E8%A7%A3%E9%87%8A.png" alt="image"></p>
+<blockquote>
+<p>注意：let声明变量的时候，不能重复声明同名变量</p>
+</blockquote>
+<p>例如：</p>
+<pre><code>let number = 20;
+let number = 30;</code></pre><p><strong>使用const定义变量</strong><br><img src="https://qgt-document.oss-cn-beijing.aliyuncs.com/P3-4-HTML-CSS/1/2j/const.png" alt="image"></p>
+<p>异同点：</p>
+<ul>
+<li>let定义的变量可以多次重新赋值而const只允许进行一次赋值</li>
+<li>let定义变量的时候，可以不赋予初值，const必须赋予初值，否则会报错</li>
+</ul>
+<p>案例：</p>
+<pre><code>const school = '杭州一中';
+let name1 = '李天宇';
+let name2 = '刘芳';
+let name3 = '李锐';
+
+let age1 = 12;
+let age2 = 13;
+
+let sex1 = '男';
+let sex2 = '女';
+
+let class1 = '六年级三班';
+let class2 = '六年级四班';
+
+console.log("姓名\t年龄\t\t性别\t\t班级\t\t\t\t学校\n");
+console.log(`${name1}\t${age1}\t\t${sex1}\t\t${class1}\t\t\t\t${school}\n`);
+console.log(`${name2}\t${age2}\t\t${sex2}\t\t${class1}\t\t\t\t${school}\n`);
+console.log(`${name3}\t${age2}\t\t${sex1}\t\t${class2}\t\t\t\t${school}\n`);
+</code></pre><h3 id="2-2数值类型"><a href="#2-2数值类型" class="headerlink" title="2.2数值类型"></a>2.2数值类型</h3><p>常见的数值类型有整数、浮点数盒NaN</p>
+<h4 id="整数"><a href="#整数" class="headerlink" title="整数"></a>整数</h4><p>列举十六进制：</p>
+<pre><code>let number1 = 0x010; // 十六进制的16
+let number2 = 0x11; // 十六进制的17
+let number3 = 0x12; // 十六进制的18</code></pre><h4 id="浮点数"><a href="#浮点数" class="headerlink" title="浮点数"></a>浮点数</h4><p>常见：</p>
+<pre><code>let floatNumber1 = 2.0;
+let floatNumber2 = 0.4;
+let floatNumber3 = .2; // 正确，但是不推荐</code></pre><p>科学计数法：</p>
+<pre><code>let bigNumber = 9.43e7; // 等于94300000
+let smallNumber = 3e-7; // 等于0.0000003</code></pre><p>浮点数精度丢失现象：</p>
+<p>例如，0.1＋0.2的结果不是0.3</p>
+<pre><code>let number1 = 0.1;
+let number2 = 0.2;
+console.log(number1 + number2); // 0.30000000000000004</code></pre><p>因此以后我们不要使用此种条件判断</p>
+<pre><code>if (a + b == 0.3) {
+  console.log('输出成功');
+}</code></pre><p><strong>NaN</strong></p>
+<p>即非数值</p>
+<p>简单来说，就是两个变量执行了一个运算,例如+ - * / 当中的一种，返回的结果仍然是数字类型，但是执行的数学运算没有成功.例如: </p>
+<pre><code>let a = 'number';
+let b = 10;
+let c = a / b;
+console.log(c); // NaN
+console.log(typeof c); // number</code></pre><blockquote>
+<p>上面的typeof是判断类型的，最后返回的number表示的是数字类型</p>
+</blockquote>
+<p>回头看一下最开始的定义</p>
+<ol>
+<li>执行了一个运算这里执行了除法运算</li>
+<li>返回的结果仍然是数字类型,可以从输出结果看是number类型</li>
+<li>执行的数学运算没有成功,本案例中一一个字符串除以一个数字，的确是无法进行运算的.</li>
+</ol>
+<p>通过这个定义我们还可以知道其他的一些出现 NaN的情况，如:</p>
+<ol>
+<li>0/0</li>
+<li>字符串乘以数字</li>
+<li>NaN<br>和任何数进行运算例如</li>
+</ol>
+<h3 id="2-3类型转换-字符串拼接"><a href="#2-3类型转换-字符串拼接" class="headerlink" title="2.3类型转换/字符串拼接"></a>2.3类型转换/字符串拼接</h3><p>类型转换主要包括<strong>隐式转换和强制类型转换</strong></p>
+<h4 id="隐式转换"><a href="#隐式转换" class="headerlink" title="隐式转换"></a>隐式转换</h4><ul>
+<li><strong>数字字符串加数字,数字隐式转换为字符串</strong></li>
+</ul>
+<pre><code>console.log(20+'20'); // 2020
+// 调换位置亦可
+console.log('20'+20); // 2020</code></pre><ul>
+<li><strong>数字字符串与数字做非加法运算,字符串隐式转换为数字</strong></li>
+</ul>
+<pre><code>console.log('20'-10); // 10
+console.log(10*'10'); // 100
+console.log(10/'2'); // 5</code></pre><ul>
+<li><strong>数字字符串与数字字符串做非加法运算隐式转换为数字</strong></li>
+</ul>
+<pre><code>console.log('20'-'10'); // 10
+console.log('20'/'10'); // 2
+console.log('20'*'10'); // 200</code></pre><h4 id="强制类型转换"><a href="#强制类型转换" class="headerlink" title="强制类型转换"></a>强制类型转换</h4><p>强制类型转换我们需要学习两个,parselnt(将小数字符串、整数字符串或者小数转换为整数)、parseFloat(将小数字符 串转换为小数).</p>
+<p>parselnt</p>
+<ul>
+<li>整数字符串转换为整数</li>
+</ul>
+<pre><code> let number = '20';
+//  将number转换为整数类型
+let converNumber = parseInt(number);
+console.log(converNumber); // 20
+// 判断转换后的数据类型
+console.log(typeof converNumber); // number</code></pre><ul>
+<li>小数字符串转换为整数</li>
+</ul>
+<pre><code>let number = '20.5';
+let converNumber = parseInt(number);
+console.log(converNumber); // 20  不足21一律按照20算
+console.log(typeof converNumber); // number</code></pre><ul>
+<li>小数转换为整数</li>
+</ul>
+<pre><code>let number = 20.5;
+let converNumber = parseInt(number);
+console.log(converNumber); // 20  </code></pre><p>parseFloat</p>
+<p>将小数字符串转换为小数</p>
+<pre><code>let number = '20.9';
+let converNumber = parseFloat(number);
+console.log(converNumber); // 20.9
+console.log(typeof converNumber); // number</code></pre><h4 id="字符串拼接"><a href="#字符串拼接" class="headerlink" title="字符串拼接"></a>字符串拼接</h4><ul>
+<li>字符串拼接使用的符号是+ (加号)</li>
+<li>字符串用引号引起来，单双引不做要求,但是要对应，不能是前半部分单引号,后半部分双引号，如(“).</li>
+<li>变量名不能用引号,如果变量名在字符串中间,可以用加号和引号区分开，例如(“我的名字: “+name +<br>. “,谢谢”).</li>
+</ul>
+<pre><code>console.log('转换后的结果是：' + converNumber);
+console.log('转换后的数字类型是：' + typeof converNumber + '类型');</code></pre><p>字符串拼接也可以在变量中使用</p>
+<pre><code>let age = 20;
+let name = '小李子';
+let output = '我叫：'+name+',今年'+age+'岁了';
+console.log(output);</code></pre><h3 id="2-4运算符"><a href="#2-4运算符" class="headerlink" title="2.4运算符"></a>2.4运算符</h3><h4 id="相等-全等"><a href="#相等-全等" class="headerlink" title="相等/全等"></a>相等/全等</h4><pre><code>let number1 = '45';
+let number2 = 45;
+console.log(number1 == number2); // true</code></pre><p>我们之前学习过隐式类型转换,在这里做比较的时候会首先将45’转换为45,然后再去跟number2比较，这就等同于下面的代码:</p>
+<pre><code>let number1 = 45;
+let number2 = 45;
+console.log(number1 == number2);</code></pre><p>如果是全等就不一样了</p>
+<pre><code>let number1 = '45';
+let number2 = 45;
+console.log(number1 === number2); // false</code></pre><p>由于相等错在类型转换问题，为了保持代码中数据类型的完整性推荐使用全等</p>
+<h4 id="自增自减"><a href="#自增自减" class="headerlink" title="自增自减"></a>自增自减</h4><p>案例：</p>
+<pre><code>let balloon = 10;
+let money = 0;
+// 卖出去第一个
+balloon--; // 9
+money++; // 1
+
+// 卖出去第二个
+balloon--; // 8
+money++; // 2
+
+// .....
+// 以此类推</code></pre><pre><code>let balloon = 10;
+let money = 0;
+
+balloon--;
+money++;
+console.log('第一次递减后的结果：' + balloon);
+console.log('第一次递增后的结果：' + money);
+
+balloon--;
+money++;
+console.log('第二次递减后的结果：' + balloon);
+console.log('第二次递增后的结果：' + money);</code></pre><h2 id="第三章-布尔类型-条件判断"><a href="#第三章-布尔类型-条件判断" class="headerlink" title="第三章 布尔类型/条件判断"></a>第三章 布尔类型/条件判断</h2><h3 id="3-1布尔类型"><a href="#3-1布尔类型" class="headerlink" title="3.1布尔类型"></a>3.1布尔类型</h3><h4 id="布尔类型"><a href="#布尔类型" class="headerlink" title="布尔类型"></a>布尔类型</h4><p>你可以把true、false理解为一个值，它和字符串、数值一样都是作为一个值来赋给变量的，例如:</p>
+<pre><code>let flag = true;
+let allow = false;</code></pre><p>上面的代码表示定义了两个变量分别赋值了<br><code>true</code>、<code>false</code></p>
+<h4 id="布尔运算"><a href="#布尔运算" class="headerlink" title="布尔运算"></a>布尔运算</h4><h5 id="基本布尔运算"><a href="#基本布尔运算" class="headerlink" title="基本布尔运算"></a>基本布尔运算</h5><pre><code>let number1 = 45;
+let number2 = 45;
+let isEqual = number1 === number2;
+console.log(isEqual);</code></pre><pre><code>let a = 12;
+let b = 3;
+
+console.log('a &gt; b结果：' + (a &gt; b)); // true
+
+console.log('a &gt;= b 结果：' + (a &gt;= b)); // true
+
+console.log('a &lt; b 结果：' + (a &lt; b)); // false
+
+console.log('a &lt;= b 结果：' + (a &lt;= b)); // false
+
+console.log('a !== b 结果：' + (a !== b)); // true
+
+let c = a &gt; b;
+// 非,表示取反,如果变量值是true,取反后是false
+console.log('!c 结果：' + !c); // false</code></pre><h5 id="两种布尔运算的简便写法"><a href="#两种布尔运算的简便写法" class="headerlink" title="两种布尔运算的简便写法"></a>两种布尔运算的简便写法</h5><table>
+<thead>
+<tr>
+<th>数据类型</th>
+<th>转换为true的值</th>
+<th>转换为false的值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>字符串</td>
+<td>任何非空字符串</td>
+<td>“”(空字符串)</td>
+</tr>
+<tr>
+<td>数字</td>
+<td>任何非零数字</td>
+<td>0</td>
+</tr>
+</tbody></table>
+<p>例子：</p>
+<pre><code>let str = 'Bob';
+
+if (str) {
+  console.log('代码被执行了'); // 会被执行
+}
+// 上面代码等同于
+if (str !== '') {
+  console.log('代码被执行了'); // 会被执行
+}</code></pre><h5 id="逻辑或-逻辑与"><a href="#逻辑或-逻辑与" class="headerlink" title="逻辑或/逻辑与"></a>逻辑或/逻辑与</h5><pre><code>let switch1 = true; // 表示开关1是闭合的
+let switch2 = false; // 表示开关2是打开的
+
+let result = switch1 || switch2; // 如果结果是true,就表示灯亮
+console.log(result);</code></pre><pre><code>let switch1 = true; // 表示开关1是闭合的
+let switch2 = false; // 表示开关2是打开的
+
+let result = switch1 &amp;&amp; switch2; // 如果结果是false,就表示灯灭
+console.log(result);</code></pre><h3 id="3-2条件判断"><a href="#3-2条件判断" class="headerlink" title="3.2条件判断"></a>3.2条件判断</h3><h4 id="if"><a href="#if" class="headerlink" title="if"></a>if</h4><p>不再举例</p>
+<h4 id="switch"><a href="#switch" class="headerlink" title="switch"></a>switch</h4><pre><code>let weather = 'rain';
+
+switch (weather) {
+  case 'snow':
+    console.log('堆雪人');
+    break;
+  case 'windy':
+    console.log('呆在家里');
+    break;
+  case 'rain':
+    console.log('雨中漫步');
+    break;
+  default:
+    console.log('工作');
+    break;
+}</code></pre><h2 id="第四章-数组"><a href="#第四章-数组" class="headerlink" title="第四章 数组"></a>第四章 数组</h2><h3 id="4-1认识数组"><a href="#4-1认识数组" class="headerlink" title="4.1认识数组"></a>4.1认识数组</h3><p>在<code>JavaScript</code>中,数组的表示方法是一个方括号<code>( [] )</code></p>
+<p>数组内容与内容之间要用逗号隔开</p>
+<pre><code>[1,2,3,4]</code></pre><p>数组有一个很有意思的特性就是它可以存放不同类型的值,例如下面的数<br>组中，就存放了各种不同类型的数据(也可以叫值).</p>
+<pre><code>[1,'第一名',true]</code></pre><p>更可以存放数组~</p>
+<pre><code>[1,'第一名',true,[2,'第二名',false]]</code></pre><p>存储数组的变量与存储值的变量是一样的， 因为你完全可以将数组理解为一<br>个“胖”一点的变量,下面我们将上面的数组存储在一个变量中:</p>
+<pre><code>let arr = [1,'第一名',true,[2,'第二名',false]];</code></pre><p>另一种创建数组的方式：</p>
+<pre><code>// 创建一个空数组并赋值
+let arr = new Array();
+
+// 创建一个有内容的数组
+let arr2 = new Array(1,2,'arr');</code></pre><h4 id="数组的索引："><a href="#数组的索引：" class="headerlink" title="数组的索引："></a>数组的索引：</h4><pre><code>// 定义数组
+let arr = ['张三','李四','王五','Lisa'];
+// 定义一个变量来接收取到的值
+let str = arr[2];
+// 输出取到的值
+console.log(str); // 王五</code></pre><p>修改值</p>
+<pre><code>let arr = ['张三','李四','王五','Lisa'];
+// 修改'王五'为'Tom'
+arr[2] = 'Tom';
+// 输出数组
+console.log(arr);</code></pre><p>其他案例：</p>
+<pre><code>let arr = ['张三','李四','王五','Lisa'];
+
+// 修改值
+arr[0] = 'Three';
+arr[1] = 'Four';
+arr[2] = 'Five';
+arr[3] = '丽莎';
+console.log(arr);
+
+// 添加值
+arr[4] = 'Polly';
+
+console.log(arr);</code></pre><h3 id="4-2数组元素的操作（增删改查）"><a href="#4-2数组元素的操作（增删改查）" class="headerlink" title="4.2数组元素的操作（增删改查）"></a>4.2数组元素的操作（增删改查）</h3><h4 id="增"><a href="#增" class="headerlink" title="增"></a>增</h4><p>push方法：在数组末尾添加值：</p>
+<pre><code>let schools = ['清华大学', '北京大学', '浙江大学', '同济大学'];
+
+// 在末尾添加“河海大学”
+schools.push('河海大学');
+console.log(schools); // 清华大学','北京大学','浙江大学','同济大学','河海大学'</code></pre><p>添加多个值:</p>
+<pre><code>schools.push('河海大学');
+schools.push('大连理工大学');
+schools.push('哈尔滨工业大学');
+
+// 上述三步操作可以一次性完成
+schools.push('河海大学', '大连理工大学', '哈尔滨工业大学');</code></pre><blockquote>
+<p>unshift方法（从头加）</p>
+</blockquote>
+<h4 id="删"><a href="#删" class="headerlink" title="删"></a>删</h4><p>删除的方法和增加的方法相对应,分为从前往后删和从后往前删除,首先要说的是从后往前删除的方法</p>
+<p>pop方法（从后往前删除）</p>
+<pre><code>let schools = ['清华大学', '北京大学', '浙江大学', '同济大学'];
+
+// 在末尾添加“河海大学”
+schools.push('河海大学');
+console.log(schools); // 清华大学','北京大学','浙江大学','同济大学','河海大学'
+
+// 从末尾删除一个元素
+schools.pop();
+console.log(schools); // 清华大学','北京大学','浙江大学','同济大学'</code></pre><p><strong>shift方法（从前往后删除）</strong></p>
+<p><strong>splice方法（删除指定位置的值）</strong></p>
+<p>splice方法在括号内可以写一个参数,也可以写两个参数,具体作用我们用案例来解释一下.</p>
+<p>一个参数：</p>
+<p>表示删除从指定位置开始到结束位置的所有元素并返回被删除的元素</p>
+<pre><code>let schools = ['清华大学', '北京大学', '浙江大学', '同济大学'];
+
+// 删除从下标为1的位置到结束位置的值
+let deleteSchools = schools.splice(1);
+// 删除之后，原数组中的剩余内容
+console.log(schools); // ["清华大学"]
+// 删除的内容
+console.log(deleteSchools); // ["北京大学", "浙江大学", "同济大学"]</code></pre><p>两个参数：</p>
+<pre><code>let schools = ['清华大学', '北京大学', '浙江大学', '同济大学'];
+
+// 从下标为0开始,往后数两个元素,删除
+let deleteSchools = schools.splice(0, 2);
+console.log(schools); // ['浙江大学', '同济大学']
+console.log(deleteSchools); // ['清华大学', '北京大学']</code></pre><h4 id="改"><a href="#改" class="headerlink" title="改"></a>改</h4><p><strong>splice方法(需改指定位置的元素)</strong></p>
+<p>splice方法难理解一点，这里需要讲解一下，splice方法括号里需要添加三个值(也叫参数).分别代表三个意思，先来解释一下这三个值 :</p>
+<ol>
+<li>第一个值整数类型表示起始位置</li>
+<li>第二个值整数类型示步长(往后选几个元素,1代表往后选1个元素)</li>
+<li>第三个参数要替换的数组的值</li>
+</ol>
+<p><img src="https://qgt-document.oss-cn-beijing.aliyuncs.com/P3-4-HTML-CSS/4/splice.png" alt="image"><br>可以看到，数组的下标不是在正下方,而是在左下角，实际上,正确的下标就是应该在左下角,下标其实类似于公交车的站点.</p>
+<p>案例1：</p>
+<pre><code>let schools = ['清华大学', '北京大学', '浙江大学', '同济大学'];
+
+schools.splice(2, 0, '江西理工大学');
+console.log(schools); //  ["清华大学", "北京大学", "江西理工大学", "浙江大学", "同济大学"]</code></pre><p>在这个案例中，splice方法的第一个参数是2,第二个参数是0，也就是从下标2开始，往后走0个步长，然后用“江西理工大学”替换这0个步长里的内容.</p>
+<p>经过一系列操作以后，给人的感觉貌似是在”北京大学”和”浙江大学”之间添加了“江西理工大学”,其实不然，splice的意义其实还是替换的意思.</p>
+<p>案例2：</p>
+<pre><code>let schools = ['清华大学', '北京大学', '浙江大学', '同济大学'];
+
+schools.splice(2, 1, '江西理工大学');
+console.log(schools); // ["清华大学", "北京大学", "江西理工大学", "同济大学"]</code></pre><p>案例3：</p>
+<pre><code>let schools = ['清华大学', '北京大学', '浙江大学', '同济大学'];
+
+schools.splice(2, 2, '江西理工大学');
+console.log(schools); // ["清华大学", "北京大学", "江西理工大学"]</code></pre><h4 id="查"><a href="#查" class="headerlink" title="查"></a>查</h4><p>只学习indexOf()</p>
+<p>一个参数：<br>比如说我们要查询schools数组内是否有某个学校:</p>
+<pre><code>let schools = ['清华大学', '北京大学', '浙江大学', '同济大学'];
+
+let result = schools.indexOf('大连理工');
+console.log(result); // -1</code></pre><blockquote>
+<p>返回值是-1表示没找到，非-1表示找到元素的下标</p>
+</blockquote>
+<p>两个参数：</p>
+<p>第一个参数是我们要找的值，第二个参数是开始寻找的位置,比如在一个参数的情况下我们来寻找“浙江大学”.</p>
+<pre><code>let schools = ['清华大学', '北京大学', '浙江大学', '同济大学'];
+
+let result = schools.indexOf('浙江大学');
+console.log(result); // 2 表示“浙江大学”所在的下标为2</code></pre><p>结果是2，表示找到了。但是当使用第二个参数规定开始寻找的位置,就未必能找到了。例如:</p>
+<pre><code>let schools = ['清华大学', '北京大学', '浙江大学', '同济大学'];
+
+let result = schools.indexOf('浙江大学', 3);
+console.log(result); // -1</code></pre><p>因为我们是从下标为3的位置(同济大学)开始寻找的，所以找不到。</p>
+<p>所以，使用第二个参数的时候，一定要小心哦。</p>
+<p>案例：</p>
+<pre><code>let mobiles = ["华为Mate30", "华为P30", "华为nova 6 5G", "华为nova4e"]
+
+mobiles.unshift("华为Mate30 Pro");
+//console.log(mobiles);
+
+let deletemobiles = mobiles.splice(2,1);
+console.log(mobiles);</code></pre><h3 id="4-3二维数组"><a href="#4-3二维数组" class="headerlink" title="4.3二维数组"></a>4.3二维数组</h3><p>我们知道一维数组是一个方括号([]),那么二维数组就是在一维数组内继续添加方括号( [] ),即数组内部继续添加数组</p>
+<p>我们在内部再多增加几个数组,改变一下摆放的格局，是不是就像大格子里面有小格子,小格子里面有内容?而小格子就是大格子的内容。假设数组名为arr</p>
+<pre><code>[
+  [2, '第二名', false],
+  [2, '第二名', false],
+  [2, '第二名', false],
+];</code></pre><p>如何取值？</p>
+<p>第一步,取出数组内部的数组</p>
+<pre><code>1et arr2 = arr[0] ;
+console.1og(arr2); // [2, '第二名',false]</code></pre><p>第二步,取出arr2内部的元素,比如说我们要取出2:</p>
+<pre><code>let number = arr2[0];
+console . log(number); // 2</code></pre><p>第三步，将两步合成一步:</p>
+<pre><code>let number = arr[0][0];
+console.1og(number); // 2</code></pre><p>到这里我们就完成了二维数组的一次取值过程.</p>
+<p>如何存值呢？</p>
+<pre><code>// 定义一个一维数组
+let arr1 = [];
+// 给一维数组里面添加数据
+arr1[0] = '宇智波佐助';
+arr1[1] = '男';
+arr1[2] = '下忍';
+arr1[3] = 12;
+console.log(arr1); // ['宇智波佐助','男','下忍',12]
+// 给一维数组里面添加数据
+arr2 = [];
+arr2[0] = '春野樱';
+arr2[1] = '女';
+arr2[2] = '下忍';
+arr2[3] = 12;
+console.log(arr2); // ['春野樱','女','下忍',12]
+// 给一维数组里面添加数据
+arr3 = [];
+arr3[0] = '漩涡鸣人';
+arr3[1] = '男';
+arr3[2] = '下忍';
+arr3[3] = 12;
+console.log(arr3); // ['漩涡鸣人','男','下忍',12]
+// 将一维数组添加到另一个数组中，形成二维数组
+let arr = [];
+arr[0] = arr1;
+arr[1] = arr2;
+arr[2] = arr3;
+console.log(arr);
+// [
+//   ['宇智波佐助', '男', '下忍', 12],
+//   ['春野樱', '女', '下忍', 12],
+//   ['漩涡鸣人', '男', '下忍', 12],
+// ]</code></pre><p><code>arr[0] = [];</code>表示给一维数组里面添加数组，这一步很关键，如果不在一维数组里添加数组[]就直接使用<code>arr[0][0]</code> 会报错</p>
+<p>因为你做的arr[0]操作获取到的数据是undefined，再去执行arr[0][0]就是无效操作了,因为没有选到数组，还做数组操作，就是错误的.</p>
+<p>还可以使用push方法来给数组赋值</p>
+<pre><code>let arr = [];
+arr.push([]);
+arr[0].push('宇智波佐助');
+arr[0].push('男');
+arr[0].push('下忍');
+arr[0].push(12);
+
+arr.push([]);
+arr[1].push('春野樱');
+arr[1].push('女');
+arr[1].push('下忍');
+arr[1].push(12);
+
+arr.push([]);
+arr[2].push('漩涡鸣人');
+arr[2].push('男');
+arr[2].push('下忍');
+arr[2].push(12);
+
+console.log(arr);</code></pre><p>根据故事的进展,宇智波佐助出逃,佐井进入了小队，所以我们需要将宇智波佐助的信息替换成佐井.<br>做法和一-维数组类似:</p>
+<pre><code>arr[0][0] =‘佐井';
+arr[0][1] = :男';
+arr[0][2] =‘下忍';
+arr[0][3] = 14;</code></pre><p>或者你比较懒,可以直接一步到位:</p>
+<pre><code>arr[0] = ['佐井’，'男’，，下忍'，14];</code></pre><p>因为这是替换了一个人，所以修改个人信息的时候，用第二种方式比较简单,大多数情况下都是变更部分信息比如说参加中忍考试以后，两个升为中忍,<br>只能去使用第一种方法来修改信息:</p>
+<pre><code>// 修改佐助等级为中忍
+arr[0][2] = '中忍';
+// 修改春野樱等级为中忍
+arr[1][2] = '中忍';</code></pre><p>案例：<br>某乡村小学有三个年级，每个年级一个班，每个班有几位学生,用二维数组表示如下:<br>let school =[</p>
+<pre><code>['胡多多'，‘孙萌’，‘李宇池'，'赵梓萱],
+['沈广玥’，‘彭紫阳'，‘王桢',
+胡家如'],
+['陈成’，'邹思唯’， '储正欢'，'张敏'],
+];</code></pre><p>从数组中取出”沈广玥”的名字，并在控制台输出</p>
+<p>“赵梓萱”因为转学的原因，需要将她的名字去掉</p>
+<p>在3班([“陈成”,”邹思唯”,”储正欢”,”张敏”])名单的末尾添加一个新生—”孙思宇</p>
+<p>最后在控制台输出整个二维数组</p>
+<pre><code>let school = [["胡多多", "孙萌", "李宇池", "赵梓萱"], ["沈广玥", "彭紫阳", "王桢", "胡家如"], ["陈成", "邹思唯", "储正欢", "张敏"]];
+
+console.log(school[1][0]);
+let school0 = school[0];
+let deleteschool = school0.splice(3);
+
+school[2].push("孙思宇");
+console.log(school);</code></pre><h2 id="第五章-循环"><a href="#第五章-循环" class="headerlink" title="第五章 循环"></a>第五章 循环</h2><h3 id="5-1for循环"><a href="#5-1for循环" class="headerlink" title="5.1for循环"></a>5.1for循环</h3><p>写法：<br><img src="https://document.youkeda.com/P3-4-HTML-CSS/5/1.jpg" alt="image"></p>
+<p>我们来打印佩奇一家的所有成员：</p>
+<pre><code>let peppaFamily = ['佩奇', '乔治', '猪妈妈', '猪爸爸'];
+
+for(let i = 0; i &lt; peppaFamily.length; i++) {
+  console.log(peppaFamily[i]);
+}
+// 输出:
+// 佩奇
+// 乔治
+// 猪妈妈
+// 猪爸爸</code></pre><p>其他写法：for…in和 for…of的写法</p>
+<ol>
+<li>for…in循环<pre><code>let peppaFamily = ['佩奇', '乔治', '猪妈妈','猪爸爸'];
+</code></pre></li>
+</ol>
+<p>for(let i in peppaFamily) {<br>  console.log(peppaFamily[i]);<br>}<br>// 输出:<br>// 佩奇<br>// 乔治<br>// 猪妈妈<br>// 猪爸爸</p>
+<pre><code>for...in循环会访问数组中的每-项，这里的i对应数组中每一项的下标。
+&gt; for..in不但可以循环数组，还能循环对象。
+
+2. for..of循环</code></pre><p>let peppaFamily = [‘佩奇’, ‘乔治’, ‘猪妈妈’,’猪爸爸’];</p>
+<p>for(let item of peppaFamily) {<br>  console.log(item);<br>}<br>// 输出:<br>// 佩奇<br>// 乔治<br>// 猪妈妈<br>// 猪爸爸</p>
+<pre><code>for..of循环也会访问数组中的每一项, 这里的item对应数组中每一项。
+ &gt; 两者的区别:for..in循环遍历的结果是数组元素的下标，而for..of遍历的结果是元素的值。
+
+### 5.2
+
+#### while循环
+![image](https://document.youkeda.com/P3-4-HTML-CSS/5/2.jpg)
+
+初始条件: i = 0;
+
+循环条件: i &lt; 4;
+
+执行内容: console.1og(i); i++; 
+
+更新条件的表达式: i++;
+
+&gt; 注意:初始条件写在while循环外，更新条件的表达式写在执行内容里。
+
+案例：
+</code></pre><p>let peppaFriends = [‘小狗丹尼’, ‘小猫坎迪’, ‘狐狸弗雷迪’, ‘小狼温蒂’, ‘大象艾米丽’, ‘小兔瑞贝卡’, ‘小羊苏西’];</p>
+<p>let i = 0;<br>while (i &lt; peppaFriends.length ) {<br>  console.log(peppaFriends[i]);<br>  i++;<br>}</p>
+<pre><code>“当"i &lt; peppaFriends.length (即i &lt; 7) 时,执行
+console.log(peppaFriends[i)，并将i加1。
+
+一共执行7次，在最后一次循环中，i=6,符合while的判断条件，执行console语句打出最后一个数组元素， 并将i加至7。
+
+到此，已打印出所有的佩奇小伙伴了。
+
+#### do...while循环
+
+while循环有两种写法: while 和do..while。
+
+两者的区别在于先判断还是先执行:
+
+写法一: while 先判断，后执行。
+
+写法二: do...while, 先"do" (执行)，后while (判断)。
+![image](https://document.youkeda.com/P3-4-HTML-CSS/5/5.jpg)
+
+&gt; 同样的:初始条件写在while循环外，更新条件的表达式写在执行内容里。
+
+但因为do...while是先执行后判断的，所以一定会执行一次do之后的内容。比如:
+</code></pre><p>let i = 0;</p>
+<p>do {<br>  console.log(i); // 输出：0<br>  i++;<br>} while (i &lt; 0 );</p>
+<pre><code>
+#### 5.3跳出循环（birek和continue）
+
+</code></pre><p>let num = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765, 10946, 17711, 28657, 46368];</p>
+<p>for(let i = 0;i &lt; num.length;i++) {<br>  if (num[i]%5 === 0) {<br>    console.log(num[i]);<br>    // 用 break 跳出循环<br>    break;<br>  }<br>}</p>
+<p>// 循环之后的语句<br>console.log(“循环之后的语句”);</p>
+<pre><code>break的作用就是跳出循环，不管循环有没有结束都不会再继续下去，而是直接执行循环之后的语句。
+
+如果我们要把数组中所有不能被5整除的元素做统一处理，比如除以5并打印，那么我们在遇到能被5整除的数字时，应该不作处理直接进行下一次循环。
+
+跳过循环中的某一次迭代，我们可以使用"continue"。
+</code></pre><p>let num = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765, 10946, 17711, 28657, 46368];</p>
+<p>for(let i = 0;i &lt; num.length;i++) {<br>  if (num[i]%5 === 0) {<br>    // 用 continue 跳出符合条件的这一次迭代<br>    console.log(“跳过了第” + (i + 1) + “个数：” + num[i]);<br>    continue;<br>  }<br>  const handledNum = num[i] / 5;<br>  console.log(handledNum);<br>}</p>
+<p>// 循环之后的语句<br>console.log(“循环之后的语句”);</p>
+<pre><code>
+区别：
+
+break是终止整个循环,而continue是结束当前迭代，进入下一次迭代，并不会终止循环。
+
+案例：
+</code></pre><p>let num = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765, 10946, 17711, 28657, 46368]</p>
+<pre><code>请用for循环找到最后一个17整除的数字并打印该数字。
+</code></pre><p>let num = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765, 10946, 17711, 28657, 46368];</p>
+<p>let num1 =[];</p>
+<p>let count = num.length;</p>
+<p>for(let i = 0; i &lt; num.length; i++){<br>  num1[i] == num[count-i];<br>}</p>
+<p>for(let i = 0; i &lt; num.length; i++){<br>  if(num[i] % 17 == 0){<br>    console.log(num[i]);<br>  }<br>}</p>
+<pre><code>## 第六章 函数
+### 6.1函数概述
+
+函数是一段可以反复调用的代码块，往往能够实现一个特定的功能。它可以解决代码重复的问题。在JavaScript中，函数是头等(first-class)对象，有时我们也可称其为方法。
+
+
+**获取随机函数**
+
+下面这句代码中的Math.random()就是js的内置函数。Math是一个内置对象，用于执行数学任务。
+</code></pre><p>const num = Math.random();</p>
+<pre><code>
+通过.上面这行代码，我们可以获得-个范围在[0, 1)之间的随机数。即从0 (包括0)往上,但是不包括1 (排除1)。
+
+如果我们要获取一一个三位数随机数，即范围在[100, 1000) 之间，那么我们可以这么做:
+
+1. 先获取[0, 1000)之间的随机数:
+
+```const num = Math. random() * 1000 ;```
+2. 再获取[100, 1000)之间的随机数
+
+要获取[100, 1000)的数，那么Math.random()应该属于[0.1, 1)。
+
+我们处理一下:</code></pre><p>// num1的范围是[0.1, 1)<br>const num1 = Math. random() * 0.9 + 0.1;<br>// num2的范围是[100， 1000)<br>const num2 = Math. floor(num1 * 1000);<br>console.log(num2);</p>
+<pre><code>&gt; Math.floor(x)是js内置方法,返回于x的最大整数。比如，Math.floor(2.3)返回2, Math.floor(4.9) 返迥4。
+
+### 6.2自定义函数
+
+
+#### 函数的声明
+
+##### 1.用function声明
+![image](https://document.youkeda.com/P3-4-HTML-CSS/6/1.jpg)
+
+要注意，用function命令声明函数有四个东西缺一不可: 
+1. 关键词"function" ;
+2. 函数名"print"，当然，这个名称是自己取的; 
+3. 函数名之后的小括号”0”;
+4. 包裹函数体用的大括号"{}”，"{"中可以没有代码;
+
+调用：
+</code></pre><p>print(); // 调用格式为：函数名 + ()</p>
+<pre><code>
+##### 2.用函数表达式声明
+![image](https://document.youkeda.com/P3-4-HTML-CSS/6/2.jpg)
+
+这种写法将一个匿名函数赋值给变量。赋值等号右边为匿名函数,又称函数表达式。
+
+注意，采用函数表达式声明函数时，function 命令后面不带有函数名。
+
+调用的时候和用function命令声明的函数调用一样,函数名+ ()。
+
+这里的函数名指的是变量名。
+</code></pre><p>print();</p>
+<pre><code>
+
+案例</code></pre><p>let print = function() {<br>  console.log(“JavaScript 真有趣”);<br>};</p>
+<p>print();<br>print();</p>
+<pre><code>es6中函数表达式声明可以用箭头函数简写为:
+</code></pre><p>let print = () =&gt; {<br>console.log(“JavaScript真有趣”);<br>};</p>
+<pre><code>
+**函数声明的提升**
+
+采用function命令声明函数时，整个函数会被提升到代码头部。所以,下面的代码不会报错:</code></pre><p>f();<br>function f() {}</p>
+<pre><code>在上面的代码中，看起来函数f的调用在前，声明在后，但其实因为用function命令声明函数时函数声明会被提升到代码头部，所以上面的代码相当于:</code></pre><p>//被提升到头部<br>function f() {}<br>f();</p>
+<pre><code>但是用函数表达式声明函数的时候不存在函数声明提升，编译的时候就会报错。
+**两种声明方式的区别**
+
+1. 结尾的大括号后是否需要加”:”:
+- function命令声明:结尾的大括号后不需要加”,"
+- 函数表达式:结尾的大括号后需要加”,"
+2. 有无声明提升:
+- function命令声明:有提升;
+- 函数表达式:没有提升;
+
+因为函数表达式是一个表达式，所以要加”,”。总的来说两种声明方式的区列还是比较小的。
+
+
+**函数的重复声明**
+如果同一个函数被多次声明，后面的声明就会覆盖前面的声明。</code></pre><p>function print() {<br>console. log(“JavaScript真有趣”);<br>}<br>function print() {<br>console. log(“JavaScript真有趣…个鬼嘞”);<br>}<br>print();</p>
+<pre><code>运行结果:</code></pre><p>JavaScript真有趣…个鬼嘞</p>
+<pre><code>前一次声明在任何时候都是无效的，这一点要特别注意。
+
+
+**立即执行函数**
+
+当函数只使用一次时,通常使用IIFE (Immediately Invokable Function Expressions):
+</code></pre><p>(function() {<br>console.1og(“这个函数只执行一次”);<br>})();</p>
+<pre><code>
+它会在函数声明后立即调用函数，除这一次调用外因为是匿名函数，所以无从调用。
+
+案例：
+
+六位数随机数：</code></pre><p>// 声明函数 code<br>function code(){<br>  let num = (Math.random() * 0.9 + 0.1) *1000000;<br>  let num1 = Math.floor(num);<br>  console.log(num1)<br>}<br>// 调用函数 code<br>code();</p>
+<pre><code>
+### 6.3函数参数
+
+解决之前的问题，我们可以通过参数给函数传数据：
+</code></pre><p>// 在圆括号运算符中加入参数 figure，用来接收外部传入的数据<br>function code(figure) {<br>  const num1 = Math.random() * 0.9 + 0.1;<br>  const num2 = Math.floor(num1 * Math.pow(10, figure));</p>
+<p>  console.log(num2);<br>}</p>
+<p>// 不要忘记调用函数，调用函数后函数才会执行<br>code(4);<br>code(6);</p>
+<pre><code>
+&gt; 上面Math.pow(x,y)是js内置方法,求取x的y次幂。比如,Math.pow(10, 4)的计算结果为10000。
+
+
+**多个参数**
+
+函数可以接受多个参数，多个参数以","(英文逗号)分隔:
+</code></pre><p>// 参数 figure(位数) txt(文本)<br>function code(figure, txt) {<br>  const num1 = Math.random() * 0.9 + 0.1;<br>  const num2 = Math.floor(num1 * Math.pow(10, figure));</p>
+<p>  console.log(txt + num2);<br>}</p>
+<p>code(6, “六位随机数：”);</p>
+<pre><code>&gt; 调用函数时，需要按顺序传入数据。
+
+**参数数量和传入数量不匹配**
+
+如果传入的数据个数超过了函数的参数:
+
+</code></pre><p>// 参数 figure(位数) txt(文本)<br>function code(figure, txt) {<br>  const num1 = Math.random() * 0.9 + 0.1;<br>  const num2 = Math.floor(num1 * Math.pow(10, figure));</p>
+<p>  console.log(txt, num2);<br>}</p>
+<p>code(6, “六位随机数：”, “第三个参数”);</p>
+<pre><code>结果：
+</code></pre><p>六位随机数：556540</p>
+<pre><code>
+结果并没有受到影响，这是因为JavaScript允许传入任意个参数而不影响调用，因此传入的参数比定义的参数多也没有问题。这一点和Java有区别，在JavaScript中这样是不会报错的。
+</code></pre><p>// 参数 figure(位数) txt(文本)<br>function code(figure, txt) {<br>  const num1 = Math.random() * 0.9 + 0.1;<br>  const num2 = Math.floor(num1 * Math.pow(10, figure));</p>
+<p>  console.log(txt, num2);<br>}</p>
+<p>code(6);</p>
+<pre><code>打印结果：</code></pre><p>undefined 556540</p>
+<pre><code>
+**参数默认值**
+
+像上面传入的数据的个数比定，义的参数少的情况，很容易出现运行结果与预期不符的情况，为了防止这种问题，我们可以给参数设置默认值:
+</code></pre><p>// 参数 figure(位数) txt(文本)<br>function code(figure, txt = “随机数：”) {<br>  const num1 = Math.random() * 0.9 + 0.1;<br>  const num2 = Math.floor(num1 * Math.pow(10, figure));</p>
+<p>  console.log(txt, num2);<br>}</p>
+<p>code(6);</p>
+<pre><code>结果
+
+</code></pre><p>随机数： 556540</p>
+<pre><code>因为对应的参数txt未传入数据，所以在函数中取默认值: "随机数:”
+
+这里注意写法，我们是用等号=给参数赋默认值的。
+
+
+案例：
+
+声明一个名为padZeros的函数,用来格式化数字,用0在左侧补位,使产生的字符串达到给定的长度,如果原数字长度超出给定长度则不作处理。比如:
+
+数字42，长度5,打印出: 00042;
+
+数字123，长度3,打印出: 123;
+
+数字1234，长度3,打印出: 1234;
+
+</code></pre><p>/*function padZeros(num, totalLen) {<br>  // 将数字转为字符串<br>  let numStr = num.toString();</p>
+<p>  // 计算所需 0 的个数<br>  let count = numStr.length;<br>  let zero = totalLen - count;</p>
+<p>  // 用 0 补位<br>  let str = ‘’;<br>  if (totalLen - count &gt; 0) {<br>    for (let i = 0; i &lt; totalLen - count; i++) {<br>      str += ‘0’ ;<br>    }<br>  } else{</p>
+<p>  }</p>
+<p>  // 打印得到的结果<br>  console.log(str+numStr);</p>
+<p>}</p>
+<p>padZeros(42, 5);<br>padZeros(123, 3);<br>padZeros(1234, 3);<br>*/</p>
+<p>function padZeros(num, totalLen) {<br>  // 将数字转为字符串<br>  let numStr = num.toString();<br>  // 计算所需 0 的个数<br>  let numZeros = totalLen - numStr.length;<br>  // 用 0 补位<br>  for (let i = 1; i &lt;= numZeros; i++) {<br>     numStr = “0” + numStr;<br>  }<br>  console.log(numStr);<br>}</p>
+<p>padZeros(42, 5);<br>padZeros(123, 3);<br>padZeros(1234, 3);</p>
+<pre><code>
+#### 6.4函数的返回值
+
+和其他编程语言一样, js中函数可以分为"无返回值"和”有返回值”两种，之前我们写的自定义函数都是无返回值函数，这里我们要来讲讲有返回值函数。
+</code></pre><p>let num = Math. random();</p>
+<pre><code>
+Math.random()就是一个有返回值的内置函数，它会返回生成的随机数。
+
+现在我们改造一下之前写的可定制位数的随机数函数,写个有返回值的自定义函数:
+
+</code></pre><p>// 参数 figure(位数)<br>function code(figure) {<br>  const num1 = Math.random() * 0.9 + 0.1;<br>  const num2 = Math.floor(num1 * Math.pow(10, figure));</p>
+<p>  // 用“return”把生成的随机数作为函数的结果返回<br>  return num2;<br>}</p>
+<p>let result = code(6);<br>console.log(result);</p>
+<pre><code>结果为 556556
+
+验证码：
+</code></pre><p>// 用户输入的验证码<br>let userCode = 682314;</p>
+<p>// 参数 figure(位数)<br>function code(figure) {<br>  const num1 = Math.random() * 0.9 + 0.1;<br>  const num2 = Math.floor(num1 * Math.pow(10, figure));</p>
+<p>  return num2;<br>}</p>
+<p>let result = code(6);</p>
+<p>// 后续的验证<br>if (result === userCode) {<br>  console.log(“验证码正确”);<br>} else {<br>  console.log(“验证码错误”);<br>}</p>
+<pre><code>从上面的例子中我们知道，在函数中使用return可以返回return语句所带的那个表达式。
+
+那如果在return语句之后，还有别的语句，这些语句还会执行吗?
+
+答案是不会。
+
+**函数中return后的语句将不会执行**
+
+案例：
+
+函数完成斐波拉契数
+</code></pre><p>function fib(num) {</p>
+<p>  let n = 0;<br>  let prev1 = 1;<br>  let prev2 = 1;</p>
+<p>  for (let i = 0; i &lt; num; i++) {<br>    if (i === 0 || i === 1) {<br>      n = 1;<br>    } else {<br>      n = prev1 + prev2;<br>      prev1 = prev2;<br>      prev2 = n;<br>    }<br>  }<br>  return prev2;<br>}</p>
+<p>const num = fib(30);<br>console.log(num);</p>
+<pre><code>
+### 6.5内置函数——计数器1
+我们常在注册、登录时遇到验证手机号的情况，点击获取验证码之后,为了防止用户频繁获取验证码，我们会在点击获取后开始倒计时60s,在这段时间里，用户不能再次获取验证码。
+
+倒计时每一秒会更新一下，这个可以用js提供的定时执行代码函数setTimeout()和setInterval)来完成。这个定时执行代码的功能，叫做定时器(timer)。
+
+
+**延时执行**
+
+setTimeout函数用来指定某个函数或某段代码，在多少毫秒之后执行。它返回一个整数，表示定时器的编号，以后可以用来取消这个定时器。
+
+![image](https://document.youkeda.com/P3-4-HTML-CSS/6/3.jpg)
+
+setTimeout函数接受两个参数，第一个参数func|code是将要推迟执行的函数名或者一段代码，第二个参数delay是推迟执行的毫秒数。
+
+以下是setTimeout的三种写法，大家关注它第一个参数的写法和运行顺序:
+</code></pre><p>console.log(1);</p>
+<p>/**</p>
+<ul>
+<li>第一个参数是代码，注意代码需用引号包裹，否则会立即执行代码</li>
+<li>第二个参数是 1000，即 1000ms 后执行 console.log(2)</li>
+<li>/<br>setTimeout(‘console.log(2)’, 1000);</li>
+</ul>
+<p>/**</p>
+<ul>
+<li>第一个参数是匿名函数</li>
+<li>第二个参数是 2000，即 2s 后执行 console.log(3)</li>
+<li>/<br>setTimeout(function () {<br>console.log(3);<br>}, 2000);</li>
+</ul>
+<p>// 第一个参数是函数名，注意函数名后不要加小括号“()”，否则会立即执行 print4<br>setTimeout(print4, 3000);</p>
+<p>console.log(5);</p>
+<p>function print4() {<br>  console.log(4);<br>}</p>
+<pre><code>
+结果
+</code></pre><p>1;<br>5;<br>2;<br>3;<br>4;</p>
+<pre><code></code></pre><p>// 立即执行<br>console.log(1);<br>// 立即执行<br>console.log(5);<br>// 1s 后执行<br>console.log(2);<br>// 2s 后执行<br>console.log(3);<br>// 3s 后执行<br>print4(); // 即：console.log(4)</p>
+<pre><code>
+从运行结果可以看出，setTimeout可以指定某个函数或某段代码，在多少毫秒之后执行，执行一次。
+
+现在我们用setTimeout来做验证码的60s倒计时，目标效果是每隔一秒打印出剩余秒数。
+
+虽然setTimeout只能执行一次，但是我们可以用递归的方式来写计时器。
+
+每隔一秒会执行一次代码，每次执行的代码要能够：
+
+1. 打印剩余秒数;
+2. 将秒数减一;
+3. 如果剩余秒数&gt;0，则调用setTimeout在一秒后重复上述的1、2、3,否则不再调用，并清除计时器，即计时结束;
+
+案例：
+</code></pre><p>// 首先定义计时总秒数，单位 s<br>let i = 60;</p>
+<p>// 定义变量用来储存定时器的编号<br>let timerId;</p>
+<p>// 写一个函数，这个函数即每次要执行的代码，能够完成上述的 1、2、3<br>function count() {<br>  console.log(i);<br>  i–;<br>  if(i &gt; 0) {<br>    timerId = setTimeout(count,1000);<br>  } else {<br>    // 清除计时器<br>    clearTimeout(timerId);<br>  }<br>}<br>// 首次调用该函数，开始第一次计时<br>count();</p>
+<pre><code>
+案例
+
+写一个正整数的计时器，每隔一秒打印出0到10。代码运行后立即打印出0，第一秒后打印出1，第二秒后打印出2,最后打印出10。
+</code></pre><p>// 首先定义计时开始的数字<br>let i = 0;</p>
+<p>// 写一个函数，这个函数即每次要执行的代码<br>  function print() {<br>  // 打印计时数字<br>  console.log(i);<br>  let id;<br>  // 每执行一次计时数字要加一<br>  i++;<br>  // 判断是否要继续执行打印函数<br>  if(i &lt;= 10){<br>    id = setTimeout(print, 1000);<br>  } else {<br>    clearTimeout(id);<br>  }<br>}</p>
+<p>// 首次调用该函数，开始第一次打印<br>print();</p>
+<pre><code>
+#### 6.6内置函数——计时器2
+
+下面我们来看setInterval,它的用法与setTimeout完全一致, 区别仅仅在于setInterval指定某个任务每隔一段时间就执行一次，也就是无限次的定时执行。
+
+**无限调用setInterval**
+
+![image](https://document.youkeda.com/P3-4-HTML-CSS/6/4.jpg)
+
+现在我们用setInterval来实现隔1s 打印数字1:
+</code></pre><p>print();<br>let timer = setInterval(print, 1000);<br>function print() {<br>  console.log(1);<br>}</p>
+<pre><code>
+可以看到，上述代码能够每隔1s打印数字1,但是这离我们的计时器还有三个地方需要改进:
+
+1. 上述代码是在1s后开始第一次打印，而计时器是立即进行第一次打印(打印60)，1s后再进行第二次打印的;
+2. 每次打印的数字是不同的;
+3. 计时器是有限次数,不是无限调用;
+
+第一步：
+</code></pre><p>print();<br>let timer = setInterval(print, 1000);</p>
+<p>function print() {<br>  console.log(1);<br>}</p>
+<pre><code>第二部：
+</code></pre><p>let i = 60;<br>print();<br>let timer = setInterval(print, 1000);</p>
+<p>function print() {<br>  console.log(i);<br>  i–;<br>}</p>
+<pre><code></code></pre><p>第三步：<br>let i = 60;<br>print();<br>let timer = setInterval(print, 1000);</p>
+<p>function print() {<br>  console.log(i);<br>  i–;<br>  if (i &lt; 1) {<br>    clearInterval(timer);<br>  }<br>}</p>
+<pre><code>最终：
+</code></pre><p>let i = 60;<br>print();<br>let timer = setInterval(print, 1000);</p>
+<p>function print() {<br>  console.log(i);<br>  i–;<br>  if (i &lt; 1) {<br>    clearInterval(timer);<br>  }<br>}</p>
+<pre><code>案例：
+
+写一个正整数的计时器，每隔一秒打印出0到10。代码运行后立即打印出0，第一秒后打印出1，第二秒后打印出2，最后打印出10。
+</code></pre><p>let i = 0;</p>
+<p>print();</p>
+<p>let count = setInterval(print,1000);</p>
+<p>function print(){<br>  console.log(i);<br>  i++<br>  if(i &gt; 10){<br>    clearInterval(count);<br>  }<br>}</p>
+<pre><code>
+## 第七章 对象
+### 7.1对象概述
+
+什么是对象?简单说，对象就是一组" 键值对”(key-value) 的集合,是一种无序的复合数据集合:
+![image](https://document.youkeda.com/P3-4-HTML-CSS/7/1.jpg)
+
+- 大括号:定义一个对象;
+- person:定义的对象被赋值给person, 则person
+将指向这个对象;
+- `name:'henry'`:键值对(key: value)，键值之间用:隔开;
+- age: 18:键值对(key: value) ;
+- 一个对象中可以包含多个键值对，每个键值对之间用,隔开,最后一个键值对后可以加,，也可以不加。
+
+</code></pre><p>let person = {<br>  name: ‘henry’,<br>  age: 18,<br>  run: function() {<br>    console.log(‘running’);<br>  }<br>}</p>
+<p>person.run();</p>
+<pre><code>会输出running
+
+让我们来实操一下，用构造函数来创建person对象:
+</code></pre><p>// 第一步：创建构造函数<br>function People(name, age) {<br>  this.name = name;<br>  this.age = age;<br>}</p>
+<p>// 第二步：通过 new 创建对象实例<br>let person = new People(‘henry’, 18);<br>console.log(person);</p>
+<pre><code>案例：
+
+通过构造函数创建-个名称为benz (奔驰)的对象，构造函数名为Car,对象实例benz有四个属性:
+1. name,表示车的品牌名，值为Benz;
+2. founder ，表示创始人，值为Karl Benz;
+3. gmtCreated，表示品牌发明汽车的时间，值为数字1886,表示1886年;
+4. run,这是一个方法，这个方法会在控制台console中输出"Benz is running..";
+
+</code></pre><p>function Car(name, founder, gmtCreated, run) {<br>  this.name = name;<br>  this.founder = founder;<br>  this.gmtCreated = gmtCreated;<br>  this.run = run;<br>}</p>
+<p>let benz = new Car(‘Benz’, ‘Karl Benz’, ‘1886’, function() {<br>  console.log(‘Benz is running…’);<br>});</p>
+<pre><code>
+#### 7.2自定义对象的属性操作
+**属性的读取**
+
+JavaScript中有两种方法读取一个对象的属性:点运算符和方括号运算符。
+</code></pre><p>let person = {<br>  name: ‘henry’,<br>  age: 18<br>}</p>
+<p>console.log(person.name);<br>console.log(person[‘name’]);</p>
+<pre><code>
+</code></pre><p>let person = {<br>  name: ‘henry’,<br>  age: 18<br>}</p>
+<p>let variable = ‘name’;<br>console.log(person[variable]);</p>
+<p>variable = ‘age’;<br>console.log(person[variable]);</p>
+<pre><code>这里我们定义了一个变量`variable`,在读取对象属性的时候，使用了方括号运算符，然后在方括号中使用了变量`variable` 
+
+解读一下:
+
+第一次打印:
+
+`variable`的值为字符串name,因此读取的是person对象的name属性;
+
+第二次打印:
+
+`variable`的值为字符串age,因此读取的是person对象的age属性;
+
+我们已经知道，对象中属性的值可以是任何数据类型，那如果某个属性的值是对象，该怎么读取这个键值对象中的属性呢?
+
+我们还是用，点运算符或者方括号运算符:
+</code></pre><p>let person = {<br>  name: ‘henry’,<br>  age: 18,<br>  parents: {<br>    papa: ‘jack’,<br>    mama: ‘mary’<br>  }<br>}</p>
+<p>console.log(person.parents.papa);<br>console.log(person[‘parents’][‘mama’]);</p>
+<pre><code>
+**属性的赋值**
+</code></pre><p>let person = {<br>  name: ‘henry’,<br>  age: 18<br>}</p>
+<p>person.name = ‘tom’;<br>person[‘age’] = 10</p>
+<p>console.log(person.name);<br>console.log(person.age);</p>
+<pre><code>**属性的查看**
+
+查看一个对象本身的所有属性，可以使用Object.keys方法 :
+</code></pre><p>let person = {<br>  name: ‘henry’,<br>  age: 18<br>}</p>
+<p>console.log(Object.keys(person));</p>
+<pre><code>
+&gt; 上述代码中的Object,是JavaScript提供的基本对象，JavaScript 的
+&gt; 所有其他对象都继承自Object对象，即那些对象都是0bject的实例。
+&gt; keys是Object对象的一个静态方法。
+
+**属性的删除和修改**
+
+当想要删除对象中的某个属性，可以用delete：</code></pre><p>let person = {<br>  name: ‘henry’,<br>  age: 18<br>}</p>
+<p>delete person.name;</p>
+<p>console.log(person);</p>
+<pre><code>
+增加属性：
+</code></pre><p>let person = {<br>  name: ‘henry’,<br>  age: 18<br>}</p>
+<p>person.gender = ‘male’;</p>
+<pre><code>
+案例：
+
+请看上述代码，我们通过字面量方法创建了一个对象person,这个人叫henry,现在请你为henry添加一个sayHello方法,每次执行该方法，henry 都会在控制台输出"hello, I am henry"。
+
+要求:
+1. 给henry添加一个方法sayHello;
+2. 调用一次sayHello方法;
+
+注意，在sayHello方法中，我们可以用this.name取到
+对象person的name属性值哦。
+</code></pre><p>let person = {<br>  name: ‘henry’,<br>  age: 18,<br>  run: function() {<br>    console.log(‘running’);<br>  },<br>  sayHello: function() {<br>    console.log(‘hello, I am ‘ + this.name);<br>  }<br>};</p>
+<p>person.sayHello();</p>
+<pre><code>
+案例：
+
+</code></pre><p>let person = {<br>  name: ‘henry’,<br>  age: 18,<br>  run: function() {<br>    console.log(‘running’);<br>  },<br>  sayHello: function() {<br>    console.log(‘hello, I am ‘ + this.name);<br>  }<br>}</p>
+<pre><code>请看上述代码，我们通过字面量方法创建了一个对象person,这个人叫henry,我们都知道，人是会长大,请给henry添加一个方法grow,每执行一次该方法，henry将长大一岁，即age会加一。
+
+要求:
+1. 给henry添加一个方法grow; .
+2. 调用一次grow方法;
+
+注意，在grow方法中我们会修改age的值，那么如何
+读取并修改age的值呢，可以参考一下sayHello方法中
+对name的读取方法哦。
+</code></pre><p>let person = {<br>  name: ‘henry’,<br>  age: 18,<br>  run: function () {<br>    console.log(‘running’);<br>  },<br>  sayHello: function () {<br>    console.log(‘hello, I am ‘ + this.name);<br>  },<br>  grow: function () {<br>    this.age++;<br>  },<br>};</p>
+<pre><code>
+
+### 7.3遍历对象属性
+如果想要在一个对象中查找某个符合条件的属性，我们就需要遍历对象了。
+
+在JavaScript中我们可以通过`for...in` 或借助`object.keys`来实现。
+
+#### 用`dor...in`遍历属性
+
+我们先来看如何用`for...in`遍历对象中的各个属性:
+
+</code></pre><p>let person = {<br>  name: ‘henry’,<br>  age: 18,<br>}</p>
+<p>for (var key in person) {<br>  console.log(‘键名：’ + key + ‘；键值：’ + person[key]);<br>}</p>
+<pre><code>#### 借助`Object.keys`属性
+于Object.keys方法返回的是-个由对象中所有属性名组成的数组，我们可以借助这一点来遍历对象:
+
+</code></pre><p>let person = {<br>  name: ‘henry’,<br>  age: 18,<br>}</p>
+<p>let keys = Object.keys(person);</p>
+<p>for (let i = 0; i &lt; keys.length; i++) {<br>  console.log(‘键名：’ + keys[i] + ‘；键值：’ + person[keys[i]]);<br>}</p>
+<pre><code>案例：
+
+请看上述代码，根据给出的提示补全`??`处的代码，在控制台中打印出所有的键值对，打印结果如下:
+</code></pre><p>使用 for…in：<br>name: henry<br>age: 18<br>papa: jack<br>mama: mary<br>sister: jane</p>
+<pre><code>注意，当属性名为family时，不能直接打印值，需要对family也进行循环(循环的key请用"familyKey"作为变量名哦)，打印出family中的键值对。请勿删除注释的代码哦。
+</code></pre><p>let person = {<br>  name: ‘henry’,<br>  age: 18,<br>  family: {<br>    papa: ‘jack’,<br>    mama: ‘mary’,<br>    sister: ‘jane’<br>  }<br>};</p>
+<p>// 使用 for…in<br>function byForIn(obj) {<br>  // 循环 obj（person）对象<br>  for (const key in obj) {<br>    if (key === ‘family’) {<br>      const family = obj.family;<br>      // 循环打印 person.family<br>      for (const familyKey in family) {<br>        console.log(familyKey + ‘:’ + family[familyKey]);<br>      }<br>    } else {<br>      console.log(key + ‘:’ + obj[key]);<br>    }<br>  }<br>}</p>
+<p>// 借助 Object.keys<br>function byKeys(obj) {<br>  const keys = Object.keys(obj);</p>
+<p>  for (let i = 0; i &lt; keys.length; i++) {<br>    if (keys[i] === ‘family’) {<br>      // 获取 person.family 的所有属性<br>      const familyKeys = Object.keys(obj.family);</p>
+<pre><code>  for (let i = 0; i &lt; familyKeys.length; i++) {
+    // 打印 person.family 中的键值对
+    console.log(familyKeys[i] + ':' + obj.family[familyKeys[i]]);
+  }
+} else {
+  // 打印 person 中除了 family 外的键值对
+  console.log(keys[i] + ':' + obj[keys[i]]);
+}</code></pre><p>  }<br>}</p>
+<p>console.log(‘使用 for…in：’);<br>byForIn(person);</p>
+<p>console.log(‘————————‘);</p>
+<p>console.log(‘借助 Object.keys：’);<br>byKeys(person);</p>
+<pre><code>
+### 7.4对象的继承
+
+我们知道，Java中是有”继承"这个概念的，在JavaScript也有。之前我们也提到过:
+
+&gt; Object是JavaScript提供的基本对象，JavaScript的所有其他对象都继承自Object对象，即那些对象都是Object的实例。keys是Object对象的一个静态方
+&gt; 法。
+
+就是说，我们之前学习的“自定义对象”，实就是继承自JavaScript提供的Object对象的。
+
+因此，除了用”字面量”和自定义的构造方法创建对象外,我们还可以用JavaScript提供的构造函数Object()或者”继承”来创建对象:
+</code></pre><p>// 字面量<br>let o1 = {<br>  name: ‘alice’,<br>};</p>
+<p>// 构造函数<br>let o2 = new Object();<br>let o3 = new Object();</p>
+<p>// 继承<br>let o4 = new o1();</p>
+<pre><code>在上面的代码中，最后一种方法创建的o4对象继承自o1，那么o1就是o4的原型。
+
+#### 原型
+什么是原型，原型其实也是JavaScript中的一个对象。那为什么要提出原型的概念呢，这是为了找对象继承的上一级对象。
+
+o1继承自Object,Object就是01的原型。
+
+o4继承自01, o1就是o4的原型。
+
+一个对象，它称呼继承的上一级对象为原型，它自己也可以称作原型链下一级对象的原型。
+
+#### 属性是否存在：in
+
+我们可以用in运算符来判断对象是否拥有某个属性:
+</code></pre><p>let person = {<br>  name: ‘henry’,<br>  age: 18,<br>};</p>
+<p>‘name’ in person;<br>‘gender’ in person;<br>‘toString’ in person;</p>
+<pre><code>输出：
+</code></pre><p>true;<br>false;<br>true;</p>
+<pre><code>`toString`是Object对象的属性。person 继承自Object所以也有这个属性。
+
+可见，由于继承的存在，一个对象中的属性分成了两类:
+继承属性和自身属性。
+
+之前我们用到的Object.keys方法返回的属性就包括了这两种属性。
+
+那么我们要如何判断对象自身属性中是否拥有某个属性呢?
+
+这个也不难，我们可以用Object对象提供的hasOwnProperty方法进行判断。
+
+#### 自身属性是否存在：hasOwnProperty
+</code></pre><p>let person = {<br>  name: ‘henry’,<br>  age: 18,<br>};</p>
+<p>person.hasOwnProperty(‘name’);<br>person.hasOwnProperty(‘gender’);<br>person.hasOwnProperty(‘toString’);</p>
+<pre><code>输出：
+</code></pre><p>true;<br>false;<br>false;</p>
+<pre><code>可以看到toString不属于对象person的自身属性。
+
+#### Object与JSON、Map的区别
+JavaScript中有几个写法和对象长得相似的概念,JSON、 Map,大家了解即可。
+
+**JSON**
+
+JSON是一种轻量级的文本数据交换格式，它用JavaScript的语法书写，但独立于这种语言，可以认为这是编程语言间用于传递数据而约定的数据格式。
+
+**JSON格式和JavaScript对象的转换**
+
+1. JSON.parse():JSON格式=&gt;JavaScript对象
+</code></pre><p>// 一个 JSON 字符串<br>const jsonStr =<br>  ‘{“sites”:[{“name”:”Runoob”, “url”:”<a href="http://www.runoob.com&quot;},{&quot;name&quot;:&quot;Google&quot;">www.runoob.com"},{"name":"Google"</a>, “url”:”<a href="http://www.google.com&quot;},{&quot;name&quot;:&quot;Taobao&quot;">www.google.com"},{"name":"Taobao"</a>, “url”:”<a href="http://www.taobao.com&quot;}]}'">www.taobao.com"}]}'</a>;</p>
+<p>// 转成 JavaScript 对象<br>const obj = JSON.parse(jsonStr);</p>
+<pre><code>2. JSON.stringify(): JavaScript 对象=&gt; JSON格式
+
+现在我们把上面得到的obj转成JSON格式:
+</code></pre><p>const jsonStr2=JSON.stringify(obj)；</p>
+<pre><code>
+**Map**
+
+Map和Object很相似，都可以保存键值对，但是他们仍有些重要的区别:
+1. 一个Object的键通常是字符串，但一个Map的键可以是任意值，包括函数、对象、基本类型，因此Map方便很多;
+2. Map中的键值是有序的，而添加到对象中的键则不是;
+3. Map的键值对个数可以直接获取，Object 则要借助Object.keys()等计算得到;
+4. Map可直接进行迭代，Object则要借助Object.keys()等;
+5. Map不存在键名和原型键名冲突问题，可以直接覆盖，Object则不行;
+
+从某种程度上来说，Map比Object更灵活方便，但是考虑到Map不能直接转为JSON格式进行通讯，所以我们可以把Map作为Object的补充来使用。
+
+案例：
+
+请按照提示补全代码，在控制台输出myObj对象的所有非继承属性。
+
+预期输出结果如下:</code></pre><p>type: Dot syntax<br>str: String value<br>random: Random Number</p>
+<pre><code>
+代码：
+</code></pre><p>let myObj = new Object();<br>let rand = ‘random’;</p>
+<p>myObj.type = ‘Dot syntax’;<br>myObj[‘str’] = ‘String value’;<br>myObj[rand] = ‘Random Number’;</p>
+<p>for (const key in myObj) {<br>  if (myObj.hasOwnProperty(key)) {<br>    console.log(key + ‘: ‘ + myObj[key]);<br>  }<br>}</p>
+<pre><code>
+### 7.5内置对象————Math、storage
+
+#### Math对象
+在上一章写随机数的时候我们用到了Math.random方法，其实Math也是JavaScript的一个原生对象，它能提供各种数学功能。该对象不是构造函数，不能生成实例，所有的属性和方法都必须在Math对象上调用。
+
+之前我们已经接触了Math.random 和Math.floor方法。
+
+现在我们来看看Math提供的其他用途。
+
+**常量**
+
+Math对象的静态属性，提供以下一些数学常数: 
+</code></pre><p>Math.E // 常数e。<br>Math.LN2 // 2 的自然对数。<br>Math.LN10 // 10 的自然对数。<br>Math.LOG2E // 以 2 为底的e的对数。<br>Math.LOG10E // 以 10 为底的e的对数。<br>Math.PI // 常数π。<br>Math.SQRT1_2 // 0.5 的平方根。<br>Math.SQRT2 // 2 的平方根。</p>
+<pre><code>我们会用到比较多的一般是常数π，即Math.Pl。
+
+**静态方法**
+Math对象提供以下一些静态方法:
+</code></pre><p>Math.abs() // 绝对值<br>Math.ceil() // 向上取整<br>Math.floor() // 向下取整<br>Math.round() // 四舍五入取整<br>Math.max() // 最大值<br>Math.min() // 最小值<br>Math.pow() // 指数运算<br>Math.sqrt() // 平方根<br>Math.log() // 自然对数<br>Math.exp() // e的指数<br>Math.random() // 随机数</p>
+<pre><code>&gt; 注意，以上方法除了Math.random()都需要传入合适的参数，即需要处理的数字。
+
+这里我们注意几个取整方法。
+
+使用的时候，给方法传入需要处理的数字即可:
+</code></pre><p>Math.ceil(4.6)//向上取整，取大于等于x，并且与它最接近的整数。<br>Math.floor(4.6)//向下取整，取小于等于x，并且与它最接近的整数。<br>Math.round(4.6) // 四舍五入取整，取与x最接近的整数。</p>
+<pre><code>输出
+</code></pre><p>5<br>4<br>5</p>
+<pre><code>除了Math之外，我们还要介绍一个常用的内置对象:Storage.
+
+#### Storage对象
+Storage接口用于脚本在浏览器保存数据。两个对象部署
+了这个接口: window.sessionStorage和window.localStorage.
+
+sessionStorage保存的数据用于浏览器的一次会话(session)，当会话结束(通常是窗口关闭)，数据被清空;localStorage 保存的数据长期存在，下一次访问该网站的时候，网页可以直接读取以前保存的数据。
+
+我们主要看一下window.localStorage的用法。
+
+**数据的存入：setItem**
+
+写法：
+</code></pre><p>window.localStorage.setItem(‘myLocalStorage’, ‘storage Value’);</p>
+<pre><code>window.localStorage.setltem('key', 'value'") 方法接受两个参数:
+
+1. key: 键名;
+2. value:键值
+
+两个参数都是字符串，不是字符串的参数会被转成字符串
+后再存入浏览器。
+
+&gt; 打开网页的开发者工具(右键=&gt;检查=&gt;application =&gt; Local Storage)， 查看存储情况:
+&gt; ![image](https://qgt-document.oss-cn-beijing.aliyuncs.com/P3-4-HTML-CSS/7/4.jpg)
+
+注意，如果要存入的数据不是字符串类型的数据，最好先
+转换成字符串类型，比如要存入一个对象，可以这么写:
+
+</code></pre><p>const obj = {<br>  name: ‘henry’,<br>  age: 18<br>}<br>const value = JSON.stringify(obj);<br>window.localStorage.setItem(‘myLocalStorage’, value);</p>
+<pre><code>&gt; JSON.stringify()方法可以将一个JavaScript值(对象
+&gt; 或者数组)转换为一个JSON字符串。
+
+**读取数据：getItem**
+
+写法：
+</code></pre><p>window.localStorage.getItem(‘myLocalStorage’);</p>
+<pre><code>window.localStorage.getltem(key')接受一个参数，即
+键名。
+
+**清除缓存：clear**
+
+写法：</code></pre><p>window.localStorage.clear();</p>
+<pre><code>该方法可清除所有保存的数据。
+
+
+案例：
+
+要求使用Storage对象的setltem方法，在本地浏览器中存
+入名为"myStorage"，值为任意字符串的数据，不可为空字
+符串。
+</code></pre><p>// 在本地浏览器中进行缓存<br>window.localStorage.setItem(‘myStorage’, ‘storage Value’);<br>// 打印缓存<br>const myStorage = window.localStorage.getItem(‘myStorage’)<br>console.log(myStorage)</p>
+<pre><code>
+### 7.6内置对象————String
+
+JavaScript原生提供的三个包装对象之一就是`String` (另外两个是Number、Boolean)。它给字符串提供了很多好用的方法，但是我们只要掌握很少的几个就已经足够了，我们一起来看一下。
+
+&gt; 包装对象:原生对象可以把原始类型的值变成(包装成)对象。
+&gt; ```let v2 = new String('abc');```
+&gt; 包装对象的最大目的:1.使得JavaScript的对象涵盖所有的值; 2.使得原始类型的值可以方便地调用某些方法(比如下面的这些方法)
+
+#### 字符串长度：length
+</code></pre><p>let len = ‘here is an apple’.length;</p>
+<pre><code>大家猜猜这个长度是多少呢?
+
+答案是16，从上面的输出结果中可以看到，字符串中的空格也是计算在内的。
+
+#### 查找字符：indexOf()
+从字符串中查找某个子字符串是否存在：
+</code></pre><p>let str = ‘here is an apple’;<br>const index = str.indexOf(‘an’);<br>console.log(index);</p>
+<pre><code>当str中存在子字符串an时，返回的值为an中的a所在的下标(下标从0开始计)，即8。
+
+当str中不存在子字符串an时,返回的值为-1。
+
+#### 去掉两端空格：trim()
+我们在输入内容的时候常常会遇到多输入空格的时候，这时候就可以用trim()把字符串开头和结束位置的空格去掉了:
+</code></pre><p>// ‘here’ 之前有一个空格，’apple’ 之后有三个空格<br>let str = ‘ here is an apple   ‘;<br>const trimedStr = str.trim();<br>console.log(str.length);<br>console.log(trimedStr.length);</p>
+<pre><code>
+&gt; 注意，`trim()`是去掉字符串前后的空格，不论前后有多少空格,都会去掉，但不会去掉中间的空格。另外，trim() 不会改变原字符串str，而是复制一份原字符串，修改后返回给trimedStr
+
+#### 截取字符串：substring/substr
+如果要截取一个字符串中的一部分，可以用`substring` 或
+`substr`
+
+比如我们现在有一个[URL]("https://www.youkeda.com/userhome#collect") 要求截取其中#之后的内容，可以这样做:
+
+</code></pre><p>let url = ‘<a href="https://www.youkeda.com/userhome#collect'" target="_blank" rel="noopener">https://www.youkeda.com/userhome#collect'</a>;</p>
+<p>// 首先找到 # 后第一个字母的下标<br>const index = url.indexOf(‘#’) + 1;</p>
+<p>// 有 hash 才能进行截取，没有就直接提示不存在<br>if (index) {<br>  // 用 substring 截取字符串<br>  const hash1 = url.substring(index + 1, url.length);</p>
+<p>  // 计算 hash 的长度<br>  const lenHash = url.length - index - 1;<br>  // 用 substr 截取字符串<br>  const hash2 = url.substr(index + 1, lenHash);</p>
+<p>  console.log(hash1);<br>  console.log(hash2);<br>} else {<br>  console.log(‘不存在 hash’);<br>}</p>
+<pre><code>- substring(start,end):start————要截取的字符串的开始下标end————要截取的字符串的结束下标。
+- substr(start,len):start————要截取的字符串的开始下标len一要截取的字符串的长度。
+
+&gt; 注意，substring和substr的第二个参数不写的时候，会一直截取到字符串结束为止。
+
+#### 分割字符串
+split方法按照给定规则分割字符串，返回一个由分割出来的子字符串组成的数组:
+
+</code></pre><p>const splitedStr = ‘a|b|c’.split(‘|’);<br>console.log(splitedStr);</p>
+<pre><code>
+`split`也不会改变原字符串，而是返回一个由分割出来的子字符审组成
+
+#### 小结
+关于字符串我们需要掌握的几个基础用法:
+
+
+| 属性/用法          | 作用                                                         |
+| ------------------ | ------------------------------------------------------------ |
+| str.length         | 返回字符串长度                                               |
+| str.indexOf(sub)   | 返回子字符串sub的开始下标，不存在则返回-1.注意:这里的参数sub是个字符串变量 |
+| str.trim()         | 字符串前后去空格                                             |
+| str.substring(s,e) | 截取下标从s到e的子字符串.注意:这里的参数s和e是个数字变量     |
+| str.substr(s,len)  | 截取下标从s开始，长度为len的子字符串.注意:这里的参数s和len是个数字变量 |
+| str.split(pattern) | 按规格pattern分割字符串.注意:这里的参数pattern是个字符串变量 |
+
+案例：
+
+写一个方法，这个方法能够返回一段文字去前后空格后的总字数方法名叫strLen.
+</code></pre><p>let str = ‘ 测试字符串 test’;<br>const len = strLen(str);</p>
+<p>console.log(len);</p>
+<pre><code>输出为10
+
+代码：</code></pre><p>let str = ‘ 测试字符串 test’;<br>const len = strLen(str);</p>
+<p>console.log(len);</p>
+<p>function strLen(Str) {<br>  const strtimed = Str.trim();<br>  return strtimed.length;<br>}</p>
+<pre><code>
+#### 7.7内置对象————Array
+Array是JavaScript的原生对象之一，它为数组提供了很多实用的方法,这里我们学习其中的几个。
+
+##### 连接数组：join()
+join()方法以指定参数作为分隔符，将所有数组成员连接为一个字符串返回。如果不提供参数，默认用逗号分隔:
+
+</code></pre><p>let arr = [1, 2, 3, 4];</p>
+<p>arr.join(‘ ‘) // ‘1 2 3 4’<br>arr.join(‘ | ‘) // “1 | 2 | 3 | 4”<br>arr.join() // “1,2,3,4”</p>
+<pre><code>这个方法和字符串里的`split`方法正好是一对作用相反的方法:
+</code></pre><p>let str = ‘a|b|c’;</p>
+<p>const splited = str.split(‘|’);<br>console.log(splited);</p>
+<p>const joined = splited.join(‘|’);<br>console.log(joined);</p>
+<pre><code>join()方法不会改变原数组。
+
+#### 倒序排列：reverse()
+rverse方法用于颠倒排列数组元素,返回改变后的数组。
+</code></pre><p>let arr = [‘a’, ‘b’, ‘c’];</p>
+<p>arr.reverse() // [“c”, “b”, “a”]<br>arr // [“c”, “b”, “a”]</p>
+<pre><code>这个方法对原本有序的数组用起来很方便，比如原来是按时间顺序排列,现在要倒序，直接使用`reverse()` 即可。
+那如果数组原本就是无序的，该怎么排序呢?这里我们会用到sort()方法。
+
+#### 排序：sort()
+
+sort方法对数组成员进行排序，默认是按照**字典顺序**排序。如果想让sort方法按照自定义方式排序，可以传入一个函数作为参数。
+
+现在我们将下面的数组按照人物年龄从小到大排列:
+</code></pre><p>let arr = [<br>  { name: ‘jenny’, age: 18 },<br>  { name: ‘tom’, age: 10 },<br>  { name: ‘mary’, age: 40 }<br>];</p>
+<p>arr.sort(function(a, b) {<br>  return a.age - b.age;<br>});</p>
+<p>console.log(arr);</p>
+<pre><code>这里我们传入了一个函数，这个函数有两个参数，即进行比较的两个数组成员，愿数组中a排在b之前。
+
+这个函数有个返回值，当返回值大于0时，表示第一个成员应该排在第二个成员之后，否则排在第二个成员之前。
+
+#### 遍历：map/forEach
+
+遍历数组我们之前用的是`for`循环，但其实JavaScript为我们提供了两个很方便的遍历方法: map和forEach。
+##### 有返回的遍历：map
+先看map方法的使用，它接受-个函数,然后将数组的所有成员依次传
+入这个参数函数，最后把每一次的执行结果组成一个新数组返回:
+</code></pre><p>let arr = [<br>  { name: ‘jenny’, age: 18 },<br>  { name: ‘tom’, age: 10 },<br>  { name: ‘mary’, age: 40 }<br>];</p>
+<p>// elem: 数组成员<br>// index: 成员下标<br>// a: 整个数组<br>const handledArr = arr.map(function(elem, index, a) {<br>  elem.age += 1;<br>  console.log(elem, index, a);<br>  return elem.name<br>});</p>
+<p>console.log(arr);<br>console.log(handledArr);</p>
+<pre><code>map方法的参数函数可以有三个参数: elem, index, a。
+- elem: 表示依次传入的数组成员
+- index: 表示依次传入的数组成员所对应的下标
+- a:表示整个数组
+
+在上面的代码中，map方法的返回值是一个由`return`后的内容`elem. name`组成的数组。
+
+##### 无返回值的遍历：forEach
+forEach的用法和map基本一致，不过forEach没有返回值:
+</code></pre><p>const handledArr = arr.forEach(function(elem, index, a) {<br>  elem.age += 1;<br>  console.log(elem, index, a);<br>  return elem.name<br>});</p>
+<p>console.log(handledArr);</p>
+<pre><code>输出：undefined
+&gt; 注意，当你在map和forEach之间难以选择时，可以想一下你是否需要返回值，map会返回操作后的数组，forEach则没有返回值。
+
+小结：
+关于数组我们需要掌握的几个基础用法:
+
+| 属性/方法         | 作用                                                         |
+| ----------------- | ------------------------------------------------------------ |
+| arr.join(pattren) | 按规则pattern连接数组,返回字符串                             |
+| arr.reverse()     | 将原数组倒序排列                                             |
+| arr.sort(func)    | 自定义排序，根据传入的参数函数func将数组成员排序             |
+| arr.map(func)     | 根据传入的参数函数func对数组进行遍历操作，返回操作后的数组.函数有三个参数，依次为:数组成员、对应下标、整个数组 |
+| arr.forEach(func) | 根据传入的参数函数func对数组进行遍历操作，无返回值函数有三个参数，依次为:数组成员、对应下标、整个数组 |
+
+
+案例：
+
+已知数组如下：
+</code></pre><p>let arr = [<br>  { name: ‘jenny’, age: 18 },<br>  { name: ‘tom’, age: 10 },<br>  { name: ‘mary’, age: 40 }<br>];</p>
+<pre><code>要求不用for循环在控制台打印出每一项的name属性，每个
+name之间用`,`连接,预期输出结果如下:
+</code></pre><p>jenny,tom,mary</p>
+<pre><code>
+
+
+代码：
+</code></pre><p>let arr = [<br>  { name: ‘jenny’, age: 18 },<br>  { name: ‘tom’, age: 10 },<br>  { name: ‘mary’, age: 40 }<br>];</p>
+<p>const nameList = []<br>arr.forEach(item =&gt; {<br>  nameList.push(item.name);<br>})<br>console.log(nameList.join(‘,’))</p>
+<pre><code>
+### 7.8内置对象————Date
+工作中常常遇到要处理时间的情况：
+![image](https://qgt-document.oss-cn-beijing.aliyuncs.com/P3-4-HTML-CSS/7/2.jpg)
+
+因此很有必要学习一下JavaScript提供的时间库的一些功能。
+
+JavaScript提供一个原生的时间库:`Date`对象。它以国际标准时间(UTC)1970年1月1日00:00:00作为时间的零点，可以表示的时间范围是前后各1亿天(单位为毫秒)。在这里我们只学习其中一些必须的基础内容。
+
+#### 获取当前时间：new Date()
+我们可以把Date作为一个构造函数，用new命令生成一一个时间对象的实例，在不加参数的情况下，返回的是当前时间:
+</code></pre><p>let now = new Date();<br>console.log(now);</p>
+<pre><code>
+那如果给构造函数传入一些参数的话，就能够**生成特定的时间对象**了，这里可以传入数字、字符串、毫秒数:
+</code></pre><p>// 传入表示“年月日时分秒”的数字<br>let dt1 = new Date(2020, 0, 6, 0, 0, 0);<br>console.log(dt1);</p>
+<p>// 传入日期字符串<br>let dt2 = new Date(‘2020-1-6’);<br>console.log(dt2);</p>
+<p>// 传入距离国际标准时间的毫秒数<br>let dt3 = new Date(1578240000000);<br>console.log(dt3);</p>
+<pre><code>&gt; 注意，传入表示"年月日时分秒”的数字时，1.如果只传入一个数字，会被认为传入的是毫秒数;2.月份的范围是0-11,而不是1-12。
+
+#### 日期运算
+##### 时间差：毫秒数
+两个时间对象是可以直接相减的，返回值为两者的毫秒数差:
+</code></pre><p>let dt1 = new Date(2020, 2, 1);<br>let dt2 = new Date(2020, 3, 1);</p>
+<p>// 求差值<br>let diff = dt2 - dt1;</p>
+<p>// 一天的毫秒数<br>let ms = 24 * 60 * 60 * 1000;</p>
+<p>console.log(diff / ms); // 31</p>
+<pre><code>可以看到，2020年2月1日和2020年3月1日之间相差的时间正好为31天。
+
+##### 早晚比较：大小于符号
+如果要比较两个时间的早晚，可以直接使用`&gt;`或者`&lt;`
+</code></pre><p>let dt1 = new Date(2020, 2, 1);<br>let dt2 = new Date(2020, 3, 1);</p>
+<p>console.log(dt1 &gt; dt2); // false<br>console.log(dt1 &lt; dt2); // true</p>
+<pre><code>
+#### 解析日期字符串：Date.parse()
+Date.parse方法用来解析日期字符串，返回该时间距离时间零点(1970年1月1日00:00:00)的毫秒数:
+</code></pre><p>let dt = Date.parse(‘2020-1-6’);<br>console.log(dt); // 1578240000000</p>
+<pre><code>`Date. parse()`方法可以把日期字符串转成距离时间零点的毫秒数。
+
+时间对象中有三大类方法to方法、get方法和set方法，这里我们会学习这两大类中的一部分方法。
+
+#### 时间对象转时间字符串：to方法
+to方法有很多，我们来看其中的`toJSON()`方法:
+</code></pre><p>let dt = new Date();<br>let dtStr = dt.toJSON();</p>
+<p>console.log(dtStr); // 2020-01-03T09:44:18.220Z</p>
+<pre><code>仔细观察控制台中打印出的内容，你可能会感到疑惑，为什么打印的时间和当前的时间差8个小时，这是因为打印的时间是现在UTC时区的时间,而我们的时间是东八区时间，比国际标准时间快8个小时。
+
+#### 获取时间对象的年/月/日：get方法
+Date对象提供了一系列get方法,用来获取实例对象某个方面的值:
+</code></pre><p>let dt = new Date();<br>dt.getTime(); // 返回实例距离1970年1月1日00:00:00的毫秒数。<br>dt.getDate(); // 返回实例对象对应每个月的几号（从1开始）。<br>dt.getDay(); // 返回星期几，星期日为0，星期一为1，以此类推。<br>dt.getFullYear(); // 返回四位的年份。<br>dt.getMonth(); // 返回月份（0表示1月，11表示12月）。<br>dt.getHours(); // 返回小时（0-23）。<br>dt.getMilliseconds(); // 返回毫秒（0-999）。<br>dt.getMinutes(); // 返回分钟（0-59）。<br>dt.getSeconds(); // 返回秒（0-59）。</p>
+<pre><code>&gt; 注意，所有这些get*方法返回的都是整数，不同方法返回值的范围不一样:
+
+&gt; 分钟和秒: 0到59
+
+&gt; 小时:0到23
+
+&gt; 星期: 0 (星期天)到6 (星期六)
+
+&gt; 日期:1到31
+
+&gt; 月份: 0 (一月)到11 (十二月)
+
+- 除了”日期”外，其他的时间范围都是从0开始的。
+
+以方法了解即可，需要用到的时候在MDN上进行查询即可。
+现在我们来尝试用dt.getFullYear()来获取当前的完整年份:
+</code></pre><p>let dt = new Date();<br>let year = dt.getFullYear();</p>
+<p>console.log(year);</p>
+<pre><code>
+#### 设置时间对象的年/月/日：set方法
+set方法和get方法正好相反，它能够设置时间对象的某个方面的值。
+</code></pre><p>let dt = new Date();<br>dt.setTime(ms); // 设置实例距离1970年1月1日00:00:00的毫秒数。<br>dt.setDate(date); // 设置实例对象对应每个月的几号（从1开始）。<br>dt.setFullYear(year); // 设置四位的年份。<br>dt.setMonth(month); // 设置月份（0表示1月，11表示12月）。<br>dt.setHours(hour); // 设置小时（0-23）。<br>dt.setMilliseconds(ms); // 设置毫秒（0-999）。<br>dt.setMinutes(min); // 设置分钟（0-59）。<br>dt.setSeconds(sec); // 设置秒（0-59）。</p>
+<pre><code>&gt; set方法没有setDay方法,因为星期几是计算得到的。
+
+同样的，以上方法了解即可，需要用到的时候在MDN.上进行查询即可。
+
+现在我们来尝试用dt.getFullYear()来获取当前的完整年份:
+</code></pre><p>let dt = new Date();<br>dt.setFullYear(2030);</p>
+<p>console.log(dt);</p>
+<pre><code>
+#### 小结
+时间对象、日期字符串和毫秒数之间是可以相互转换的，一图胜干言，我们把转换的规则总结成了一张图:
+![image](https://qgt-document.oss-cn-beijing.aliyuncs.com/P3-4-HTML-CSS/7/3.jpg)
+
+案例：
+
+如右边代码所示，已知一组活动信息，请按照活动的开始时间从早到晚将信息排序，并将开始时间格式化，例如:
+
+'2020-01-0113:00:00'格式化后为:'2020年1月1日13点0分'。
+
+格式化后的时间要求保存在对应的活动信息中，属性名为
+formattedDate,如:
+</code></pre><p>let infoList = [<br>  {<br>    id: ‘20020101’,<br>    startTime: ‘2020-01-01 13:00:00’,<br>    description: ‘现在加入，即刻领取属于自己的英雄’<br>  }<br>];</p>
+<p>// 格式化时间后<br>let infoList = [<br>  {<br>    id: ‘20020101’,<br>    startTime: ‘2020-01-01 13:00:00’,<br>    description: ‘现在加入，即刻领取属于自己的英雄’,<br>    formattedDate: ‘2020年1月1日 13点0分’<br>  }<br>];</p>
+<pre><code>
+
+代码：</code></pre><p>let infoList = [<br>  {<br>    id: ‘20020101’,<br>    startTime: ‘2020-01-01 13:00:00’,<br>    description: ‘现在加入，即刻领取属于自己的英雄’<br>  },<br>  {<br>    id: ‘20032101’,<br>    startTime: ‘2020-03-21 14:00:00’,<br>    description: ‘寓教于乐一家亲，深入浅出一片心’<br>  },<br>  {<br>    id: ‘20011001’,<br>    startTime: ‘2020-01-10 08:00:00’,<br>    description: ‘让孩子在游戏中爱上学习’<br>  },<br>  {<br>    id: ‘19111101’,<br>    startTime: ‘2019-11-11 09:30:00’,<br>    description: ‘发行的不是游戏，是快乐’<br>  }<br>];</p>
+<p>// 排序<br>infoList.sort((a, b) =&gt; {<br>  //return a.startTime - b.startTime;<br>  const aStartDate = new Date(a.startTime);<br>  const bStartDate = new Date(b.startTime);<br>  return aStartDate &gt; bStartDate ? 1 : -1;<br>});</p>
+<p>// 格式化时间<br>infoList.forEach(info =&gt; {<br>  info.formattedDate = formatDate(info.startTime);<br>});</p>
+<p>// 打印结果<br>console.log(infoList);</p>
+<p>// 格式化时间的函数<br>function formatDate(dtStr) {<br>  // 把时间字符串转为 Date 实例<br>  let date = new Date(dtStr);<br>  //let d = new Date(Date.parse(dtStr.replace(/-/g, “/“)));</p>
+<p>  // 获取：年、月、日、时、分<br>  const year = date.getFullYear();<br>  const month = date.getMonth()+1;<br>  const day = date.getDate();<br>  const hour = date.getHours();<br>  const min = date.getMinutes();</p>
+<p>  return year + ‘年’ + month + ‘月’ + day + ‘日 ‘ + hour + ‘点’ + min + ‘分’;<br>}</p>
+<pre><code>
+## 第八章 BOM
+### 8.1BOM
+在之前的7章课程中，我们已经学会了`Javascript`的基本语法。
+
+大家肯定有疑惑，我知道这些语法,怎么和我们的HTML,I CSsS 一起联合起
+来使用呢?
+
+本节课开始我们将开始学习这一部分， 重点教会大家完成**页面交互过程**。
+
+#### BOM
+我们知道为了让网页能显示出来,首先我们得在浏览器中输入网址，敲击回车，浏览器能自动帮我们渲染网页内容
+
+和浏览器渲染有关的对象，我们叫做**浏览器对象模型(Browser Object Model) --- BOM**。
+
+**BOM**是由一系列相关对象构成，每个对象都提供了很多方法和属性。
+
+但BOM缺乏标准，BOM属于约定俗成,比如Chrome怎么实现，
+FireFox, IE 等等就照抄一下。所以不同浏览器并不完全相同，在前端有一门高级技术叫做**浏览器兼容处理**，也就是处理这类问题，我们在之后会涉及到。
+
+现在业界主要以**Chrome**为准(这也是我们希望大家用Chrome进行学习的原因)。在这里我们主要学习**BOM**一些共同的对象和API。
+
+#### BOM对象
+在BOM里最重要的对象有4个，分别如下: 
+
+- **window (窗口)** : window是整个网页的框架，每个网页的内容都是装载在window里面
+- **navigator (浏览器)** : navigator里面存储浏览器相关信息
+- **history (历史)**:我们知道每个网页可以前进后端，history 便拿来存储整个网页栈的
+- **screen (显示屏幕)**:screen包含我们显示屏幕的信息，这个是硬件信息
+- **Location (地址)**:location包含当前访问的地址(网址)信息
+
+下面我以我的电脑为例，让大家更形象看看BOM对象在电脑上位置:
+![image](https://style.youkeda.com/img/course/f4/8/1.jpeg)
+
+**特别强调几点。**
+1. screen是整个电脑唯一的
+2. navigator是整个浏览器唯一的， 如果有多个浏览器就会有多个navigator
+3. window是每个网页唯一的， 每个网页都有一个独立的window
+4. history, location 是每个网页的信息，当然也是网页唯一的
+
+### 8.2windows
+
+#### HTML中嵌入JavaScript
+在所有的BOM中最重要的是**window对象**，我们这节课来详细学习下。
+
+在之前的学习中我们只是单纯写`javascript`，我们这次把javascript写入到HTML代码中，方便执行。
+
+我们在页面中打印优课达-学的比别人好一点，代码如下:
+</code></pre>
+
+  
+    <meta charset="UTF-8">
+    <title>优课达</title>
+  <meta name="generator" content="Hexo 4.2.0"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"><link rel="alternate" href="/atom.xml" title="我的个人blog" type="application/atom+xml">
+
+  
+    <h1>优课达-学的比别人好一点</h1>
+    <script src="./index.js"></script>
+  
+
+```
+我们在`body`底部加入`<script src="./index.js"></script>`，嵌入执行脚本。
+
+<p>然后在<code>index.js</code>脚本中加入<code>javascript</code>代码。执行一下:</p>
+<p>最终在控制台打印出：</p>
+<pre><code>"优课达-学的比别人好一点"</code></pre><h4 id="window"><a href="#window" class="headerlink" title="window"></a>window</h4><p>在Javascript学习中，最好用的学习和排查问题方法就是- –<br><strong>console.log</strong>,在这里我们打印一下window,看看window到底是什么</p>
+<p>右下角<strong>JSConsole</strong>的内容如下图所示：<br><img src="https://style.youkeda.com/img/course/f4/8/2.png" alt="image"></p>
+<p>我们看到<code>window</code>对象中，有很多<strong>方法</strong>，比如<code>alert</code>，<code>confirm</code>还有一些属性对象比如: <code>console</code> ，<code>screen</code> ，<code>navigator</code> ，<code>location</code>如果看不清楚，我们还可以打开MDN文档<br><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window" target="_blank" rel="noopener">MDN</a><br>官方解释为:</p>
+<ol>
+<li>window对象表示一个浏览器窗口或一个frame框架，它处于对象层次的<strong>最顶端</strong>，它提供了处理浏览器窗口的方法和属性。</li>
+<li>window对象是浏览器对象中的<strong>默认对象</strong>，所以可以隐式地引用window对象的属性和方法。在浏览器环境中，添加到window对象中的方法、属性等，其作用域都是全局的。</li>
+</ol>
+<p>第一点不难理解，我们主要解释第二点，什么叫做默认对象?什么叫做隐式引用?</p>
+<p>举个例子：</p>
+<pre><code>console.log('优课达');
+window.console.log('优课达');
+
+console.log(navigator);
+console.log(window.navigator);
+
+function hello() {}
+console.log(hello);
+console.log(window.hello);</code></pre><p>我们看出<code>console.1og</code>等于<code>window.console.1og</code>，<code>navigator</code>等于<code>window.navigator</code>,甚至自定义的顶层函数，也是挂载在<code>window</code>下面的。</p>
+<p>除此之外，之前讲的<code>Math</code>对象，<code>setTimeout</code>函数，<code>setInterva1</code>函数都是挂载在window下面,这里课程就不演示了，大家有兴趣自己去尝试一下。</p>
+<p>总结一下:</p>
+<blockquote>
+<p>window是默认对象，如果是调用window.上面的方法,可以省略，也可以称为隐式调用window上面的属性和方法。</p>
+</blockquote>
+<p>案例</p>
+<p>请大家阅读MDN中window对象，<a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window" target="_blank" rel="noopener">window</a></p>
+<p>找到获取浏览器窗口的内容区域的宽度和高度的属性，并将其打印</p>
+<p>代码：</p>
+<pre><code>//下面打印浏览器窗口内容区域的宽度
+console.log(window.innerWidth)
+//下面打印浏览器窗口内容区域的高度
+console.log(window.innerHeight)
+</code></pre><p>案例2：</p>
+<p>请大家阅读MDN中window对象，<a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window" target="_blank" rel="noopener">window</a></p>
+<p>找到打开新窗口的方法，并打开网址<code>https://www.youkeda.com</code></p>
+<p>提示:<br>本次调用的是方法，而不是属性喔。</p>
+<p>代码：</p>
+<pre><code>//下面调用打开新窗口的方法
+window.open(https://www.youkeda.com);</code></pre><h3 id="8-3Location-History"><a href="#8-3Location-History" class="headerlink" title="8.3Location/History"></a>8.3Location/History</h3><h4 id="Location"><a href="#Location" class="headerlink" title="Location"></a>Location</h4><p>我们继续学习Location对象，其用来保存当前网页位置的信息。<br>和之前一样，我们直接使用console.log 打印出来看看。</p>
+<p><strong>Location属性</strong></p>
+<p>用图表示如下(pathname 太长，部分省略代替) :<br><img src="https://style.youkeda.com/img/course/f4/8/3.jpeg" alt="image"><br>上面的不同属性都表示URL的不同部分，大家可以尝试利用这个规则去分析其他网页信息。</p>
+<p><strong>Location方法</strong></p>
+<p>在Location方法中，我们重点只需要掌握一个方法 — <strong>reload()</strong>。</p>
+<p>为了防止无限快速循环，我们设置一个定时器延迟调用reload。</p>
+<pre><code>setTimeout(function () {
+  window.location.reload();
+}, 3000);</code></pre><p>其他方法，大家了解一下即可，几乎不会用到，</p>
+<p><strong>跳转到新的地址</strong></p>
+<p>我们同样可以修改Location,直接将网页地址赋值给Location即可,<br>代码如下:</p>
+<pre><code>window.location = 'https://www.youkeda.com';</code></pre><h4 id="History"><a href="#History" class="headerlink" title="History"></a>History</h4><p><strong>History</strong>允许操作浏览器的曾经在标签页或者框架里访问的会话历史记录，由这个名称我们得知，History会存储该窗口的历史记录。</p>
+<p>mdn地址为：<a href="https://developer.mozilla.org/zh-CN/docs/Web/API/History" target="_blank" rel="noopener">https://developer.mozilla.org/zh-CN/docs/Web/API/History</a></p>
+<p>我们以上面跳转到新地址举例，如果原始网页为<br><code>https://www.youkeda.com</code>那history中存储为</p>
+<pre><code>// 会话记录
+['https://www.youkeda.com'];</code></pre><p>如果我们在网页中点击某个链接，或者使用<code>window.location = xxx</code>跳转到<code>https://www.baidu.com</code>,那history中存储为</p>
+<pre><code>// 会话记录
+['https://www.youkeda.com', 'https://www.baidu.com'];</code></pre><p>后续访问，以此类推。大家学过JS基础的话应该能看出来这是一个数组(或者说是列表)，在实际存储中用到的数据结构和数组特别类似，叫做<strong>栈</strong>。</p>
+<p>在history中需要掌握两个方法，<strong>back()</strong>和<strong>forward()</strong>, 分别对应到浏览器左上角的返回和前进按钮。理解比较简单，在课程中就不演示了。</p>
+<p>案例：</p>
+<p>本节课我们利用上面学到的知识改变了网址。</p>
+<p>题目要求:在本网页的地址的基础上修改search值为?spm=youkeda,并延迟3s跳转到新地址。</p>
+<p>案例如下:</p>
+<pre><code>// 原始地址
+https://resource.youkeda.com/wss/index.html?time=1580454161498
+
+// 目标地址
+https://resource.youkeda.com/wss/index.html?spm=youkeda</code></pre><p>注意最后问号区域</p>
+<p><strong>提示：</strong></p>
+<ol>
+<li>利用Location先获取地址信息</li>
+<li>利用JS字符串拼接修改地址信息</li>
+<li>利用Location的方法跳转到新的地址。</li>
+</ol>
+<pre><code>setTimeout(function() {
+  window.location =
+    window.location.origin + window.location.pathname + '?spm=youkeda';
+}, 3000);
+</code></pre><h3 id="8-4Navigator-Screen"><a href="#8-4Navigator-Screen" class="headerlink" title="8.4Navigator/Screen"></a>8.4Navigator/Screen</h3><h4 id="Navigator"><a href="#Navigator" class="headerlink" title="Navigator"></a>Navigator</h4><p>Navigator表示用户代理的状态和标识，也就是浏览器基本信息，在这里面我们需要了解一个属性—userAgent,代表当前浏览器的用户代理。</p>
+<p>演示一下:</p>
+<pre><code>console.log(window.navigator.userAgent)</code></pre><p>结果：</p>
+<pre><code>Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like
+Gecko) Chrome/79.0.3945.130 Safari/537.36</code></pre><p>从这个信息中我们可以得知</p>
+<blockquote>
+<p>Mozilla是一个基金会，表示这是一个主流浏览器</p>
+</blockquote>
+<blockquote>
+<p>Intel Mac OS X表示电脑信息为Mac</p>
+</blockquote>
+<blockquote>
+<p>Chrome/79.0表示浏览器版本</p>
+</blockquote>
+<p>大家可以根据自己的输出信息分析下自己的数据。</p>
+<p>案例：</p>
+<p><strong>Screen</strong><br>Screen我们就不用介绍了，希望大家能养成查文档的好习惯。</p>
+<p>以后到公司找文档和解决方案的能力是衡量一个程序员能力高低的最主要的手段之一。</p>
+<p>本次把Screen当做作业来练习，请大家在MDN中查找window. screen 相关的文档，并根据文档指示，获取电脑屏幕的宽度和高度，并打印出来。</p>
+<pre><code>// 打印电脑屏幕的宽度
+console.log(window.screen.width);
+
+// 打印电脑屏幕的高度
+console.log(window.screen.height);
+</code></pre><h2 id="第九章-DOM"><a href="#第九章-DOM" class="headerlink" title="第九章 DOM"></a>第九章 DOM</h2><h3 id="9-1初识DOM"><a href="#9-1初识DOM" class="headerlink" title="9.1初识DOM"></a>9.1初识DOM</h3><h4 id="初识DMO"><a href="#初识DMO" class="headerlink" title="初识DMO"></a>初识DMO</h4><p>先给大家打一个预防针，本节课是<strong>整个Javascript 甚至整个前端最最核心的内容</strong>，大家一定要认真仔细学习。</p>
+<p>当然本节内容也非常多，我会化繁为简，抽取其中最实用的给大家介绍。</p>
+<p>在之前课程中我们都学习过HTML、CSS,本课程也掌握了Javascript 的一些基本语法，大家是否有疑问:</p>
+<p>都说前端三板斧，那Javascript和HTML、CSS有什么联系呢?怎么使用Javascript来操作HTML和CSS呢?</p>
+<p>这就归功于本节课的重点—<strong>文档对象模型</strong>，Document Object Model 一般我们简称为DOM。</p>
+<p>官方解释为:</p>
+<blockquote>
+<p>文档对象模型(DOM)可以将<strong>web页面</strong>与<strong>脚本或编程语言</strong>连接起来。</p>
+</blockquote>
+<p>我们来理解下这句话，有两个重点:</p>
+<h5 id="1-web页面"><a href="#1-web页面" class="headerlink" title="1.web页面"></a>1.web页面</h5><blockquote>
+<p>这里的web页面，也就是之前我们用HTML和CSS绘制的页面，也称作为<strong>文档</strong></p>
+</blockquote>
+<h5 id="2-脚本或编程语言"><a href="#2-脚本或编程语言" class="headerlink" title="2.脚本或编程语言"></a>2.脚本或编程语言</h5><p>为什么这里不直接说将Web页面和Javascript语言连接起来，而要绕一下说<strong>脚本或编程语言</strong>呢?</p>
+<blockquote>
+<p>因为DOM是一种规范，或者是一种约定，只要遵循这个规范,那么无论是Javascript,还是python，或者java都可以被连接起来。</p>
+</blockquote>
+<p>那紧接着，我们来看看DOM是如何将实现连接的? </p>
+<h4 id="DOM映射"><a href="#DOM映射" class="headerlink" title="DOM映射"></a>DOM映射</h4><p>我们平时写HTML的时候，大多都认为HTML是平面的东西，一堆文字包裹在一堆标签中间。但实际上像HTML和XML这种形式的文档都是<strong>树状结构</strong>，也对应数据结构中的<strong>树</strong>。</p>
+<p>我们写一个简单的Web页面(HTML代码编写)，并尝试将其转换成树。</p>
+<pre><code>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;youkeda&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div&gt;
+      &lt;h1&gt;优课达&lt;/h1&gt;
+      &lt;p&gt;学的比别人好一点&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre><p>转换成的树图示如下：<br><img src="https://style.youkeda.com/img/course/f4/9/1.jpeg" alt="image"><br>图示就是一棵倒着的树，最顶部我们称为树根，这棵树就是DOM树。</p>
+<p>我们总结下DOM树特性:</p>
+<ol>
+<li>树根是DOCUMENT,也可以称为整个页面文档</li>
+<li>每个HTML标签我们称之为<strong>DOM节点</strong>，英文为<strong>Node或者ELement</strong></li>
+<li>每个HTML标签包裹的子标签,在树上体现为分支,称为<strong>儿子节点</strong>。比如上图，<code>P</code>和<code>H1</code>都是<code>DIV</code>的儿子节点。<code>DIV</code> 同样也是<code>BODY</code>的儿子节<br>点。</li>
+<li>儿子节点类推可以得知<code>P</code>,<code>H1</code>是<code>BODY</code>的孙子节点。</li>
+<li>所有<code>P</code>，<code>H1</code>的长辈，我们称为<code>P</code>和<code>H1</code>的祖先节点。</li>
+<li><code>P</code>, <code>H1</code>是亲兄弟，我们称为兄弟节点。</li>
+</ol>
+<p>注意上面的特性中的粗体，这些不是开玩笑的父子游戏，这是专业术语哈!</p>
+<p>案例：<br><img src="https://style.youkeda.com/img/course/f4/9/2.jpeg" alt="image"></p>
+<p>代码：</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8" /&gt;
+    &lt;title&gt;优课达&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;header&gt;
+      &lt;h1&gt;优课达&lt;/h1&gt;
+    &lt;/header&gt;
+    &lt;main&gt;
+      &lt;ul&gt;
+        &lt;li&gt;
+          学的比别人好一点
+        &lt;/li&gt;
+        &lt;li&gt;
+          https://www.youkeda.com
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/main&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre><h3 id="9-2访问DOCUMENT"><a href="#9-2访问DOCUMENT" class="headerlink" title="9.2访问DOCUMENT"></a>9.2访问DOCUMENT</h3><p>在上节课中我们知道web网页最终会映射为一棵DOM树,<br>DOM树连接网页和Javascript语言，那我们该怎么获取<br>DOM树的根部元素呢?</p>
+<p>很简单，DOCUMENT元素会存在全局变量window下面，<br>我们可以通过如下代码来访问:</p>
+<pre><code>console.log(window.document);</code></pre><p>最终JSConsole中的效果如下：<br><img src="https://style.youkeda.com/img/course/f4/9/3.png" alt="image"><br>从JSConsole我们知道，<code>window.document</code>得到的是一个<code>HTMLDocument</code>对象，这个对象内容有点多，大家不需要全部了解，只需要看几个属性即可，比如document内容key为<code>documentElement</code> :<br><img src="https://style.youkeda.com/img/course/f4/9/4.png" alt="image"><br>还可以了解一下<code>body</code>,<code>head</code>属性,分别对应HTML中的<code>body</code>,<code>head</code>内容。</p>
+<h4 id="Chrome调试工具"><a href="#Chrome调试工具" class="headerlink" title="Chrome调试工具"></a>Chrome调试工具</h4><p>上面的打印结果非常难以阅读，Chrome浏览器为了方便大家阅读,开发一套开发者工具，大家可以在<strong>非工程目录</strong>区域点击右键，点击<strong>检查</strong>开启开发者窗口，如下图所示:<br><img src="https://style.youkeda.com/img/course/f4/9/5.png" alt="image"><br>然后执行下面三个步骤:</p>
+<ol>
+<li>开发者窗口里面切换到<strong>Console</strong>面板</li>
+<li>再次点击代码演示</li>
+<li>可以看到Console里面出现#<strong>document</strong>,这个是Chrome单独处理过的，可读性较强(学习平台中的JSConsole是最原生的对象类型)。</li>
+</ol>
+<p>大家以后可以在此处查看Console,以后课程内容,我会同时截取两处的图片方便大家查看。</p>
+<p>具体操作步骤如下图所示:<br><img src="https://style.youkeda.com/img/course/f4/9/6.png" alt="image"></p>
+<h4 id="选择器查询"><a href="#选择器查询" class="headerlink" title="选择器查询"></a>选择器查询</h4><p>通过上面的代码，我们可以得到了整个网页内容，那如果我们想获取某一个特殊节点应该怎么办呢?我们用前端基础课程的大作业(QQ注册页)这个复杂的HTML代码作为案例。</p>
+<p>代码如下:</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8" /&gt;
+  &lt;link rel="stylesheet" type="text/css" href="./index.css" /&gt;
+  &lt;title&gt;QQ注册&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;nav class="nav"&gt;
+    &lt;a class="qq"&gt;
+      &lt;img src="https://document.youkeda.com/P3-1-HTML-CSS/1.9/3-qq/qq.png" /&gt;
+      &lt;span&gt;QQ&lt;/span&gt;
+    &lt;/a&gt;
+    &lt;ul class="right"&gt;
+      &lt;li class="bright"&gt;
+        &lt;img
+          src="https://document.youkeda.com/P3-1-HTML-CSS/1.9/3-qq/bright.png"
+          alt="QQ靓号"
+        /&gt;
+      &lt;/li&gt;
+      &lt;li class="language"&gt;
+        &lt;span&gt;简体中文&lt;/span&gt;
+        &lt;img
+          class="arrow"
+          src="https://document.youkeda.com/P3-1-HTML-CSS/1.9/3-qq/arrow-down.png"
+        /&gt;
+      &lt;/li&gt;
+      &lt;li class="contact"&gt;意见反馈&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+  &lt;main class="main"&gt;
+    &lt;div class="bg"&gt;&lt;/div&gt;
+    &lt;div class="content"&gt;
+      &lt;div class="core"&gt;
+        &lt;h1&gt;欢迎注册QQ&lt;/h1&gt;
+        &lt;div class="subtitle"&gt;
+          &lt;h2&gt;每一天，乐在沟通。&lt;/h2&gt;
+          &lt;a class="free-bright"&gt;免费靓号&lt;/a&gt;
+        &lt;/div&gt;
+
+        &lt;form action=""&gt;
+          &lt;input type="text" placeholder="昵称" /&gt;
+          &lt;input class="password" type="password" placeholder="密码" /&gt;
+          &lt;div class="mobile"&gt;
+            &lt;select&gt;
+              &lt;option&gt;+86&lt;/option&gt;
+              &lt;option&gt;+852&lt;/option&gt;
+            &lt;/select&gt;
+            &lt;input type="text" placeholder="手机号码" /&gt;
+          &lt;/div&gt;
+          &lt;p class="mobile-tip"&gt;可通过该手机号找回密码&lt;/p&gt;
+          &lt;button class="submit"&gt;立即注册&lt;/button&gt;
+          &lt;div class="agreement"&gt;
+            &lt;input type="checkbox" /&gt;
+            &lt;label&gt;我已阅读并同意相关服务条款和隐私政策&lt;/label&gt;
+          &lt;/div&gt;
+        &lt;/form&gt;
+      &lt;/div&gt;
+      &lt;footer&gt;Copyright © 1998-2019Tencent All Rights Reserved&lt;/footer&gt;
+    &lt;/div&gt;
+  &lt;/main&gt;
+&lt;/body&gt;</code></pre><p>我们如何获取到<code>subtitle</code>这个节点呢?</p>
+<pre><code>&lt;div class="subtitle"&gt;
+  &lt;h2&gt;每一天，乐在沟通。&lt;/h2&gt;
+  &lt;a class="free-bright"&gt;免费靓号&lt;/a&gt;
+&lt;/div&gt;</code></pre><p>这就需要用到<strong>选择器查询方法—querySelector()</strong></p>
+<p>这个方法需要传递一个字符串形式的<strong>selectors</strong>作为筛选条件。这需要利用大家已经学过的CSS知识，在此处我们可以使用’.subtitle’作为条件。</p>
+<p>但如果页面中有很多个class为<code>subtitle</code>的节点，可能筛选结果就不太准确了，我们可以加强了筛选条件，为:</p>
+<pre><code>//基础筛选条件
+'.subtitle';
+
+//加强版本，加上父亲筛选， 筛选 main标签下面 -&gt; class为core的节点下面 -&gt; class为subtitle的节点
+'main .core .subtitle';</code></pre><p>完整的代码如下：</p>
+<pre><code>document.querySelector('main .core .subtitle');</code></pre><p>之前QQ靓号的页面：</p>
+<pre><code>console.log(document.querySelector('main .core .subtitle'));</code></pre><p>最终结果：<br><img src="https://style.youkeda.com/img/course/f4/9/8.png" alt="image"><br>两者结合我们知道筛选到的节点满足我们的要求，并且这个节点是<code>HTMLDivElement</code>类型，我们又认识一种新的DOM对象。</p>
+<h5 id="迭代查询"><a href="#迭代查询" class="headerlink" title="迭代查询"></a>迭代查询</h5><p>当我们得到subtitle元素后,我们还可以利用这个元素，继续筛选器内部元素，比如我们想筛选器内部的a标签,我们可以继续完善代码:</p>
+<pre><code>let subtitle = document.querySelector('main .core .subtitle');
+console.log(subtitle.querySelector('a'));</code></pre><p>最终可以得到一个HTMLAnchorElement节点，在这里我就不演示了</p>
+<h4 id="选择器全量查询"><a href="#选择器全量查询" class="headerlink" title="选择器全量查询"></a>选择器全量查询</h4><p>在上面的技术中，我们只能查询到第一个满足条件的节点,那该怎么查询所有满足条件的节点呢？</p>
+<p>很简单，换一个方法，改为<strong>querySelectorAll()</strong>, 我们来看个新的案例，查询上面<strong>HTML</strong>中的所有<strong>input</strong>节点。</p>
+<pre><code>document.querySelectorAll('input');</code></pre><p>效果：<br><img src="https://style.youkeda.com/img/course/f4/9/9.png" alt="image"><br>可以发现，我们找到了4个<code>input</code>节点，并且查询返回的是一个<strong>类数组</strong>，我们可以直接通过索引访问。</p>
+<blockquote>
+<p>类数组，顾名思义类似数组形式，(可以通过索引访问的对象我们都可以称之为类数组)，从JSConsole中我们实际得到的是<strong>NodeList</strong>对象。</p>
+</blockquote>
+<h4 id="其他筛选方法"><a href="#其他筛选方法" class="headerlink" title="其他筛选方法"></a>其他筛选方法</h4><p><code>querySelector</code>和<code>querySelectorAll</code>是最新提出的方法，在这两个方法之前，有一套最原生的DOM查询函数,我们简单介绍下:</p>
+<p><strong>getElementByld()</strong>:根据<strong>id</strong>查询某个节点</p>
+<p><strong>getElementsByClassName()</strong>:根据<strong>class</strong>查询多个节点</p>
+<p><strong>getElementsByTagName()</strong>:根据<strong>标签名</strong>查询多个节点</p>
+<p>那querySelector(AII)和getElementXXX有什么具体区别呢?</p>
+<p>最主要的区别在于—<strong>动态性</strong>。</p>
+<blockquote>
+<p>querySelector查询出来的元素是拷贝的原始数据，不会再随着页面DOM节点的改变而变化</p>
+</blockquote>
+<blockquote>
+<p>get系列方法查询出来的元素就是原始数据，所以会随着页面的DOM节点的改变而变化</p>
+</blockquote>
+<p>这部分不要求掌握!大家只需要记住在以后的场景中，大多数都是用<code>querySelector(A11)</code>即可。</p>
+<p>案例：<br><img src="https://style.youkeda.com/img/course/f4/9/11.png" alt="image"></p>
+<pre><code>console.log(document.querySelector('li.bright img'));</code></pre><p>案例2：<br>请利用所学的知识第二个Option DOM节点，如下代码<br><code>&lt;option&gt;+852&lt;/option&gt;</code></p>
+<p><strong>提示：</strong></p>
+<p>1.可以使用CSS伪类选择器或者全部查询再取第二个节点<br>2.注意查看筛选到的节点的innerHTML属性是否为+852</p>
+<pre><code>console.log(document.querySelector('select option:nth-child(2)'));
+</code></pre><p>或者</p>
+<pre><code>let a =document.querySelectorAll('option');
+console.log(a[1]);</code></pre><h3 id="9-3DOM属性"><a href="#9-3DOM属性" class="headerlink" title="9.3DOM属性"></a>9.3DOM属性</h3><p>本节课我们学习DOM内部细节，学习他的重要属性，在学之前，我们先统计下上个小节我们遇到的DOM种类。</p>
+<pre><code>&lt;!-- HTMLDocument 根文档 --&gt;
+&lt;html&gt;
+  ……
+&lt;/html&gt;
+
+&lt;!-- HTMLDivElement DIV类型 --&gt;
+&lt;div class="subtitle"&gt;
+  ……
+&lt;/div&gt;
+
+&lt;!-- HTMLAnchorElement 超链接类型 --&gt;
+&lt;a class="free-bright"&gt;免费靓号&lt;/a&gt;
+
+&lt;!-- HTMLInputElement Input类型 --&gt;
+&lt;input class="password" type="pasworkd" placeholder="请输入密码" /&gt;</code></pre><p>我们发现基本每一种HTML标签都有-种DOM类型对应,<br>当然还有非常多的类型，大家可以打开MDN网站<br><a href="https://developer.moilla.org/zh-CN/docs/Web/API，在页面中搜索`Element`。" target="_blank" rel="noopener">https://developer.moilla.org/zh-CN/docs/Web/API，在页面中搜索`Element`。</a></p>
+<p>这些类型不要求牢记，大家稍微了解一下即可。 我们马上来<br>重点学习下他们的共同属性。</p>
+<h4 id="DOM属性"><a href="#DOM属性" class="headerlink" title="DOM属性"></a>DOM属性</h4><p>在上面我们看到很多DOM种类，但可以归纳为几个类别:</p>
+<ol>
+<li>元素节点.</li>
+<li>特性节点</li>
+<li>文本节点<br>4 …..其他类别不重要，忽略</li>
+</ol>
+<p>那这三种节点分别对应什么HTML代码呢?我们来看个案例</p>
+<p>html代码如下：</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8" /&gt;
+  &lt;title&gt;优课达&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div id="test"&gt;优课达&lt;/div&gt;
+  &lt;script src="./index.js"&gt;&lt;/script&gt;
+&lt;/body&gt;</code></pre><p>JS代码如下：</p>
+<pre><code>let divDom = document.querySelector('div#test');
+console.log(divDom.nodeType, divDom.nodeName, divDom.nodeValue);
+
+// 获取DIV节点的第一个儿子节点，代表 '优课达' 这个字符串
+let txtDom = divDom.firstChild;
+console.log(txtDom.nodeType, txtDom.nodeName, txtDom.nodeValue);
+
+// 获取DIV节点的id属性
+let attDom = divDom.attributes.id;
+console.log(attDom.nodeType, attDom.nodeName, attDom.nodeValue);</code></pre><table>
+<thead>
+<tr>
+<th>节点</th>
+<th>nodeType</th>
+<th>nodeName</th>
+<th>nodeValue</th>
+<th>类型</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>DivDom</td>
+<td>1</td>
+<td>DIV</td>
+<td>null</td>
+<td>元素节点</td>
+</tr>
+<tr>
+<td>txtDom</td>
+<td>3</td>
+<td>#text</td>
+<td>优课达</td>
+<td>文本节点</td>
+</tr>
+<tr>
+<td>attDom</td>
+<td>2</td>
+<td>id</td>
+<td>test</td>
+<td>特性节点</td>
+</tr>
+</tbody></table>
+<p>我们总结下特性如下:</p>
+<ol>
+<li>整个HTML中，无论是标签，标签属性,还是纯文本字符串都是<code>Element</code>，不同的地方在于<code>nodeType</code>分别为<code>1，2，3</code></li>
+<li>HTML标签都是<strong>元素节点</strong>，可以用<code>nodeName</code>获取标签名称</li>
+<li>纯文本都是<strong>文本节点</strong>，可以用<code>nodeValue</code>获取文本内容</li>
+<li>标签的每个属性都是<strong>特性节点</strong>，可以用<code>nodeName</code>取得属性Key,用<code>nodeValue</code>取得属性Value</li>
+<li><code>attributes</code>可以获取元素节点的所有属性，得到的结果是一个字典，通过属性Key获取对应的特性节点。</li>
+</ol>
+<h4 id="DOM内容"><a href="#DOM内容" class="headerlink" title="DOM内容"></a>DOM内容</h4><p>修改如上代码，如下：</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8" /&gt;
+  &lt;title&gt;优课达&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div id="test"&gt;
+    优课达
+    &lt;p&gt;youkeda&lt;/p&gt;
+    &lt;p&gt;学的比别人好一点&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;script src="./index.js"&gt;&lt;/script&gt;
+&lt;/body&gt;</code></pre><pre><code>let divDom = document.querySelector('div#test');
+console.log(divDom.outerHTML, divDom.innerHTML, divDom.innerText);</code></pre><p>结果为：</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>值</th>
+<th>总结</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>outerHTML</td>
+<td><code>&lt;div id="test"&gt;优课达&lt;p&gt;youkeda&lt;/p&gt;&lt;p&gt;学的比别人好一点&lt;/p&gt;&lt;/div&gt;</code></td>
+<td>整个DOM的HTML代码</td>
+</tr>
+<tr>
+<td>innerHTML</td>
+<td><code>优课达&lt;p&gt;youkeda&lt;/p&gt;&lt;p&gt;学的比别人好一点&lt;/p&gt;</code></td>
+<td>DOM内部HTML代码</td>
+</tr>
+<tr>
+<td>innerText</td>
+<td><code>优课达</code></td>
+<td>DOM内部纯文本内容</td>
+</tr>
+</tbody></table>
+<p>在实际情况下，大家根据需要利用不同的属性获取内容。</p>
+<h4 id="DOM亲属"><a href="#DOM亲属" class="headerlink" title="DOM亲属"></a>DOM亲属</h4><p>在上面我们知道可以利用firstChild属性获取到元素的第一个儿子节点。那还能获取哪些其他亲属呢?</p>
+<p>我们来看一个案例:</p>
+<p>HTML依然用上面的代码，Javascript 代码如下:</p>
+<pre><code>let divDom = document.querySelector('div#test');
+console.log(divDom.firstChild, divDom.lastChild);
+console.log('-----');
+console.log(divDom.childNodes);
+console.log('-----');
+console.log(divDom.parentNode);</code></pre><p>结果：<br><img src="https://style.youkeda.com/img/course/f4/9/14.png" alt="image"></p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>值</th>
+<th>总结</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>firstChild</td>
+<td><code>优课达</code></td>
+<td>指定节点的第一个子节点</td>
+</tr>
+<tr>
+<td>lastChild</td>
+<td><code>&lt;p&gt;学的比别人好一点&lt;/p&gt;</code></td>
+<td>指定节点的最后一个子节点</td>
+</tr>
+<tr>
+<td>childNodes</td>
+<td><code>优课达&lt;p&gt;youkeda&lt;/p&gt;&lt;p&gt;学的比别人好一点&lt;/p&gt;</code></td>
+<td>指定节点的子节点的集合</td>
+</tr>
+<tr>
+<td>parentNode</td>
+<td><code>&lt;body&gt;&lt;div id="test"&gt;优课达&lt;p&gt;youkeda&lt;/p&gt;&lt;p&gt;学的比别人好一点&lt;/p&gt;&lt;/div&gt;&lt;script src="./index.js"&gt;&lt;/script&gt;&lt;/body&gt;</code></td>
+<td>指定节点在DOM树中的父节点</td>
+</tr>
+</tbody></table>
+<h4 id="DOM样式"><a href="#DOM样式" class="headerlink" title="DOM样式"></a>DOM样式</h4><p>通过DOM，我们同样可以访问到其CSS特性，我们来下面<br>案例:</p>
+<p>HTML：</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8" /&gt;
+  &lt;title&gt;优课达&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1 class="test youkeda" style="color: #FF3300; font-size: 24px;"&gt;优课达&lt;/h1&gt;
+  &lt;script src="./index.js"&gt;&lt;/script&gt;
+&lt;/body&gt;</code></pre><p>JS</p>
+<pre><code>const h1Dom = document.querySelector('h1');
+console.log(h1Dom.classList);
+console.log(h1Dom.style);
+console.log(h1Dom.style.color);</code></pre><p><img src="https://style.youkeda.com/img/course/f4/9/15.png" alt="image"></p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>类型</th>
+<th>值</th>
+<th>总结</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>classList</td>
+<td>DOMTokenList类数组</td>
+<td>[‘test’,’youkeda’]</td>
+<td>classList数组方式存储所有的class名称</td>
+</tr>
+<tr>
+<td>style</td>
+<td>CSSStyleDeclaration</td>
+<td>clolr属性为rgb(255,51,0)</td>
+<td>对象或字典的方法存储CSSStyle</td>
+</tr>
+</tbody></table>
+<p>当然这些内容都是可以修改的，我们在下一节会具体讲到。</p>
+<h4 id="DOM数据属性"><a href="#DOM数据属性" class="headerlink" title="DOM数据属性"></a>DOM数据属性</h4><p>网页设计的初衷是数据和特定的HTML标签相关联。而我们肉眼能看到的数据只是HTML标签内部纯文本(innerText)部分,</p>
+<p>数据肯定不止肉眼所见那么少，那我们该怎么利用HTML存储呢?</p>
+<p>HTML提供一种数据属性的标准，利用<code>data-*</code>允许我们在标准内于HTML元素中存储额外的信息。例如下代码: .</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8" /&gt;
+  &lt;title&gt;优课达&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;article data-parts="3" data-words="1314" data-category="python"&gt;
+    ...
+  &lt;/article&gt;
+  &lt;script src="./index.js"&gt;&lt;/script&gt;
+&lt;/body&gt;</code></pre><p>如上面的代码，学习过语义化标签,我们知道article<br>一般用于放置文章区域。</p>
+<p>对文章而言，除了文章内容，我们还有其他额外数据，例如:<br><strong>段落，字数,分类</strong>，etc..</p>
+<p>那这些额外数据我们就可以利用<code>data-*</code>来存储，如上面的代码:</p>
+<pre><code>&lt;article data-parts="3" data-words="1314" data-category="python"&gt;&lt;/article&gt;</code></pre><p>注意，数据属性很重要，在前端中广泛应用，大家有兴趣可以用chrome开发者工具去试试看看一下其他网站的代码。</p>
+<p>那我们该怎么通过JS来获取呢?按上面的推理，肯定也存在DOM的某个属性中，代码如下:</p>
+<pre><code>const article = document.querySelector('article');
+console.log(article.dataset);</code></pre><p><img src="https://style.youkeda.com/img/course/f4/9/16.png" alt="image"><br>从结果可以看出，<code>dataset</code>是个Map对象，它是<code>data-*</code>这个<code>*</code>的<strong>Key-Value</strong>集合。</p>
+<h4 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h4><p>本章内容比较多，但都比较简单、容易理解。大家也不需要死记硬背，说实话到现在为止我也经常忘记。教给大家一个方法，记住大概意思，比如dataset,只需要记住<code>data</code>然后在DOM打印结果属性中去找寻。</p>
+<p>案例：</p>
+<p>请利用所学的属性获取的知识，获取QQ注册页左上角Logo的图片地址,并打印出来结果为:</p>
+<pre><code>'https://document.youkeda.com/P3-1-HTML-CSS/1.9/3-qq/qq.png';</code></pre><pre><code>const imgDom = document.querySelector('img');
+console.log(imgDom.attributes.src.value);
+或者
+const img = document.querySelector('img');
+console.log(img.src);</code></pre><p>案例：</p>
+<p>请利用所学的内容获取的知识，获取本页面的标题( h1内部文本) ,并打印出来结果为:</p>
+<p>‘欢迎注册QQ’</p>
+<pre><code>console.log(document.querySelector('h1').innerText);</code></pre><h3 id="9-4DOM操作-1"><a href="#9-4DOM操作-1" class="headerlink" title="9.4DOM操作(1)"></a>9.4DOM操作(1)</h3><h4 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h4><p>通过前面三节课，我们已经对DOM有了很深入的了解。我相信，给到大家任意一个网页，大家都能使用Javascript完.成任意网页内容提取。</p>
+<p>有了这个能力，以后大家如果想转行当爬虫工程师也是非常轻松的。</p>
+<p>大家是不是又一次感受到，软件行业的相通性，也就是一通百通的道理。</p>
+<p>既然对DOM有了足够的了解，那我们再接再厉，本节课开始学习<strong>操作DOM</strong>,想想就特别激动。</p>
+<p>之前的三节课程可以说是理论知识，本节课我想改变一下形式，利用实战案例带大家了解DOM操作该怎么使用!</p>
+<h4 id="DOM样式修改"><a href="#DOM样式修改" class="headerlink" title="DOM样式修改"></a>DOM样式修改</h4><p>还记得这个案例吧<br><img src="https://style.youkeda.com/img/course/f4/9/18.png" alt="image"><br>在Web基础课程第8章,我们在讲到position: absolute </p>
+<p>先不考虑点击事件，点击事件在后面一个章节会给大家讲到，在这里我们先内置点击代码。</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;head&gt;
+  &lt;meta charset="utf-8" /&gt;
+  &lt;link rel="stylesheet" type="text/css" href="./post.css" /&gt;
+  &lt;title&gt;优课达&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;section class="box"&gt;
+    &lt;img
+      class="java"
+      src="https://document.youkeda.com/new-learn-path/Bitmap.png"
+    /&gt;
+    &lt;div class="title"&gt;Java&lt;/div&gt;
+    &lt;div class="select"&gt;&lt;/div&gt;
+  &lt;/section&gt;
+
+  &lt;script src="./post.js"&gt;&lt;/script&gt;
+&lt;/body&gt;</code></pre><p>代码中<code>&lt;div class="select"&gt;&lt;/div&gt;</code>也即是那个圆圈选择框。</p>
+<p>我们可以试想下，有什么办法能实现上面的效果呢?</p>
+<blockquote>
+<p>我们是否可以在点击的时候，向<code>select</code>插入一个<code>img</code>节点,渲染选中的打钩图片。然后再次点击的时候清除<code>select</code>内部节点</p>
+</blockquote>
+<p>当然方案不止这一个，大家可以扩散思维。如果按照这个目标，我们需要哪些技术?</p>
+<ol>
+<li>如何使用Javascript 创建节点? (在这里创建 img节点)</li>
+<li>如何设置节点的样式、属性? ( img节点设置src 属性)</li>
+<li>如何在已存在节点内部添加子节点? ( img节点需要添加到<br>select中)</li>
+<li>如何清空节点内部子节点? (再次 点击时清空select 的子节点)</li>
+</ol>
+<p>根据这个思路，我们来看看Javascript代码,如下:</p>
+<pre><code>// 保存当前是否选中的状态
+let isSelected = false;
+
+// 获取整个元素的节点
+const box = document.querySelector('.box');
+
+// 获取select框节点
+const select = document.querySelector('.select');
+
+// 给整个元素添加点击事件【大家可以先忽略这部分】
+box.addEventListener('click', function () {
+  // 点击以后触发这个函数
+
+  // 修改当前选中状态，取反即可
+  isSelected = !isSelected;
+
+  // 如果当前是选中状态、则添加img到select中
+  if (isSelected) {
+    // 创建一个img标签节点
+    const img = document.createElement('img');
+
+    // 设置img的src属性和样式，让其撑满select框
+    img.src = 'https://style.youkeda.com/img/sandwich/check.png';
+    img.setAttribute('style', 'width: 100%; height: 100%;');
+
+    // 将这个节点添加到select框中
+    select.appendChild(img);
+  } else {
+    // 如果不是选择状态，则清空内部子元素
+    select.innerHTML = '';
+  }
+});</code></pre><h5 id="1-创建标签节点"><a href="#1-创建标签节点" class="headerlink" title="1.创建标签节点"></a>1.创建标签节点</h5><p><strong>document.createElement(tagName)</strong></p>
+<blockquote>
+<p>此方法用于创建一个由标签名称tagName指定的HTML<br>元素，也就是上节课提到的<strong>元素(标签)节点</strong>。</p>
+</blockquote>
+<p>如果想创建一个<code>div</code>标签,我们可以使用:</p>
+<pre><code>const div = document.createElement('div');</code></pre><p>如果想继续在这个div标签内部，添加纯文本内容，可以继续使用创建文本方法document.createTextNode(),代码如下: </p>
+<pre><code>const div = document.createElement('div');
+const txt = document.createTextNode('优课达-学的比别人好一点');</code></pre><p>我们继续把txt添加到div中，把div添加到body中，代<br>码如下:</p>
+<pre><code>const div = document.createElement('div');
+const txt = document.createTextNode('优课达-学的比别人好一点');
+div.appendChild(txt);
+document.body.appendChild(div);</code></pre><h5 id="2-添加新节点"><a href="#2-添加新节点" class="headerlink" title="2.添加新节点"></a>2.添加新节点</h5><p><strong>appendChild(newNode)</strong></p>
+<p>在上面的案例中，我们多次用到appendChild(),此方法可以往该节点中插入儿子节点。</p>
+<p>上面案例比较多,我就不举例了，我再给大家介绍一些和此方法类似的API。</p>
+<p><strong>inserBefore(newNode，referenceNode)</strong></p>
+<p>此方法和<code>appendChild()</code>刚好相反，<code>appendChild</code>是在<strong>所有儿子节点之后添加</strong>，<code>inserBefore</code>是在<strong>某个目标儿子节点之前添加</strong>。</p>
+<p><code>insertBefore(newNode,referenceNode)</code>,需要两个参数,<code>newNode</code>表示新节点，<code>referenceNode</code>表示目标节点，也就是新节点插入到目标节点之前。</p>
+<p>我们来看一个案例:</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;head&gt;
+  &lt;meta charset="utf-8" /&gt;
+  &lt;title&gt;优课达&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;ul class="root"&gt;
+    &lt;li class="sars"&gt;SARS&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;script src="./index.js"&gt;&lt;/script&gt;
+&lt;/body&gt;</code></pre><p>在案例中，我们有一个列表，里面陈列着疾病SARS。后来我们发现H1N1，因为没有SARS严重，我们将其放在SARS后。</p>
+<p>2020年发生新型冠状病毒，比SARA严重，需要插入到其<br>前面，最终的顺序为</p>
+<pre><code>&lt;ul class="root"&gt;
+  &lt;li&gt;新型冠状病毒&lt;/li&gt;
+  &lt;li&gt;SARS&lt;/li&gt;
+  &lt;li&gt;H1N1&lt;/li&gt;
+&lt;/ul&gt;</code></pre><p>那如何用JS来完成这个动态逻辑呢?我们来看看代码:</p>
+<pre><code>const root = document.querySelector('ul.root');
+const sars = document.querySelector('li.sars');
+
+// 创建 H1N1
+const H1N1 = document.createElement('li');
+const H1N1Txt = document.createTextNode('H1N1');
+H1N1.appendChild(H1N1Txt);
+root.appendChild(H1N1);
+
+// 创建 新型冠状病毒
+const nCoV = document.createElement('li');
+const nCoVTxt = document.createTextNode('新型冠状病毒');
+nCoV.appendChild(nCoVTxt);
+root.insertBefore(nCoV, sars);</code></pre><p>最终的效果和我们想象的一样。但有点瑕疵，上面代码中重复代码太多，本次是添加两个疾病节点，如果以后添加100个疾病节点，那该怎么办呢?</p>
+<p>对，我们既然学习过函数，那我们此处就应该用，上这个技巧，我们修改下代码如下:</p>
+<pre><code>function createDisease(txt) {
+  const dom = document.createElement('li');
+  const domTxt = document.createTextNode(txt);
+  dom.appendChild(domTxt);
+  return dom;
+}
+
+const root = document.querySelector('ul.root');
+const sars = document.querySelector('li.sars');
+
+// 创建 H1N1
+const H1N1 = createDisease('H1N1');
+root.appendChild(H1N1);
+
+// 创建 新型冠状病毒
+const nCoV = createDisease('新型冠状病毒');
+root.insertBefore(nCoV, sars);</code></pre><h5 id="3-设置样式、属性"><a href="#3-设置样式、属性" class="headerlink" title="3.设置样式、属性"></a>3.设置样式、属性</h5><p>在上面，我们通过如下代码设置CSS样式，这个和直接在HTML代码中写style语法一样。</p>
+<pre><code>img.setAttribute('style', 'width: 100%; height: 100%;');</code></pre><p>在上一节课我们知道dom.style是一个Map对象，因此如<br>果我们不想全量替换样式，我们还可以单独设置某些属性，<br>如下代码:</p>
+<pre><code>dom.style.color = 'xxxx';</code></pre><p><strong>setAttribute()</strong>不仅仅可以设置<code>style</code>之外，所有HTML属性都能用他设置，比如<code>id</code>, <code>src</code> ，<code>type</code> ，<code>disabled</code> , etc…</p>
+<p><strong>classList</strong></p>
+<p>再教给大家一个小技巧，试想一下如果我们需要给img设置太多的样式，这样写起来是不是太麻烦了?那我们有什么简便方法呢?</p>
+<p>在上一节，我们已经知道<code>classList</code>能获取到DOM上所有的类,那我们是否可以把样式写成CSS,然后在此处只用添加或删除class呢?</p>
+<p>当然可以! !</p>
+<p><code>classList</code>给我们提供了基础操作的增删改查方法，很容易<br>理解，大家可以查看下<a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Element/classList" target="_blank" rel="noopener">MDN</a>文档:</p>
+<h5 id="4-innerHTML"><a href="#4-innerHTML" class="headerlink" title="4.innerHTML"></a>4.innerHTML</h5><p>在案例中，我们使用<code>innerHTML=''</code>清空<code>select</code>节点所有的后代内容。</p>
+<p>大家肯定在想那我们是不是可以利用<code>innerHTML</code>，给某个元素添加内容呢?</p>
+<p>当然可以的，我们继续使用疾病的案例:在上面的JS代码中，我们使用<code>appendChild</code>添加<code>textNode</code>节点，我们改变一下写法，代码如下:</p>
+<pre><code>function createDisease(txt) {
+  const dom = document.createElement('li');
+
+  // 我们可以直接用innerHTML设置其纯文本
+  dom.innerHTML = txt;
+  return dom;
+}</code></pre><p>效果和之前的一致</p>
+<h4 id="总结-1"><a href="#总结-1" class="headerlink" title="总结"></a>总结</h4><p>本节课虽然只有一一个案例，但是涉及到的知识点还是比较多的,没事,我们后面还有很多案例可以让我们继续巩固这部分知识。</p>
+<p>在上面的案例中，我们发现为了实现某个效果，其实我们有多种方法。这就是前端的特性，我们没有唯一的标准答案，只有较好的方法技巧和规则。</p>
+<h3 id="9-5DOM操作-二"><a href="#9-5DOM操作-二" class="headerlink" title="9.5DOM操作(二)"></a>9.5DOM操作(二)</h3><h4 id="案例介绍"><a href="#案例介绍" class="headerlink" title="案例介绍"></a>案例介绍</h4><p>我们在使用手机浏览器中的百度时候，大家肯定发现过如下两个图片状态:<br><img src="https://style.youkeda.com/img/course/f4/9/20.png" alt="image"><br>左侧图片是输入文字之前，右侧图片是输入<strong>肺炎</strong>之后</p>
+<p>我们本节课就来模拟一个简化版的百度搜索</p>
+<p>我们分解下页面开发步骤:</p>
+<ol>
+<li>首先，我们在不考虑鼠标交互的情况下，完成静态HTML页面</li>
+<li>监听搜索框Input输入事件(这部分代码内置，下一 章我们马上会讲到)</li>
+<li>当输入内容是肺炎时，显示模糊搜索结果</li>
+<li>当输入内容不是肺炎时，显示登录查看历史</li>
+</ol>
+<h4 id="开发静态HTML页面"><a href="#开发静态HTML页面" class="headerlink" title="开发静态HTML页面"></a>开发静态HTML页面</h4><pre><code>&lt;body&gt;
+  &lt;div&gt;
+    &lt;nav&gt;
+      &lt;!-- 头部搜索框区域 --&gt;
+    &lt;/nav&gt;
+    &lt;main&gt;
+      &lt;!-- 输入非'肺炎'情况 --&gt;
+      &lt;section class="login"&gt;
+        登录查看历史
+      &lt;/section&gt;
+      &lt;!-- 输入'肺炎'情况 --&gt;
+      &lt;ul class="search-result"&gt;
+        &lt;li&gt;
+          &lt;i class="search"&gt;&lt;/i&gt;
+          &lt;p&gt;&lt;em&gt;肺炎&lt;/em&gt;疫情实时动态&lt;/p&gt;
+          &lt;i class="edit"&gt;&lt;/i&gt;
+        &lt;/li&gt;
+        ……
+      &lt;/ul&gt;
+    &lt;/main&gt;
+  &lt;/div&gt;
+&lt;/body&gt;</code></pre><p>代码主要分为3块区域,<strong>搜索框，登录查看历史，肺炎相关列表</strong>，当然最后的两个区域不会共存。</p>
+<h4 id="监听Input输入事件，处理区域显示隐藏"><a href="#监听Input输入事件，处理区域显示隐藏" class="headerlink" title="监听Input输入事件，处理区域显示隐藏"></a>监听Input输入事件，处理区域显示隐藏</h4><p>监听Input输入事件，我们暂时内置代码如下:</p>
+<pre><code>const input = document.querySelector('input');
+
+// 监听键盘事件
+input.addEventListener('keyup', function() {
+  // this 是DOM节点，this.value可以获取input内输入的值
+  console.log(this.value);
+});</code></pre><p>大家在Input输入框里面输入内容，内容会实时在<br>JSConsole打出，这就说明我们已经完成输入事件的监听。</p>
+<h4 id="监听输入肺炎时，显示肺炎查询结果"><a href="#监听输入肺炎时，显示肺炎查询结果" class="headerlink" title="监听输入肺炎时，显示肺炎查询结果"></a>监听输入肺炎时，显示肺炎查询结果</h4><p>显示和隐藏我们知道可以利用CSS知识<code>display: block/none;</code> 进行控制。</p>
+<p>因此首先我们修改CSS将<strong>登录查看历史</strong>设置可见，将<strong>搜索结果</strong>设置不可见</p>
+<pre><code>main .search-result {
+  padding: 0;
+  display: none;
+}</code></pre><p>接着修改Javascript代码，动态控制显示和隐藏如下:</p>
+<pre><code>const input = document.querySelector('input');
+
+const login = document.querySelector('.login');
+const searchResult = document.querySelector('.search-result');
+
+// 监听键盘事件
+input.addEventListener('keyup', function() {
+  // this 是DOM节点，this.value可以获取input内输入的值
+  if (this.value === '肺炎') {
+    login.style.display = 'none';
+    searchResult.style.display = 'block';
+  } else {
+    login.style.display = 'block';
+    searchResult.style.display = 'none';
+  }
+});</code></pre><p>大家尝试在右则输入肺炎和其他内容，可以看到控制效果和我们想要的一致。</p>
+<h4 id="肺炎搜索结果动态显示"><a href="#肺炎搜索结果动态显示" class="headerlink" title="肺炎搜索结果动态显示"></a>肺炎搜索结果动态显示</h4><p>我们知道搜索结果肯定不会题面写死的，在实际情况下,这些数据都会实时变换的。</p>
+<p>这部分数据是由Javascript发起网络请求返回的数据，然后利用动态生成节点的方法插入页面。</p>
+<p>我们还未学习网络请求，暂时先模拟在Javascript代码中,</p>
+<p>如下代码:</p>
+<pre><code>let data = [
+  '&lt;em&gt;肺炎&lt;/em&gt;实时疫情动态',
+  '&lt;em&gt;肺炎&lt;/em&gt;的症状有哪些症状',
+  '&lt;em&gt;肺炎&lt;/em&gt;武汉',
+  '&lt;em&gt;肺炎&lt;/em&gt;症状',
+  '&lt;em&gt;肺炎&lt;/em&gt;最新',
+  '&lt;em&gt;肺炎&lt;/em&gt;是怎么引起的',
+  '&lt;em&gt;肺炎&lt;/em&gt;最新消息',
+  '&lt;em&gt;肺炎&lt;/em&gt;实时',
+  '&lt;em&gt;肺炎&lt;/em&gt;症状及表现',
+  '&lt;em&gt;肺炎&lt;/em&gt;最新情况'
+];</code></pre><p>我们需要利用这份数组数据，生成多个li标签内容,<br>li标签模板如下:</p>
+<pre><code>function createSearchItem(txt) {
+  const item = document.createElement('li');
+  item.innerHTML = `&lt;i class="search"&gt;&lt;/i&gt;&lt;p&gt;${txt}&lt;/p&gt;&lt;i class="edit"&gt;&lt;/i&gt;`;
+  return item;
+}</code></pre><p>在这里我们使用innerHTML 和模板字符串快速创建li内<br>容。</p>
+<p>最后我们需要遍历搜索结果数据数组，依次创建<code>li</code> ,并插入到页面中，代码如下:</p>
+<pre><code>在这里我们使用innerHTML 和模板字符串快速创建li内
+容。
+最后我们需要遍历搜索结果数据数组，依次创建li ,并插入
+到页面中，代码如下:
+</code></pre><p>大家在右边输入肺炎测试下，最终效果和百度-样。</p>
+<h4 id="总结-2"><a href="#总结-2" class="headerlink" title="总结"></a>总结</h4><p>我们总结下本节课的解决思路:</p>
+<p>首先我们在不考虑动态效果情况下，把页面中所涉及到的所有元素都用<strong>静态页面</strong>的形式写出来。</p>
+<p>其次利用Javascript控制区域的<strong>显示和隐藏</strong>，达到动态效果。</p>
+<p>最后根据写好的<strong>静态页面模板和数据，动态创建DOM节点</strong>。</p>
+<p>接下来我们自己上手练习一下。</p>
+<h4 id="京东狗切换"><a href="#京东狗切换" class="headerlink" title="京东狗切换"></a>京东狗切换</h4><p>我们先来完成一个图片动态切换的效果，如下GIF:</p>
+<p><img src="https://style.youkeda.com/img/course/f4/9/21.gif" alt="image"></p>
+<p>当鼠标放置在图片上，图片会进行切换，当离开图片时，图片恢复原样。</p>
+<p><strong>提示</strong></p>
+<ol>
+<li>基础的HTML、 CSS样式已经内置在代码<br>中，大家只需完成JS部分</li>
+<li>鼠标放置和离开的事件，已经默认写好，<br>大家只需完成之后的操作</li>
+</ol>
+<p>index.js</p>
+<pre><code>const logo = document.querySelector('.logo');
+// 鼠标放置事件
+logo.addEventListener('mouseover', function() {
+  // 处理放置事件
+});
+
+// 鼠标离开事件
+logo.addEventListener('mouseout', function() {
+  // 处理离开事件
+});
+</code></pre><p>index.html(这里的图片也要在当前目录下创建文件夹)</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head lang="en"&gt;
+    &lt;meta charset="UTF-8" /&gt;
+    &lt;title&gt;京东&lt;/title&gt;
+
+    &lt;link rel="stylesheet" href="./index.css" /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;img class="logo" src="./images/1.png" /&gt;
+    &lt;script src="./index.js"&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre><p>CSS</p>
+<pre><code>img {
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+</code></pre><script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://github.com/zrz15751005135/zrz15751005135.github.io" rel="external nofollow noreferrer">张睿喆</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://github.com/zrz15751005135/zrz15751005135.github.io/2020/10/30/js-ji-chu/">https://github.com/zrz15751005135/zrz15751005135.github.io/2020/10/30/js-ji-chu/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="https://github.com/zrz15751005135/zrz15751005135.github.io" target="_blank">张睿喆</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+
+<div id="article-share">
+    
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+        <style>
+    .valine-card {
+        margin: 1.5rem auto;
+    }
+
+    .valine-card .card-content {
+        padding: 20px 20px 5px 20px;
+    }
+
+    #vcomments textarea {
+        box-sizing: border-box;
+        background: url("/medias/comment_bg.png") 100% 100% no-repeat;
+    }
+
+    #vcomments p {
+        margin: 2px 2px 10px;
+        font-size: 1.05rem;
+        line-height: 1.78rem;
+    }
+
+    #vcomments blockquote p {
+        text-indent: 0.2rem;
+    }
+
+    #vcomments a {
+        padding: 0 2px;
+        color: #4cbf30;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    #vcomments img {
+        max-width: 100%;
+        height: auto;
+        cursor: pointer;
+    }
+
+    #vcomments ol li {
+        list-style-type: decimal;
+    }
+
+    #vcomments ol,
+    ul {
+        display: block;
+        padding-left: 2em;
+        word-spacing: 0.05rem;
+    }
+
+    #vcomments ul li,
+    ol li {
+        display: list-item;
+        line-height: 1.8rem;
+        font-size: 1rem;
+    }
+
+    #vcomments ul li {
+        list-style-type: disc;
+    }
+
+    #vcomments ul ul li {
+        list-style-type: circle;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    #vcomments table, th, td {
+        border: 0;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments h1 {
+        font-size: 1.85rem;
+        font-weight: bold;
+        line-height: 2.2rem;
+    }
+
+    #vcomments h2 {
+        font-size: 1.65rem;
+        font-weight: bold;
+        line-height: 1.9rem;
+    }
+
+    #vcomments h3 {
+        font-size: 1.45rem;
+        font-weight: bold;
+        line-height: 1.7rem;
+    }
+
+    #vcomments h4 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    #vcomments h5 {
+        font-size: 1.1rem;
+        font-weight: bold;
+        line-height: 1.4rem;
+    }
+
+    #vcomments h6 {
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+
+    #vcomments p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    #vcomments hr {
+        margin: 12px 0;
+        border: 0;
+        border-top: 1px solid #ccc;
+    }
+
+    #vcomments blockquote {
+        margin: 15px 0;
+        border-left: 5px solid #42b983;
+        padding: 1rem 0.8rem 0.3rem 0.8rem;
+        color: #666;
+        background-color: rgba(66, 185, 131, .1);
+    }
+
+    #vcomments pre {
+        font-family: monospace, monospace;
+        padding: 1.2em;
+        margin: .5em 0;
+        background: #272822;
+        overflow: auto;
+        border-radius: 0.3em;
+        tab-size: 4;
+    }
+
+    #vcomments code {
+        font-family: monospace, monospace;
+        padding: 1px 3px;
+        font-size: 0.92rem;
+        color: #e96900;
+        background-color: #f8f8f8;
+        border-radius: 2px;
+    }
+
+    #vcomments pre code {
+        font-family: monospace, monospace;
+        padding: 0;
+        color: #e8eaf6;
+        background-color: #272822;
+    }
+
+    #vcomments pre[class*="language-"] {
+        padding: 1.2em;
+        margin: .5em 0;
+    }
+
+    #vcomments code[class*="language-"],
+    pre[class*="language-"] {
+        color: #e8eaf6;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+
+    #vcomments b,
+    strong {
+        font-weight: bold;
+    }
+
+    #vcomments dfn {
+        font-style: italic;
+    }
+
+    #vcomments small {
+        font-size: 85%;
+    }
+
+    #vcomments cite {
+        font-style: normal;
+    }
+
+    #vcomments mark {
+        background-color: #fcf8e3;
+        padding: .2em;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+</style>
+
+<div class="card valine-card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="vcomments" class="card-content" style="display: grid">
+    </div>
+</div>
+
+<script src="/libs/valine/av-min.js"></script>
+<script src="/libs/valine/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '#vcomments',
+        appId: 'f6UEXTOH6kp1XbaMiuRnQJSU-gzGzoHsz',
+        appKey: 'mMbPFpStLoaC4G4K67DX70ks',
+        notify: 'false' === 'true',
+        verify: 'false' === 'true',
+        visitor: 'true' === 'true',
+        avatar: 'mm',
+        pageSize: '10',
+        lang: 'zh-cn',
+        placeholder: 'just go go'
+    });
+</script>
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2020/10/30/js-ji-chu/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="JS基础自学了解">
+                        
+                        <span class="card-title">JS基础自学了解</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            JS基础了解
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-30
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/JS%E5%9F%BA%E7%A1%80/" class="post-category">
+                                    JS基础
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2020/10/26/web-qian-duan-ji-chu/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="web前端自学基础">
+                        
+                        <span class="card-title">web前端自学基础</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            web前端基础了解
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-26
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/web%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/" class="post-category">
+                                    web前端基础
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+    
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+<!-- 代码块折行 -->
+
+<style type="text/css">
+code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }
+</style>
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+    <footer class="page-footer bg-color">
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            <span id="sitetime"></span>
+            <span id="year">2020</span>
+            <a href="https://github.com/zrz15751005135/zrz15751005135.github.io" target="_blank">张睿喆</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">71.7k</span>&nbsp;字
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:410899047@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+    <a href="https://www.facebook.com/xxx" class="tooltipped" target="_blank" data-tooltip="关注我的Facebook: https://www.facebook.com/xxx" data-position="top" data-delay="50">
+        <i class="fab fa-facebook-f"></i>
+    </a>
+
+
+
+    <a href="https://twitter.com/xxx" class="tooltipped" target="_blank" data-tooltip="关注我的Twitter: https://twitter.com/xxx" data-position="top" data-delay="50">
+        <i class="fab fa-twitter"></i>
+    </a>
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=410899047" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 410899047" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+    <a href="https://weibo.com/xxx" class="tooltipped" target="_blank" data-tooltip="关注我的微博: https://weibo.com/xxx" data-position="top" data-delay="50">
+        <i class="fab fa-weibo"></i>
+    </a>
+
+
+
+    <a href="https://www.zhihu.com/xxx" class="tooltipped" target="_blank" data-tooltip="关注我的知乎: https://www.zhihu.com/xxx" data-position="top" data-delay="50">
+        <i class="fab fa-zhihu1">知</i>
+    </a>
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+<script language=javascript>
+    function siteTime() {
+        window.setTimeout("siteTime()", 1000);
+        var seconds = 1000;
+        var minutes = seconds * 60;
+        var hours = minutes * 60;
+        var days = hours * 24;
+        var years = days * 365;
+        var today = new Date();
+        var todayYear = today.getFullYear();
+        var todayMonth = today.getMonth() + 1;
+        var todayDate = today.getDate();
+        var todayHour = today.getHours();
+        var todayMinute = today.getMinutes();
+        var todaySecond = today.getSeconds();
+        /* Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)
+        year - 作为date对象的年份，为4位年份值
+        month - 0-11之间的整数，做为date对象的月份
+        day - 1-31之间的整数，做为date对象的天数
+        hours - 0(午夜24点)-23之间的整数，做为date对象的小时数
+        minutes - 0-59之间的整数，做为date对象的分钟数
+        seconds - 0-59之间的整数，做为date对象的秒数
+        microseconds - 0-999之间的整数，做为date对象的毫秒数 */
+        var t1 = Date.UTC(2020, 04, 01, 00, 00, 00); //北京时间2018-2-13 00:00:00
+        var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+        var diff = t2 - t1;
+        var diffYears = Math.floor(diff / years);
+        var diffDays = Math.floor((diff / days) - diffYears * 365);
+        var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+        var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) / minutes);
+        var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours - diffMinutes * minutes) / seconds);
+        document.getElementById("sitetime").innerHTML = "本站已运行 " +diffYears+" 年 "+diffDays + " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+    }/*因为建站时间还没有一年，就将之注释掉了。需要的可以取消*/
+    siteTime();
+</script>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script src="/js/search.js"></script>
+<script type="text/javascript">
+$(function () {
+    searchFunc("/" + "search.xml", 'searchInput', 'searchResult');
+});
+</script>
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>

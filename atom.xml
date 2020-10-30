@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>我的个人blog</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://github.com/zrz15751005135/zrz15751005135.github.io/"/>
+  <updated>2020-10-30T11:52:48.401Z</updated>
+  <id>https://github.com/zrz15751005135/zrz15751005135.github.io/</id>
+  
+  <author>
+    <name>张睿喆</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JS基础自学了解</title>
+    <link href="https://github.com/zrz15751005135/zrz15751005135.github.io/2020/10/30/js-ji-chu/"/>
+    <id>https://github.com/zrz15751005135/zrz15751005135.github.io/2020/10/30/js-ji-chu/</id>
+    <published>2020-10-30T11:50:20.000Z</published>
+    <updated>2020-10-30T11:52:48.401Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;第一章-走进JavaScript&quot;&gt;&lt;a href=&quot;#第一章-走进JavaScript&quot; class=&quot;headerlink&quot; title=&quot;第一章 走进JavaScript&quot;&gt;&lt;/a&gt;第一章 走进JavaScript&lt;/h2&gt;&lt;h3
+        
+      
+    
+    </summary>
+    
+    
+      <category term="JS基础" scheme="https://github.com/zrz15751005135/zrz15751005135.github.io/categories/JS%E5%9F%BA%E7%A1%80/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>web前端自学基础</title>
+    <link href="https://github.com/zrz15751005135/zrz15751005135.github.io/2020/10/26/web-qian-duan-ji-chu/"/>
+    <id>https://github.com/zrz15751005135/zrz15751005135.github.io/2020/10/26/web-qian-duan-ji-chu/</id>
+    <published>2020-10-26T07:30:00.000Z</published>
+    <updated>2020-10-30T11:54:30.895Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;第一章：认识前端开发&quot;&gt;&lt;a href=&quot;#第一章：认识前端开发&quot; class=&quot;headerlink&quot; title=&quot;第一章：认识前端开发&quot;&gt;&lt;/a&gt;第一章：认识前端开发&lt;/h2&gt;&lt;h3 id=&quot;什么是HTML&quot;&gt;&lt;a href=&quot;#什么是HTML&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="web前端基础" scheme="https://github.com/zrz15751005135/zrz15751005135.github.io/categories/web%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>python自学day2</title>
+    <link href="https://github.com/zrz15751005135/zrz15751005135.github.io/2020/08/01/pyday2/"/>
+    <id>https://github.com/zrz15751005135/zrz15751005135.github.io/2020/08/01/pyday2/</id>
+    <published>2020-08-01T07:22:23.000Z</published>
+    <updated>2020-10-10T01:59:32.480Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;装饰器&quot;&gt;&lt;a href=&quot;#装饰器&quot; class=&quot;headerlink&quot; title=&quot;装饰器&quot;&gt;&lt;/a&gt;装饰器&lt;/h3&gt;&lt;p&gt;1、当装饰器的东西要放上面&lt;/p&gt;
+&lt;p&gt;2、引用装饰器，先运行装饰器&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;import
+        
+      
+    
+    </summary>
+    
+    
+      <category term="python自学笔记" scheme="https://github.com/zrz15751005135/zrz15751005135.github.io/categories/python%E8%87%AA%E5%AD%A6%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="python自学笔记" scheme="https://github.com/zrz15751005135/zrz15751005135.github.io/tags/python%E8%87%AA%E5%AD%A6%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python自学day3</title>
+    <link href="https://github.com/zrz15751005135/zrz15751005135.github.io/2020/08/01/pyday3/"/>
+    <id>https://github.com/zrz15751005135/zrz15751005135.github.io/2020/08/01/pyday3/</id>
+    <published>2020-08-01T07:22:23.000Z</published>
+    <updated>2020-10-10T01:59:44.902Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;模块&quot;&gt;&lt;a href=&quot;#模块&quot; class=&quot;headerlink&quot; title=&quot;模块&quot;&gt;&lt;/a&gt;模块&lt;/h1&gt;&lt;p&gt;每一个.py文件&lt;br&gt;新建test1234.py文件&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#-*- coding=utf-8
+        
+      
+    
+    </summary>
+    
+    
+      <category term="python自学笔记" scheme="https://github.com/zrz15751005135/zrz15751005135.github.io/categories/python%E8%87%AA%E5%AD%A6%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="python自学笔记" scheme="https://github.com/zrz15751005135/zrz15751005135.github.io/tags/python%E8%87%AA%E5%AD%A6%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python自学day1</title>
+    <link href="https://github.com/zrz15751005135/zrz15751005135.github.io/2020/08/01/pyday1/"/>
+    <id>https://github.com/zrz15751005135/zrz15751005135.github.io/2020/08/01/pyday1/</id>
+    <published>2020-08-01T07:22:23.000Z</published>
+    <updated>2020-10-10T01:59:13.383Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;part1&quot;&gt;&lt;a href=&quot;#part1&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="python自学笔记" scheme="https://github.com/zrz15751005135/zrz15751005135.github.io/categories/python%E8%87%AA%E5%AD%A6%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="python自学笔记" scheme="https://github.com/zrz15751005135/zrz15751005135.github.io/tags/python%E8%87%AA%E5%AD%A6%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python自学day5</title>
+    <link href="https://github.com/zrz15751005135/zrz15751005135.github.io/2020/08/01/pyday5/"/>
+    <id>https://github.com/zrz15751005135/zrz15751005135.github.io/2020/08/01/pyday5/</id>
+    <published>2020-08-01T07:22:23.000Z</published>
+    <updated>2020-10-10T02:00:19.240Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;循环通信&quot;&gt;&lt;a href=&quot;#循环通信&quot; class=&quot;headerlink&quot; title=&quot;循环通信&quot;&gt;&lt;/a&gt;循环通信&lt;/h3&gt;&lt;p&gt;服务端&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#-*- coding=utf-8 -*-
+
+import socket
+
+def
+        
+      
+    
+    </summary>
+    
+    
+      <category term="python自学笔记" scheme="https://github.com/zrz15751005135/zrz15751005135.github.io/categories/python%E8%87%AA%E5%AD%A6%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="python自学笔记" scheme="https://github.com/zrz15751005135/zrz15751005135.github.io/tags/python%E8%87%AA%E5%AD%A6%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python自学day4</title>
+    <link href="https://github.com/zrz15751005135/zrz15751005135.github.io/2020/08/01/pyday4/"/>
+    <id>https://github.com/zrz15751005135/zrz15751005135.github.io/2020/08/01/pyday4/</id>
+    <published>2020-08-01T07:22:23.000Z</published>
+    <updated>2020-10-10T02:00:00.956Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;findall发现所有&quot;&gt;&lt;a href=&quot;#findall发现所有&quot; class=&quot;headerlink&quot; title=&quot;findall发现所有&quot;&gt;&lt;/a&gt;findall发现所有&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;#-*- coding=utf-8
+        
+      
+    
+    </summary>
+    
+    
+      <category term="python自学笔记" scheme="https://github.com/zrz15751005135/zrz15751005135.github.io/categories/python%E8%87%AA%E5%AD%A6%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="python自学笔记" scheme="https://github.com/zrz15751005135/zrz15751005135.github.io/tags/python%E8%87%AA%E5%AD%A6%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数据库基础</title>
+    <link href="https://github.com/zrz15751005135/zrz15751005135.github.io/2020/04/13/shu-ju-ku-1/"/>
+    <id>https://github.com/zrz15751005135/zrz15751005135.github.io/2020/04/13/shu-ju-ku-1/</id>
+    <published>2020-04-13T08:30:20.000Z</published>
+    <updated>2020-04-22T15:44:34.742Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;数据库-1&quot;&gt;&lt;a href=&quot;#数据库-1&quot; class=&quot;headerlink&quot; title=&quot;数据库(1)&quot;&gt;&lt;/a&gt;数据库(1)&lt;/h1&gt;&lt;h2 id=&quot;数据库的好处&quot;&gt;&lt;a href=&quot;#数据库的好处&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="数据库" scheme="https://github.com/zrz15751005135/zrz15751005135.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    
+      <category term="数据库笔记" scheme="https://github.com/zrz15751005135/zrz15751005135.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JAVA异常处理</title>
+    <link href="https://github.com/zrz15751005135/zrz15751005135.github.io/2020/04/06/java-yi-chang-chu-li/"/>
+    <id>https://github.com/zrz15751005135/zrz15751005135.github.io/2020/04/06/java-yi-chang-chu-li/</id>
+    <published>2020-04-06T01:50:20.000Z</published>
+    <updated>2020-04-06T01:54:56.081Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Java异常处理&quot;&gt;&lt;a href=&quot;#Java异常处理&quot; class=&quot;headerlink&quot; title=&quot;Java异常处理&quot;&gt;&lt;/a&gt;Java异常处理&lt;/h1&gt;&lt;h2 id=&quot;1-java异常处理机制&quot;&gt;&lt;a href=&quot;#1-java异常处理机制&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="JAVA面向对象自学笔记" scheme="https://github.com/zrz15751005135/zrz15751005135.github.io/categories/JAVA%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%87%AA%E5%AD%A6%E7%AC%94%E8%AE%B0/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>JAVA接口自学</title>
+    <link href="https://github.com/zrz15751005135/zrz15751005135.github.io/2020/04/06/java-jie-kou/"/>
+    <id>https://github.com/zrz15751005135/zrz15751005135.github.io/2020/04/06/java-jie-kou/</id>
+    <published>2020-04-06T00:48:32.000Z</published>
+    <updated>2020-04-06T01:00:00.906Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;JAVA接口&quot;&gt;&lt;a href=&quot;#JAVA接口&quot; class=&quot;headerlink&quot; title=&quot;JAVA接口&quot;&gt;&lt;/a&gt;JAVA接口&lt;/h1&gt;&lt;h2 id=&quot;1-接口语法&quot;&gt;&lt;a href=&quot;#1-接口语法&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="JAVA面向对象自学笔记" scheme="https://github.com/zrz15751005135/zrz15751005135.github.io/categories/JAVA%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%87%AA%E5%AD%A6%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="JAVA自学笔记" scheme="https://github.com/zrz15751005135/zrz15751005135.github.io/tags/JAVA%E8%87%AA%E5%AD%A6%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>前端学习概述</title>
+    <link href="https://github.com/zrz15751005135/zrz15751005135.github.io/2020/04/03/qian-duan-kai-fa-gai-shu/"/>
+    <id>https://github.com/zrz15751005135/zrz15751005135.github.io/2020/04/03/qian-duan-kai-fa-gai-shu/</id>
+    <published>2020-04-03T08:30:20.000Z</published>
+    <updated>2020-04-06T01:00:44.187Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;前端开发&quot;&gt;&lt;a href=&quot;#前端开发&quot; class=&quot;headerlink&quot; title=&quot;前端开发&quot;&gt;&lt;/a&gt;前端开发&lt;/h1&gt;&lt;h2 id=&quot;前端开发概述&quot;&gt;&lt;a href=&quot;#前端开发概述&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="前端自学笔记" scheme="https://github.com/zrz15751005135/zrz15751005135.github.io/categories/%E5%89%8D%E7%AB%AF%E8%87%AA%E5%AD%A6%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="前端自学笔记" scheme="https://github.com/zrz15751005135/zrz15751005135.github.io/tags/%E5%89%8D%E7%AB%AF%E8%87%AA%E5%AD%A6%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>article title</title>
+    <link href="https://github.com/zrz15751005135/zrz15751005135.github.io/2020/04/01/article-title/"/>
+    <id>https://github.com/zrz15751005135/zrz15751005135.github.io/2020/04/01/article-title/</id>
+    <published>2020-04-01T09:20:57.000Z</published>
+    <updated>2020-04-01T09:49:11.250Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;今天正式创建博客，4月3日域名审核完毕，正式开始写blog之旅~，分享一些学习经验还有自己的一些事情，后天见咯。&lt;/p&gt;
+&lt;script&gt;
+        document.querySelectorAll(&#39;.github-emoji&#39;)
+         
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://github.com/zrz15751005135/zrz15751005135.github.io/2020/04/01/hello-world/"/>
+    <id>https://github.com/zrz15751005135/zrz15751005135.github.io/2020/04/01/hello-world/</id>
+    <published>2020-04-01T08:26:35.530Z</published>
+    <updated>2020-04-01T08:26:35.530Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+</feed>
