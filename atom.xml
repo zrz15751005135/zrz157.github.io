@@ -96,11 +96,11 @@
   </entry>
   
   <entry>
-    <title>python自学day3</title>
-    <link href="https://github.com/zrz15751005135/zrz15751005135.github.io/2020/08/01/pyday3/"/>
-    <id>https://github.com/zrz15751005135/zrz15751005135.github.io/2020/08/01/pyday3/</id>
+    <title>python自学day1</title>
+    <link href="https://github.com/zrz15751005135/zrz15751005135.github.io/2020/08/01/pyday1/"/>
+    <id>https://github.com/zrz15751005135/zrz15751005135.github.io/2020/08/01/pyday1/</id>
     <published>2020-08-01T07:22:23.000Z</published>
-    <updated>2020-10-10T01:59:44.902Z</updated>
+    <updated>2020-10-10T01:59:13.383Z</updated>
     
     <summary type="html">
     
@@ -108,8 +108,7 @@
       
         
         
-          &lt;h1 id=&quot;模块&quot;&gt;&lt;a href=&quot;#模块&quot; class=&quot;headerlink&quot; title=&quot;模块&quot;&gt;&lt;/a&gt;模块&lt;/h1&gt;&lt;p&gt;每一个.py文件&lt;br&gt;新建test1234.py文件&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;#-*- coding=utf-8
+          &lt;h2 id=&quot;part1&quot;&gt;&lt;a href=&quot;#part1&quot; class=&quot;headerlink&quot;
         
       
     
@@ -124,11 +123,11 @@
   </entry>
   
   <entry>
-    <title>python自学day1</title>
-    <link href="https://github.com/zrz15751005135/zrz15751005135.github.io/2020/08/01/pyday1/"/>
-    <id>https://github.com/zrz15751005135/zrz15751005135.github.io/2020/08/01/pyday1/</id>
+    <title>python自学day4</title>
+    <link href="https://github.com/zrz15751005135/zrz15751005135.github.io/2020/08/01/pyday4/"/>
+    <id>https://github.com/zrz15751005135/zrz15751005135.github.io/2020/08/01/pyday4/</id>
     <published>2020-08-01T07:22:23.000Z</published>
-    <updated>2020-10-10T01:59:13.383Z</updated>
+    <updated>2020-10-10T02:00:00.956Z</updated>
     
     <summary type="html">
     
@@ -136,7 +135,35 @@
       
         
         
-          &lt;h2 id=&quot;part1&quot;&gt;&lt;a href=&quot;#part1&quot; class=&quot;headerlink&quot;
+          &lt;h3 id=&quot;findall发现所有&quot;&gt;&lt;a href=&quot;#findall发现所有&quot; class=&quot;headerlink&quot; title=&quot;findall发现所有&quot;&gt;&lt;/a&gt;findall发现所有&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;#-*- coding=utf-8
+        
+      
+    
+    </summary>
+    
+    
+      <category term="python自学笔记" scheme="https://github.com/zrz15751005135/zrz15751005135.github.io/categories/python%E8%87%AA%E5%AD%A6%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="python自学笔记" scheme="https://github.com/zrz15751005135/zrz15751005135.github.io/tags/python%E8%87%AA%E5%AD%A6%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python自学day3</title>
+    <link href="https://github.com/zrz15751005135/zrz15751005135.github.io/2020/08/01/pyday3/"/>
+    <id>https://github.com/zrz15751005135/zrz15751005135.github.io/2020/08/01/pyday3/</id>
+    <published>2020-08-01T07:22:23.000Z</published>
+    <updated>2020-10-10T01:59:44.902Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;模块&quot;&gt;&lt;a href=&quot;#模块&quot; class=&quot;headerlink&quot; title=&quot;模块&quot;&gt;&lt;/a&gt;模块&lt;/h1&gt;&lt;p&gt;每一个.py文件&lt;br&gt;新建test1234.py文件&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#-*- coding=utf-8
         
       
     
@@ -169,33 +196,6 @@
 import socket
 
 def
-        
-      
-    
-    </summary>
-    
-    
-      <category term="python自学笔记" scheme="https://github.com/zrz15751005135/zrz15751005135.github.io/categories/python%E8%87%AA%E5%AD%A6%E7%AC%94%E8%AE%B0/"/>
-    
-    
-      <category term="python自学笔记" scheme="https://github.com/zrz15751005135/zrz15751005135.github.io/tags/python%E8%87%AA%E5%AD%A6%E7%AC%94%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>python自学day4</title>
-    <link href="https://github.com/zrz15751005135/zrz15751005135.github.io/2020/08/01/pyday4/"/>
-    <id>https://github.com/zrz15751005135/zrz15751005135.github.io/2020/08/01/pyday4/</id>
-    <published>2020-08-01T07:22:23.000Z</published>
-    <updated>2020-10-10T02:00:00.956Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h3 id=&quot;findall发现所有&quot;&gt;&lt;a href=&quot;#findall发现所有&quot; class=&quot;headerlink&quot; title=&quot;findall发现所有&quot;&gt;&lt;/a&gt;findall发现所有&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;#-*- coding=utf-8
         
       
     
